@@ -35,53 +35,32 @@ function svgIcon(name, size) {
 }
 
 /* ============================================
-   Claude Aesthetic: Lenis Smooth Scroll
+   Claude Aesthetic: Lenis Smooth Scroll (DISABLED for performance)
    ============================================ */
-function initLenisSmoothScroll() {
-  try {
-    if (typeof Lenis !== 'undefined') {
-      const lenis = new Lenis({
-        duration: 1.2,
-        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
-        touchMultiplier: 2,
-        infinite: false
-      });
-      lenis.on('scroll', function() {
-        if (typeof ScrollTrigger !== 'undefined') ScrollTrigger.update();
-        updateScrollProgress();
-      });
-      if (typeof gsap !== 'undefined') {
-        gsap.ticker.add(function(time) { lenis.raf(time * 1000); });
-        gsap.ticker.lagSmoothing(0);
-      } else {
-        function raf(time) { lenis.raf(time); requestAnimationFrame(raf); }
-        requestAnimationFrame(raf);
-      }
-    }
-  } catch(e) { console.warn('Lenis init failed:', e); }
-}
+function initLenisSmoothScroll() { return; }
 
 /* ============================================
-   Claude Aesthetic: Scroll Progress Bar
+   Claude Aesthetic: Scroll Progress Bar (native scroll)
    ============================================ */
-function updateScrollProgress() {
+function initScrollProgress() {
   var bar = document.getElementById('scrollProgress');
   if (!bar) return;
-  var scrollTop = window.scrollY || document.documentElement.scrollTop;
-  var docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
-  bar.style.width = progress + '%';
+  window.addEventListener('scroll', function() {
+    var scrollTop = window.scrollY;
+    var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    var progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    bar.style.width = progress + '%';
+  }, { passive: true });
 }
 
 /* ============================================
-   Claude Aesthetic: GSAP Animations
+   Claude Aesthetic: GSAP Animations (SIMPLIFIED for performance)
    ============================================ */
 function initGSAPAnimations() {
   try {
-    if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') return;
-    gsap.registerPlugin(ScrollTrigger);
+    if (typeof gsap === 'undefined') return;
 
-    // Set initial states with gsap.set()
+    // Set initial states
     gsap.set('.top-nav', { y: -100, opacity: 0 });
     gsap.set('.hero-title', { y: 60, opacity: 0 });
     gsap.set('.hero-subtitle', { y: 30, opacity: 0 });
@@ -122,129 +101,38 @@ function initGSAPAnimations() {
     // Daily quote
     gsap.to('.daily-quote', { y: 0, opacity: 1, duration: 0.8, delay: 0.8, ease: 'power3.out' });
 
-    // Scroll-triggered reveals
-    ScrollTrigger.batch('.reveal, .comp-hub-card, .knowledge-card, .toolbox-card', {
-      onEnter: function(elements) {
-        gsap.from(elements, {
-          y: 50, opacity: 0, duration: 0.8, stagger: 0.1, ease: 'power3.out'
-        });
-      },
-      start: 'top 90%',
-      once: true
-    });
-
-    // Section titles slide in
-    ScrollTrigger.batch('.content-page-title', {
-      onEnter: function(elements) {
-        gsap.from(elements, {
-          x: -30, opacity: 0, duration: 0.8, ease: 'power3.out'
-        });
-      },
-      start: 'top 85%',
-      once: true
-    });
-
   } catch(e) { console.warn('GSAP init failed:', e); }
 }
 
 /* ============================================
-   Claude Aesthetic: 3D Card Tilt (Desktop only)
+   Lightweight Reveal Animations (IntersectionObserver)
    ============================================ */
-function initCardTilt() {
-  if (!window.matchMedia('(pointer: fine)').matches) return;
-  
-  var cards = document.querySelectorAll('.comp-hub-card, .knowledge-card, .toolbox-card, .featured-item');
-  cards.forEach(function(card) {
-    card.addEventListener('mousemove', function(e) {
-      requestAnimationFrame(function() {
-        var rect = card.getBoundingClientRect();
-        var x = e.clientX - rect.left;
-        var y = e.clientY - rect.top;
-        var centerX = rect.width / 2;
-        var centerY = rect.height / 2;
-        var rotateX = ((y - centerY) / centerY) * -4;
-        var rotateY = ((x - centerX) / centerX) * 4;
-        card.style.transform = 'perspective(1000px) rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg) translateY(-8px)';
-      });
+function initRevealAnimations() {
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
     });
-    card.addEventListener('mouseleave', function() {
-      card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0)';
-      card.style.transition = 'transform 0.5s cubic-bezier(.4,0,.2,1)';
-    });
-    card.addEventListener('mouseenter', function() {
-      card.style.transition = 'transform 0.1s ease';
-    });
-  });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(function(el) { observer.observe(el); });
 }
 
 /* ============================================
-   Claude Aesthetic: Custom Cursor (Desktop only)
+   Claude Aesthetic: 3D Card Tilt (DISABLED for performance)
    ============================================ */
-function initCustomCursor() {
-  if (!window.matchMedia('(pointer: fine)').matches) return;
-  
-  var cursor = document.createElement('div');
-  cursor.className = 'custom-cursor';
-  cursor.innerHTML = '<div class="cursor-dot"></div><div class="cursor-ring"></div>';
-  document.body.appendChild(cursor);
-  
-  var dot = cursor.querySelector('.cursor-dot');
-  var ring = cursor.querySelector('.cursor-ring');
-  var mouseX = 0, mouseY = 0, ringX = 0, ringY = 0;
-  var rafId = null;
-  
-  document.addEventListener('mousemove', function(e) {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-    dot.style.left = mouseX + 'px';
-    dot.style.top = mouseY + 'px';
-    if (!rafId) {
-      rafId = requestAnimationFrame(function() {
-        ringX += (mouseX - ringX) * 0.15;
-        ringY += (mouseY - ringY) * 0.15;
-        ring.style.left = ringX + 'px';
-        ring.style.top = ringY + 'px';
-        rafId = null;
-      });
-    }
-  });
-
-  // Hover effect on interactive elements
-  document.addEventListener('mouseover', function(e) {
-    if (e.target.closest('button, a, .card, .comp-hub-card, .knowledge-card, .toolbox-card, input, textarea, .nav-link, .featured-item, .service-item')) {
-      dot.style.transform = 'translate(-50%,-50%) scale(2.5)';
-      dot.style.opacity = '0.3';
-      ring.style.transform = 'translate(-50%,-50%) scale(1.5)';
-      ring.style.borderColor = 'rgba(251,191,36,0.5)';
-    }
-  });
-  document.addEventListener('mouseout', function(e) {
-    if (e.target.closest('button, a, .card, .comp-hub-card, .knowledge-card, .toolbox-card, input, textarea, .nav-link, .featured-item, .service-item')) {
-      dot.style.transform = 'translate(-50%,-50%) scale(1)';
-      dot.style.opacity = '1';
-      ring.style.transform = 'translate(-50%,-50%) scale(1)';
-      ring.style.borderColor = 'rgba(251,191,36,0.3)';
-    }
-  });
-}
+function initCardTilt() { return; }
 
 /* ============================================
-   Claude Aesthetic: Mouse Spotlight
+   Claude Aesthetic: Custom Cursor (DISABLED for performance)
    ============================================ */
-function initMouseSpotlight() {
-  if (!window.matchMedia('(pointer: fine)').matches) return;
-  
-  var spotlight = document.createElement('div');
-  spotlight.className = 'mouse-spotlight';
-  document.body.appendChild(spotlight);
-  
-  document.addEventListener('mousemove', function(e) {
-    requestAnimationFrame(function() {
-      spotlight.style.left = e.clientX + 'px';
-      spotlight.style.top = e.clientY + 'px';
-    });
-  });
-}
+function initCustomCursor() { return; }
+
+/* ============================================
+   Claude Aesthetic: Mouse Spotlight (DISABLED for performance)
+   ============================================ */
+function initMouseSpotlight() { return; }
 
 
 document.write(new Date().getFullYear())
@@ -1579,13 +1467,10 @@ renderProfile=function(){
 /* --- Init on DOMContentLoaded --- */
 document.addEventListener('DOMContentLoaded',function(){
   updateNavAuth();
-  // Claude Aesthetic Enhancements
-  initLenisSmoothScroll();
+  // Claude Aesthetic Enhancements (performance-optimized)
   initGSAPAnimations();
-  initCustomCursor();
-  initCardTilt();
-  initMouseSpotlight();
-  window.addEventListener('scroll', updateScrollProgress, { passive: true });
+  initScrollProgress();
+  initRevealAnimations();
   // Render featured competitions on homepage
   renderFeaturedCompetitions();
 });
