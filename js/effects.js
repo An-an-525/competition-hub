@@ -41,6 +41,8 @@
      Effect 1: Dot Grid Repel (zorto.dev style)
      ============================================================ */
   function initDotGrid() {
+    // Claude 风格：桌面端禁用点阵
+    if (window.innerWidth > 768) return;
     var canvas = document.getElementById('dotGridCanvas');
     if (!canvas) return;
     if (prefersReducedMotion()) {
@@ -449,6 +451,8 @@
      Effect 3: Particle System (Three.js)
      ============================================================ */
   function initParticleSystem() {
+    // Claude 风格：桌面端禁用粒子
+    if (window.innerWidth > 768) return;
     var container = document.getElementById('particleContainer');
     if (!container) return;
     if (prefersReducedMotion()) {

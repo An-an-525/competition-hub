@@ -20,6 +20,9 @@ function initScrollProgress() {
    Claude Aesthetic: GSAP Animations (SIMPLIFIED for performance)
    ============================================ */
 function initGSAPAnimations() {
+  // Claude 风格：不使用入场动画
+  if (typeof gsap === 'undefined') return;
+  return;
   try {
     if (typeof gsap === 'undefined') return;
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" data-theme="dark">
+<html lang="zh-CN" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
@@ -18,14 +18,9 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <title>竞赛助手 - 学科竞赛智能查询与报名平台</title>
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"
-    onerror="this.onerror=null;this.href='https://fonts.loli.net/css2?family=Syne:wght@700;800&family=DM+Sans:wght@300;400;500&display=swap';">
+  <!-- Google Fonts (removed for Claude style - using system fonts) -->
 
-  <!-- GSAP -->
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <!-- GSAP (removed for Claude style - no entrance animations) -->
 
 
 
@@ -159,14 +154,14 @@
       <div class="hero-deco hero-deco-ring"></div>
 
       <div class="home-welcome">
-        <h1 class="hero-title">你好，同学</h1>
-        <div class="hero-subtitle">学科竞赛与校园资讯，一站查询</div>
+        <h1 class="hero-title">竞赛助手</h1>
+        <p class="hero-subtitle">学科竞赛查询与报名平台</p>
       </div>
       <div class="home-search">
         <div class="search-icon">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
         </div>
-        <input type="text" id="homeSearchInput" placeholder="试试输入：数学建模 报名时间 / 计算机二级 / 食堂推荐" onkeydown="if(event.key==='Enter'){var v=this.value.trim();if(v){navigate('ai');setTimeout(function(){document.getElementById('aiChatInput').value=v;sendAIChat()},100);this.value=''}}" />
+        <input type="text" id="homeSearchInput" placeholder="搜索竞赛、专业、校园..." onkeydown="if(event.key==='Enter'){var v=this.value.trim();if(v){navigate('ai');setTimeout(function(){document.getElementById('aiChatInput').value=v;sendAIChat()},100);this.value=''}}" />
         <button class="search-btn" onclick="var inp=document.getElementById('homeSearchInput');var v=inp.value.trim();if(v){navigate('ai');setTimeout(function(){document.getElementById('aiChatInput').value=v;sendAIChat()},100);inp.value=''}" aria-label="AI 提问">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
         </button>
