@@ -47,7 +47,7 @@ function handlePageInit(page,tab){
   if(page==='ai')updateAIView();
 }
 function toggleNavGroup(btn){var dropdown=btn.nextElementSibling;var isOpen=dropdown.classList.contains('show');closeAllNavGroups();if(!isOpen)dropdown.classList.add('show');btn.classList.toggle('active',!isOpen)}
-function closeAllNavGroups(){document.querySelectorAll('.nav-dropdown').forEach(function(d){d.classList.remove('show')});document.querySelectorAll('.nav-group-trigger').forEach(function(t){t.classList.remove('active')})}
+function closeAllNavGroups(){document.querySelectorAll('.nav-dropdown').forEach(function(d){d.classList.remove('show')});document.querySelectorAll('.nav-group-trigger,.nav-dropdown-trigger').forEach(function(t){t.classList.remove('active')})}
 function toggleMobileMenu(){document.body.style.overflow='hidden';document.getElementById('mobileMenu').classList.toggle('open');document.getElementById('hamburgerBtn').classList.toggle('open')}
 function closeMobileMenu(){document.body.style.overflow='';document.getElementById('mobileMenu').classList.remove('open');document.getElementById('hamburgerBtn').classList.remove('open')}
 document.addEventListener('click',function(e){if(!e.target.closest('.nav-group'))closeAllNavGroups()});

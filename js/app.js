@@ -56,6 +56,8 @@ renderProfile = function() {
   var html = '<div style="max-width:600px;margin:0 auto">';
   html += '<div class="profile-header"><div class="profile-avatar">' + esc(user.name.charAt(0)) + '</div><div class="profile-name">' + esc(user.name) + '</div><div class="profile-meta">' + esc(user.studentId) + ' | ' + esc(user.college) + (user.role === 'admin' ? ' | 管理员' : '') + '</div></div>';
   html += '<div class="settings-group"><div class="settings-item" onclick="navigate(\'myregistrations\')"><div class="si-icon" style="background:var(--surface-gold-subtle);color:var(--accent)">' + svgIcon('clipboard', 18) + '</div><div class="si-label">我的报名</div><div class="si-arrow">&#8250;</div></div>';
+  var favs = getFavorites();
+  html += '<div class="settings-item" onclick="showFavoritesList()"><div class="si-icon" style="background:rgba(255,200,74,0.1);color:#FFC84A">' + svgIcon('star', 18) + '</div><div class="si-label">我的收藏</div><div class="si-badge">' + favs.length + '</div><div class="si-arrow">&#8250;</div></div>';
   if (user.role === 'admin') html += '<div class="settings-item" onclick="navigate(\'admin\')"><div class="si-icon" style="background:rgba(46,204,113,0.1);color:#2ecc71">' + svgIcon('gear', 18) + '</div><div class="si-label">管理面板</div><div class="si-arrow">&#8250;</div></div>';
   html += '<div class="settings-item" onclick="navigate(\'ai\')"><div class="si-icon" style="background:rgba(52,152,219,0.1);color:#3498db">' + svgIcon('robot', 18) + '</div><div class="si-label">AI问答</div><div class="si-arrow">&#8250;</div></div>';
   html += '</div>';

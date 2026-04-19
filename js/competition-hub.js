@@ -137,7 +137,7 @@ async function renderCompHub(container){
     html+='<div class="comp-hub-card hub-card'+(isFeatured?' hub-card-featured':'')+'" data-name="'+esc((c.name||'').toLowerCase())+'" data-category="'+esc(c.category||'')+'" data-status="'+esc(c.status||'')+'" data-level="'+esc(c.level||'')+'" onclick="showHubCompDetail('+c.id+')">';
     html+='<div class="comp-card-gradient '+levelClass+'"></div>';
     html+='<div class="comp-card-category-icon '+catClass+'">'+catIconSvg+'</div>';
-    html+='<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px"><h4 style="flex:1">'+esc(c.name)+'</h4>'+getStatusBadge(c.status)+'</div>';
+    html+='<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px"><h4 style="flex:1">'+esc(c.name)+'</h4><div style="display:flex;gap:4px;align-items:center;flex-shrink:0">'+getFavoriteButtonHtml(String(c.id))+getReminderButtonHtml(String(c.id), c.name, c.reg_end || '')+'</div>'+getStatusBadge(c.status)+'</div>';
     html+='<div class="comp-hub-meta">';
     if(c.level)html+='<span class="tag-pill">'+esc(c.level)+'</span>';
     if(c.category)html+='<span class="tag-pill" style="background:var(--surface-gold-subtle);color:var(--gold)">'+esc(c.category)+'</span>';
@@ -190,6 +190,7 @@ async function showHubCompDetail(compId){
   var user=getCurrentUser();
   var html='<div style="max-height:70vh;overflow-y:auto;padding-right:8px">';
   html+='<div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:12px"><h3 style="font-size:18px;color:var(--text-primary);flex:1">'+esc(c.name)+'</h3>'+getStatusBadge(c.status)+'</div>';
+  html+='<div style="display:flex;gap:8px;margin:8px 0">'+getFavoriteButtonHtml(String(compId))+getReminderButtonHtml(String(compId), c.name, c.reg_end || '')+'</div>';
   html+='<div style="display:flex;flex-wrap:wrap;gap:4px;margin-bottom:16px">';
   if(c.level)html+='<span class="tag-pill">'+esc(c.level)+'</span>';
   if(c.category)html+='<span class="tag-pill" style="background:var(--surface-gold-subtle);color:var(--gold)">'+esc(c.category)+'</span>';

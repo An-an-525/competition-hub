@@ -64,6 +64,7 @@ function renderCompAll(container){
   html+='</div>';
   container.innerHTML=html;
 }
+
 function filterCompetitions(){
   applyCompFilters();
 }
@@ -262,4 +263,97 @@ function renderCompSecurity(container){
   });
   html+='</div>';
   container.innerHTML=html;
+}
+
+/* === 收藏竞赛（本地存储） === */
+function getFavorites() {
+  return JSON.parse(getLS('app_favorites', '[]'));
+}
+function saveFavorites(list) {
+  setLS('app_favorites', JSON.stringify(list));
+}
+function toggleFavorite(compId) {
+  var favs = getFavorites();
+  var idx = favs.indexOf(compId);
+  if (idx >= 0) {
+    favs.splice(idx, 1);
+    showCopyToast('已取消收藏', 'info');
+  } else {
+    favs.push(compId);
+    showCopyToast('已收藏，可在个人中心查看', 'success');
+  }
+  saveFavorites(favs);
+  // 刷新当前竞赛列表
+  if (typeof renderCompHub === 'function') renderCompHub();
+  if (typeof renderFeaturedCompetitions === 'function') renderFeaturedCompetitions();
+}
+function isFavorited(compId) {
+  return getFavorites().indexOf(compId) >= 0;
+}
+function getFavoriteButtonHtml(compId) {
+  var fav = isFavorited(compId);
+  return '<button onclick="event.stopPropagation();toggleFavorite(\'' + compId + '\')" style="background:none;border:none;cursor:pointer;padding:6px;border-radius:50%;transition:all 0.2s ease;color:' + (fav ? '#FFC84A' : 'var(--text-muted)') + '" title="' + (fav ? '取消收藏' : '收藏') + '">' + (fav ? '&#9733;' : '&#9734;') + '</button>';
+}
+
+/* === DDL 提醒（本地存储） === */
+function getReminders() {
+  return JSON.parse(getLS('app_reminders', '[]'));
+}
+function saveReminders(list) {
+  setLS('app_reminders', JSON.stringify(list));
+}
+function toggleReminder(compId, compName, deadline) {
+  var reminders = getReminders();
+  var idx = reminders.findIndex(function(r) { return r.id === compId; });
+  if (idx >= 0) {
+    reminders.splice(idx, 1);
+    showCopyToast('已取消提醒', 'info');
+  } else {
+    reminders.push({ id: compId, name: compName, deadline: deadline, addedAt: Date.now() });
+    showCopyToast('已加入提醒，截止前会通知你', 'success');
+  }
+  saveReminders(reminders);
+}
+function isReminded(compId) {
+  return getReminders().some(function(r) { return r.id === compId; });
+}
+function getReminderButtonHtml(compId, compName, deadline) {
+  var on = isReminded(compId);
+  return '<button onclick="event.stopPropagation();toggleReminder(\'' + compId + '\',\'' + esc(compName).replace(/'/g, "\\'") + '\',\'' + esc(deadline || '').replace(/'/g, "\\'") + '\')" style="background:none;border:none;cursor:pointer;padding:6px;border-radius:50%;transition:all 0.2s ease;font-size:14px;color:' + (on ? '#FFC84A' : 'var(--text-muted)') + '" title="' + (on ? '取消提醒' : '订阅截止提醒') + '">' + (on ? '&#128276;' : '&#128274;') + '</button>';
+}
+
+function showFavoritesList() {
+  var favs = getFavorites();
+  var container = document.getElementById('profileContent');
+  if (favs.length === 0) {
+    container.innerHTML = '<div style="text-align:center;padding:40px;color:var(--text-muted)"><div style="font-size:32px;margin-bottom:12px">&#9734;</div><p>暂无收藏</p><p style="font-size:13px;margin-top:8px">浏览竞赛时点击 ☆ 即可收藏</p><button class="btn-secondary" style="margin-top:16px" onclick="renderProfile()">返回个人中心</button></div>';
+    return;
+  }
+  var html = '<div style="max-width:600px;margin:0 auto"><div style="display:flex;align-items:center;gap:12px;margin-bottom:20px"><button onclick="renderProfile()" style="background:none;border:none;color:var(--text-muted);cursor:pointer;font-size:18px">&larr;</button><h3>我的收藏 (' + favs.length + ')</h3></div>';
+  // 需要从 CSUST_DATA 或 Hub 数据中获取竞赛信息
+  html += '<div id="favList"></div></div>';
+  container.innerHTML = html;
+  // 异步加载竞赛详情
+  if (typeof fetchCompetitions === 'function') {
+    fetchCompetitions().then(function(comps) {
+      var list = document.getElementById('favList');
+      if (!list) return;
+      var inner = '';
+      favs.forEach(function(fid) {
+        var comp = comps.find(function(c) { return String(c.id) === String(fid); });
+        if (comp) {
+          inner += '<div class="card" style="padding:16px;margin-bottom:10px;cursor:pointer" onclick="navigate(\'competition\');setTimeout(function(){showHubCompDetail(\'' + fid + '\')},200)"><div style="display:flex;justify-content:space-between;align-items:center"><div><div style="font-weight:600;font-size:15px">' + esc(comp.name) + '</div><div style="font-size:12px;color:var(--text-muted);margin-top:4px">' + esc(comp.level || '') + ' · ' + esc(comp.category || '') + '</div></div><button onclick="event.stopPropagation();toggleFavorite(\'' + fid + '\');showFavoritesList()" style="background:none;border:none;color:#FFC84A;cursor:pointer;font-size:18px" title="取消收藏">&#9733;</button></div></div>';
+        } else {
+          // 从 CSUST_DATA fallback
+          if (typeof CSUST_DATA !== 'undefined' && CSUST_DATA.competitions) {
+            var c2 = CSUST_DATA.competitions.find(function(c) { return String(c.id) === String(fid); });
+            if (c2) {
+              inner += '<div class="card" style="padding:16px;margin-bottom:10px;cursor:pointer" onclick="navigate(\'competition\');setTimeout(function(){showCompDetail(' + CSUST_DATA.competitions.indexOf(c2) + ')},200)"><div style="display:flex;justify-content:space-between;align-items:center"><div><div style="font-weight:600;font-size:15px">' + esc(c2.name) + '</div><div style="font-size:12px;color:var(--text-muted);margin-top:4px">' + esc(c2.level || '') + '</div></div><button onclick="event.stopPropagation();toggleFavorite(\'' + fid + '\');showFavoritesList()" style="background:none;border:none;color:#FFC84A;cursor:pointer;font-size:18px" title="取消收藏">&#9733;</button></div></div>';
+            }
+          }
+        }
+      });
+      list.innerHTML = inner || '<p style="text-align:center;color:var(--text-muted);padding:20px">收藏的竞赛暂无详细信息</p>';
+    });
+  }
 }

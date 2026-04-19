@@ -56,58 +56,18 @@
     <div class="nav-links" id="navLinks">
       <button class="nav-link" data-page="home" onclick="navigate('home')">首页</button>
       <button class="nav-link" data-page="ai" onclick="navigate('ai')">AI问答</button>
-      <div class="nav-sep"></div>
-      <div class="nav-group">
-        <button class="nav-group-trigger" onclick="toggleNavGroup(this)">学业助手 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
-        <div class="nav-dropdown">
-          <button class="nav-link" data-page="academic" onclick="navigate('academic');closeAllNavGroups()">专业查询</button>
-          <button class="nav-link" data-page="academic" onclick="navigate('academic','courses');closeAllNavGroups()">选课指南</button>
-          <button class="nav-link" data-page="academic" onclick="navigate('academic','exams');closeAllNavGroups()">考试安排</button>
-          <button class="nav-link" data-page="academic" onclick="navigate('academic','scholarship');closeAllNavGroups()">奖助学金</button>
-        </div>
-      </div>
-      <div class="nav-group">
-        <button class="nav-group-trigger" onclick="toggleNavGroup(this)">校园生活 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
-        <div class="nav-dropdown">
-          <button class="nav-link" data-page="campus" onclick="navigate('campus');closeAllNavGroups()">校区导览</button>
-          <button class="nav-link" data-page="campus" onclick="navigate('campus','canteen');closeAllNavGroups()">食堂</button>
-          <button class="nav-link" data-page="campus" onclick="navigate('campus','library');closeAllNavGroups()">图书馆</button>
-          <button class="nav-link" data-page="campus" onclick="navigate('campus','dorm');closeAllNavGroups()">宿舍</button>
-          <button class="nav-link" data-page="campus" onclick="navigate('campus','transport');closeAllNavGroups()">交通指南</button>
-          <button class="nav-link" data-page="campus" onclick="navigate('campus','card');closeAllNavGroups()">校园一卡通</button>
-          <button class="nav-link" data-page="campus" onclick="navigate('campus','links');closeAllNavGroups()">常用链接</button>
-          <button class="nav-link" data-page="campus" onclick="navigate('campus','shuttle');closeAllNavGroups()">校车通勤</button>
-        </div>
-      </div>
-      <div class="nav-group">
-        <button class="nav-group-trigger" onclick="toggleNavGroup(this)">招生咨询 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
-        <div class="nav-dropdown">
-          <button class="nav-link" data-page="admission" onclick="navigate('admission');closeAllNavGroups()">招生政策</button>
-          <button class="nav-link" data-page="admission" onclick="navigate('admission','majors');closeAllNavGroups()">专业大全</button>
-          <button class="nav-link" data-page="admission" onclick="navigate('admission','scores');closeAllNavGroups()">录取分数线</button>
-          <button class="nav-link" data-page="admission" onclick="navigate('admission','tuition');closeAllNavGroups()">学费标准</button>
-          <button class="nav-link" data-page="admission" onclick="navigate('admission','contact');closeAllNavGroups()">联系方式</button>
-        </div>
-      </div>
-      <div class="nav-group">
-        <button class="nav-group-trigger" onclick="toggleNavGroup(this)">校园资讯 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></button>
-        <div class="nav-dropdown">
-          <button class="nav-link" data-page="news" onclick="navigate('news');closeAllNavGroups()">通知公告</button>
-          <button class="nav-link" data-page="news" onclick="navigate('news','clubs');closeAllNavGroups()">社团活动</button>
-          <button class="nav-link" data-page="news" onclick="navigate('news','flea');closeAllNavGroups()">二手交易</button>
-          <button class="nav-link" data-page="news" onclick="navigate('news','lost');closeAllNavGroups()">失物招领</button>
-          <div style="height:1px;background:var(--border-subtle);margin:6px 8px"></div>
-          <button class="nav-link" data-page="competition" onclick="navigate('competition');closeAllNavGroups()">学科竞赛</button>
-          <button class="nav-link" data-page="competition" onclick="navigate('competition','calendar');closeAllNavGroups()">竞赛日历</button>
-          <button class="nav-link" data-page="competition" onclick="navigate('competition','achievements');closeAllNavGroups()">竞赛战绩</button>
-          <button class="nav-link" data-page="competition" onclick="navigate('competition','guide');closeAllNavGroups()">竞赛指南</button>
-          <button class="nav-link" data-page="competition" onclick="navigate('competition','security');closeAllNavGroups()">公共安全类</button>
-        </div>
-      </div>
-      <div class="nav-sep"></div>
+      <button class="nav-link" data-page="competition" onclick="navigate('competition')">竞赛</button>
       <button class="nav-link" data-page="toolbox" onclick="navigate('toolbox')">工具箱</button>
-      <div class="nav-sep"></div>
-      <button class="nav-link" data-page="profile" onclick="navigate('profile')">个人中心</button>
+      <div class="nav-group">
+        <button class="nav-link nav-dropdown-trigger" onclick="toggleNavGroup(this)">更多 <svg width="10" height="6" viewBox="0 0 10 6" fill="none" style="margin-left:4px;vertical-align:middle"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="nav-dropdown">
+          <button class="nav-link" data-page="academic" onclick="navigate('academic');closeAllNavGroups()">学业助手</button>
+          <button class="nav-link" data-page="campus" onclick="navigate('campus');closeAllNavGroups()">校园生活</button>
+          <button class="nav-link" data-page="admission" onclick="navigate('admission');closeAllNavGroups()">招生咨询</button>
+          <button class="nav-link" data-page="news" onclick="navigate('news');closeAllNavGroups()">校园资讯</button>
+          <button class="nav-link" data-page="profile" onclick="navigate('profile');closeAllNavGroups()">个人中心</button>
+        </div>
+      </div>
     </div>
     <div class="nav-right">
       <div id="navAuthArea" style="display:flex;align-items:center;gap:8px"></div>
@@ -206,10 +166,13 @@
         <div class="search-icon">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
         </div>
-        <input type="text" id="homeSearchInput" placeholder="向 AI 提问：竞赛、专业、校园..." onkeydown="if(event.key==='Enter'){var v=this.value.trim();if(v){navigate('ai');setTimeout(function(){document.getElementById('aiChatInput').value=v;sendAIChat()},100);this.value=''}}" />
+        <input type="text" id="homeSearchInput" placeholder="试试输入：数学建模 报名时间 / 计算机二级 / 食堂推荐" onkeydown="if(event.key==='Enter'){var v=this.value.trim();if(v){navigate('ai');setTimeout(function(){document.getElementById('aiChatInput').value=v;sendAIChat()},100);this.value=''}}" />
         <button class="search-btn" onclick="var inp=document.getElementById('homeSearchInput');var v=inp.value.trim();if(v){navigate('ai');setTimeout(function(){document.getElementById('aiChatInput').value=v;sendAIChat()},100);inp.value=''}" aria-label="AI 提问">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
         </button>
+        <div style="text-align:center;margin-top:8px;font-size:12px;color:var(--text-muted)">
+          你可以输入：竞赛名、专业、DDL、校园问题 — AI 会帮你解答
+        </div>
       </div>
 
       <!-- Stats Section -->
@@ -291,6 +254,7 @@
 
     <!-- AI Chat Page -->
     <div id="page-ai" class="page">
+      <div class="page-breadcrumb"><button onclick="navigate('home')">首页</button><span class="bc-sep">/</span><span class="bc-current">AI 问答</span></div>
       <div class="ai-page" id="aiPage">
         <div class="ai-empty" id="aiEmpty">
           <div class="ai-empty-icon">AI</div>
@@ -323,6 +287,7 @@
 
     <!-- Academic Page -->
     <div id="page-academic" class="page">
+      <div class="page-breadcrumb"><button onclick="navigate('home')">首页</button><span class="bc-sep">/</span><span class="bc-current">学业助手</span></div>
       <div class="content-page">
         <h2 class="content-page-title"><span class="gold">学业助手</span></h2>
         <div class="tabs-bar" id="academicTabs">
@@ -338,6 +303,7 @@
 
     <!-- Campus Page -->
     <div id="page-campus" class="page">
+      <div class="page-breadcrumb"><button onclick="navigate('home')">首页</button><span class="bc-sep">/</span><span class="bc-current">校园生活</span></div>
       <div class="content-page">
         <h2 class="content-page-title"><span class="gold">校园生活</span></h2>
         <div class="tabs-bar" id="campusTabs">
@@ -356,6 +322,7 @@
 
     <!-- Admission Page -->
     <div id="page-admission" class="page">
+      <div class="page-breadcrumb"><button onclick="navigate('home')">首页</button><span class="bc-sep">/</span><span class="bc-current">招生咨询</span></div>
       <div class="content-page">
         <h2 class="content-page-title"><span class="gold">招生咨询</span></h2>
         <div class="tabs-bar" id="admissionTabs">
@@ -371,6 +338,7 @@
 
     <!-- News Page -->
     <div id="page-news" class="page">
+      <div class="page-breadcrumb"><button onclick="navigate('home')">首页</button><span class="bc-sep">/</span><span class="bc-current">校园资讯</span></div>
       <div class="content-page">
         <h2 class="content-page-title"><span class="gold">校园资讯</span></h2>
         <div class="tabs-bar" id="newsTabs">
@@ -385,6 +353,7 @@
 
     <!-- Competition Page -->
     <div id="page-competition" class="page">
+      <div class="page-breadcrumb"><button onclick="navigate('home')">首页</button><span class="bc-sep">/</span><span class="bc-current">学科竞赛</span></div>
       <div class="content-page">
         <h2 class="content-page-title"><span class="gold">学科竞赛</span></h2>
         <div class="tabs-bar" id="competitionTabs">
@@ -400,6 +369,7 @@
 
     <!-- Toolbox Page -->
     <div id="page-toolbox" class="page">
+      <div class="page-breadcrumb"><button onclick="navigate('home')">首页</button><span class="bc-sep">/</span><span class="bc-current">工具箱</span></div>
       <div class="content-page">
         <h2 class="content-page-title"><span class="gold">工具箱</span></h2>
         <div class="toolbox-grid">
@@ -414,7 +384,9 @@
     </div>
 
     <!-- Profile Page -->
-    <div id="page-profile" class="page"><div id="profileContent"></div></div>
+    <div id="page-profile" class="page">
+      <div class="page-breadcrumb"><button onclick="navigate('home')">首页</button><span class="bc-sep">/</span><span class="bc-current">个人中心</span></div>
+      <div id="profileContent"></div></div>
 
     <!-- Auth Page -->
     <div id="page-auth" class="page">
