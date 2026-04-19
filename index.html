@@ -31,8 +31,8 @@
 
 
   <!-- Stylesheet -->
-  <script type="module" crossorigin src="/competition-hub/assets/index.D6YCogfQ.js"></script>
-  <link rel="stylesheet" crossorigin href="/competition-hub/assets/index.wYaKSRql.css">
+  <script type="module" crossorigin src="/competition-hub/assets/index.C_bUUPWP.js"></script>
+  <link rel="stylesheet" crossorigin href="/competition-hub/assets/index.BORKGGJB.css">
 </head>
 <body>
   <!-- Scroll Progress Bar -->
@@ -273,6 +273,16 @@
           </div>
         </div>
         <div class="ai-messages" id="aiChatContainer" style="display:none" aria-live="polite" role="log"></div>
+        <!-- 深度思考模式开关 -->
+        <div style="display:flex;align-items:center;justify-content:space-between;padding:8px 0;margin-bottom:4px">
+          <div style="display:flex;align-items:center;gap:8px">
+            <button id="deepModeToggle" class="deep-mode-toggle" onclick="toggleDeepMode()" aria-label="切换深度思考模式">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+            </button>
+            <span id="deepModeLabel" style="font-size:12px;color:var(--text-muted)">深度思考</span>
+          </div>
+          <div id="aiLoginStatus" style="font-size:11px;color:var(--text-muted)"></div>
+        </div>
         <div class="ai-input-bar">
           <div class="ai-input-wrap">
             <textarea id="aiChatInput" placeholder="输入你想了解的问题..." rows="1" onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();sendAIChat()}"></textarea>
