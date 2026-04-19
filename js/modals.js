@@ -1,7 +1,0 @@
-/* Extracted from app.js */
-function showContactModal(){document.body.style.overflow='hidden';document.getElementById('contactModal').classList.add('active')}
-function hideContactModal(){document.body.style.overflow='';document.getElementById('contactModal').classList.remove('active')}
-function copyContactInfo(el){var text=el.getAttribute('data-copy');navigator.clipboard.writeText(text).then(function(){el.classList.add('copied');var hint=el.querySelector('.contact-copy-hint');if(hint)hint.textContent='已复制';setTimeout(function(){el.classList.remove('copied');var h2=el.querySelector('.contact-copy-hint');if(h2)h2.textContent='长按或点击复制'},2000)}).catch(function(){var ta=document.createElement('textarea');ta.value=text;document.body.appendChild(ta);ta.select();document.execCommand('copy');document.body.removeChild(ta);showCopyToast('已复制')})}
-function showLegalModal(tab){document.body.style.overflow='hidden';document.getElementById('legalModal').classList.add('active');switchLegalTab(tab||'terms')}
-function hideLegalModal(){document.body.style.overflow='';document.getElementById('legalModal').classList.remove('active')}
-function switchLegalTab(tab){document.querySelectorAll('.legal-tab').forEach(function(t){t.classList.toggle('active',t.getAttribute('data-tab')===tab)});document.querySelectorAll('.legal-section').forEach(function(s){s.classList.remove('active')});document.getElementById(tab+'Section').classList.add('active')}
