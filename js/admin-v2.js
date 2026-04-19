@@ -1,1 +1,228 @@
-LyogQWRtaW4gUmV2aWV3IFN5c3RlbSB2MiAqLwoKYXN5bmMgZnVuY3Rpb24gcmVuZGVyQWRtaW5WMigpIHsKICB2YXIgY29udGFpbmVyID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2FkbWluQ29udGVudCcpIHx8IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdwYWdlLWFkbWluJyk7CiAgaWYgKCFjb250YWluZXIpIHJldHVybjsKICBpZiAoIWlzQWRtaW4oKSkgewogICAgY29udGFpbmVyLmlubmVySFRNTCA9ICc8ZGl2IHN0eWxlPSJ0ZXh0LWFsaWduOmNlbnRlcjtwYWRkaW5nOjQwcHg7Y29sb3I6dmFyKC0tdGV4dC1tdXRlZCkiPuaXoOadg+mZkOiuv+mXrjwvZGl2Pic7CiAgICByZXR1cm47CiAgfQoKICBjb250YWluZXIuaW5uZXJIVE1MID0gJzxkaXYgc3R5bGU9Im1heC13aWR0aDo5MDBweDttYXJnaW46MCBhdXRvO3BhZGRpbmc6MjBweCI+JzsKICBjb250YWluZXIuaW5uZXJIVE1MICs9ICc8aDMgc3R5bGU9Im1hcmdpbi1ib3R0b206MjBweCI+5a6h5qC4566h55CGPC9oMz4nOwoKICAvLyDnu5/orqHljaHniYcKICBjb250YWluZXIuaW5uZXJIVE1MICs9ICc8ZGl2IGlkPSJhZG1pblN0YXRzIiBzdHlsZT0iZGlzcGxheTpncmlkO2dyaWQtdGVtcGxhdGUtY29sdW1uczpyZXBlYXQoNCwxZnIpO2dhcDo4cHg7bWFyZ2luLWJvdHRvbToyNHB4Ij48L2Rpdj4nOwoKICAvLyDnrZvpgInmoI8KICBjb250YWluZXIuaW5uZXJIVE1MICs9ICc8ZGl2IHN0eWxlPSJkaXNwbGF5OmZsZXg7Z2FwOjhweDttYXJnaW4tYm90dG9tOjE2cHg7ZmxleC13cmFwOndyYXAiPic7CiAgY29udGFpbmVyLmlubmVySFRNTCArPSAnPHNlbGVjdCBpZD0iYWRtaW5GaWx0ZXJTdGF0dXMiIG9uY2hhbmdlPSJsb2FkQWRtaW5BcHBsaWNhdGlvbnMoKSIgc3R5bGU9InBhZGRpbmc6OHB4IDEycHg7Ym9yZGVyLXJhZGl1czo4cHg7Ym9yZGVyOjFweCBzb2xpZCB2YXIoLS1ib3JkZXItc3VidGxlKTtiYWNrZ3JvdW5kOnZhcigtLWJnLWNhcmQpO2NvbG9yOnZhcigtLXRleHQtcHJpbWFyeSk7Zm9udC1zaXplOjEzcHgiPjxvcHRpb24gdmFsdWU9IiI+5YWo6YOo54q25oCBPC9vcHRpb24+PG9wdGlvbiB2YWx1ZT0ic3VibWl0dGVkIj7lvoXlrqHmoLg8L29wdGlvbj48b3B0aW9uIHZhbHVlPSJ1bmRlcl9yZXZpZXciPuWuoeaguOS4rTwvb3B0aW9uPjxvcHRpb24gdmFsdWU9ImFwcHJvdmVkIj7lt7LpgJrov4c8L29wdGlvbj48b3B0aW9uIHZhbHVlPSJyZWplY3RlZCI+5bey6amz5ZuePC9vcHRpb24+PG9wdGlvbiB2YWx1ZT0icmVxdWVzdF9jaGFuZ2VzIj7pnIDooaXlhYU8L29wdGlvbj48L3NlbGVjdD4nOwogIGNvbnRhaW5lci5pbm5lckhUTUwgKz0gJzxzZWxlY3QgaWQ9ImFkbWluRmlsdGVyVHlwZSIgb25jaGFuZ2U9ImxvYWRBZG1pbkFwcGxpY2F0aW9ucygpIiBzdHlsZT0icGFkZGluZzo4cHggMTJweDtib3JkZXItcmFkaXVzOjhweDtib3JkZXI6MXB4IHNvbGlkIHZhcigtLWJvcmRlci1zdWJ0bGUpO2JhY2tncm91bmQ6dmFyKC0tYmctY2FyZCk7Y29sb3I6dmFyKC0tdGV4dC1wcmltYXJ5KTtmb250LXNpemU6MTNweCI+PG9wdGlvbiB2YWx1ZT0iIj7lhajpg6jnsbvlnos8L29wdGlvbj48b3B0aW9uIHZhbHVlPSJpbmRpdmlkdWFsIj7kuKrkuro8L29wdGlvbj48b3B0aW9uIHZhbHVlPSJ0ZWFtIj7lm6LpmJ88L29wdGlvbj48L3NlbGVjdD4nOwogIGNvbnRhaW5lci5pbm5lckhUTUwgKz0gJzxpbnB1dCB0eXBlPSJ0ZXh0IiBpZD0iYWRtaW5TZWFyY2hOYW1lIiBwbGFjZWhvbGRlcj0i5pCc57Si56ue6LWb5ZCNLi4uIiBvbmlucHV0PSJsb2FkQWRtaW5BcHBsaWNhdGlvbnMoKSIgc3R5bGU9ImZsZXg6MTtwYWRkaW5nOjhweCAxMnB4O2JvcmRlci1yYWRpdXM6OHB4O2JvcmRlcjoxcHggc29saWQgdmFyKC0tYm9yZGVyLXN1YnRsZSk7YmFja2dyb3VuZDp2YXIoLS1iZy1jYXJkKTtjb2xvcjp2YXIoLS10ZXh0LXByaW1hcnkpO2ZvbnQtc2l6ZToxM3B4O21pbi13aWR0aDoxNTBweCI+JzsKICBjb250YWluZXIuaW5uZXJIVE1MICs9ICc8L2Rpdj4nOwoKICAvLyDmiqXlkI3liJfooagKICBjb250YWluZXIuaW5uZXJIVE1MICs9ICc8ZGl2IGlkPSJhZG1pbkFwcExpc3QiPjwvZGl2Pic7CiAgY29udGFpbmVyLmlubmVySFRNTCArPSAnPC9kaXY+JzsKCiAgbG9hZEFkbWluU3RhdHMoKTsKICBsb2FkQWRtaW5BcHBsaWNhdGlvbnMoKTsKfQoKYXN5bmMgZnVuY3Rpb24gbG9hZEFkbWluU3RhdHMoKSB7CiAgdmFyIGVsID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2FkbWluU3RhdHMnKTsKICBpZiAoIWVsKSByZXR1cm47CgogIHZhciBjb3VudHMgPSB7IHRvdGFsOiAwLCBwZW5kaW5nOiAwLCBhcHByb3ZlZDogMCwgcmVqZWN0ZWQ6IDAgfTsKICB2YXIgc3RhdHVzZXMgPSBbJ3N1Ym1pdHRlZCcsICd1bmRlcl9yZXZpZXcnLCAnYXBwcm92ZWQnLCAncmVqZWN0ZWQnLCAncmVxdWVzdF9jaGFuZ2VzJ107CgogIGZvciAodmFyIGkgPSAwOyBpIDwgc3RhdHVzZXMubGVuZ3RoOyBpKyspIHsKICAgIHZhciByZXMgPSBhd2FpdCBmZXRjaChIVUJfVVJMICsgJy9yZXN0L3YxL2FwcGxpY2F0aW9ucz9zdGF0dXM9ZXEuJyArIHN0YXR1c2VzW2ldICsgJyZzZWxlY3Q9aWQnLCB7IGhlYWRlcnM6IEhVQl9IRUFERVJTIH0pOwogICAgaWYgKHJlcy5vaykgewogICAgICB2YXIgZGF0YSA9IGF3YWl0IHJlcy5qc29uKCk7CiAgICAgIGNvdW50cy50b3RhbCArPSBkYXRhLmxlbmd0aDsKICAgICAgaWYgKHN0YXR1c2VzW2ldID09PSAnc3VibWl0dGVkJyB8fCBzdGF0dXNlc1tpXSA9PT0gJ3VuZGVyX3JldmlldycpIGNvdW50cy5wZW5kaW5nICs9IGRhdGEubGVuZ3RoOwogICAgICBpZiAoc3RhdHVzZXNbaV0gPT09ICdhcHByb3ZlZCcpIGNvdW50cy5hcHByb3ZlZCArPSBkYXRhLmxlbmd0aDsKICAgICAgaWYgKHN0YXR1c2VzW2ldID09PSAncmVqZWN0ZWQnKSBjb3VudHMucmVqZWN0ZWQgKz0gZGF0YS5sZW5ndGg7CiAgICB9CiAgfQoKICBlbC5pbm5lckhUTUwgPSAnPGRpdiBjbGFzcz0iY2FyZCIgc3R5bGU9InBhZGRpbmc6MTZweDt0ZXh0LWFsaWduOmNlbnRlciI+PGRpdiBzdHlsZT0iZm9udC1zaXplOjI0cHg7Zm9udC13ZWlnaHQ6ODAwO2NvbG9yOnZhcigtLXRleHQtcHJpbWFyeSkiPicgKyBjb3VudHMudG90YWwgKyAnPC9kaXY+PGRpdiBzdHlsZT0iZm9udC1zaXplOjEycHg7Y29sb3I6dmFyKC0tdGV4dC1tdXRlZCkiPuaAu+aKpeWQjTwvZGl2PjwvZGl2PicgKwogICAgJzxkaXYgY2xhc3M9ImNhcmQiIHN0eWxlPSJwYWRkaW5nOjE2cHg7dGV4dC1hbGlnbjpjZW50ZXIiPjxkaXYgc3R5bGU9ImZvbnQtc2l6ZToyNHB4O2ZvbnQtd2VpZ2h0OjgwMDtjb2xvcjojRkZDODRBIj4nICsgY291bnRzLnBlbmRpbmcgKyAnPC9kaXY+PGRpdiBzdHlsZT0iZm9udC1zaXplOjEycHg7Y29sb3I6dmFyKC0tdGV4dC1tdXRlZCkiPuW+heWuoeaguDwvZGl2PjwvZGl2PicgKwogICAgJzxkaXYgY2xhc3M9ImNhcmQiIHN0eWxlPSJwYWRkaW5nOjE2cHg7dGV4dC1hbGlnbjpjZW50ZXIiPjxkaXYgc3R5bGU9ImZvbnQtc2l6ZToyNHB4O2ZvbnQtd2VpZ2h0OjgwMDtjb2xvcjojMmVjYzcxIj4nICsgY291bnRzLmFwcHJvdmVkICsgJzwvZGl2PjxkaXYgc3R5bGU9ImZvbnQtc2l6ZToxMnB4O2NvbG9yOnZhcigtLXRleHQtbXV0ZWQpIj7lt7LpgJrov4c8L2Rpdj48L2Rpdj4nICsKICAgICc8ZGl2IGNsYXNzPSJjYXJkIiBzdHlsZT0icGFkZGluZzoxNnB4O3RleHQtYWxpZ246Y2VudGVyIj48ZGl2IHN0eWxlPSJmb250LXNpemU6MjRweDtmb250LXdlaWdodDo4MDA7Y29sb3I6I2U3NGMzYyI+JyArIGNvdW50cy5yZWplY3RlZCArICc8L2Rpdj48ZGl2IHN0eWxlPSJmb250LXNpemU6MTJweDtjb2xvcjp2YXIoLS10ZXh0LW11dGVkKSI+5bey6amz5ZuePC9kaXY+PC9kaXY+JzsKfQoKYXN5bmMgZnVuY3Rpb24gbG9hZEFkbWluQXBwbGljYXRpb25zKCkgewogIHZhciBlbCA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdhZG1pbkFwcExpc3QnKTsKICBpZiAoIWVsKSByZXR1cm47CiAgZWwuaW5uZXJIVE1MID0gJzxkaXYgc3R5bGU9InRleHQtYWxpZ246Y2VudGVyO3BhZGRpbmc6MjBweDtjb2xvcjp2YXIoLS10ZXh0LW11dGVkKSI+5Yqg6L295LitLi4uPC9kaXY+JzsKCiAgdmFyIHN0YXR1c0ZpbHRlciA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdhZG1pbkZpbHRlclN0YXR1cycpLnZhbHVlOwogIHZhciB0eXBlRmlsdGVyID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2FkbWluRmlsdGVyVHlwZScpLnZhbHVlOwogIHZhciBzZWFyY2hOYW1lID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2FkbWluU2VhcmNoTmFtZScpLnZhbHVlLnRyaW0oKTsKCiAgdmFyIHVybCA9IEhVQl9VUkwgKyAnL3Jlc3QvdjEvYXBwbGljYXRpb25zP3NlbGVjdD0qLGNvbXBldGl0aW9ucyhuYW1lLGxldmVsLGNhdGVnb3J5KSxwcm9maWxlcyFhcHBsaWNhdGlvbnNfYXBwbGljYW50X3VzZXJfaWRfZmtleShuYW1lLHN0dWRlbnRfaWQsY29sbGVnZSkmb3JkZXI9Y3JlYXRlZF9hdC5kZXNjJmxpbWl0PTUwJzsKCiAgdmFyIHJlcyA9IGF3YWl0IGZldGNoKHVybCwgeyBoZWFkZXJzOiBIVUJfSEVBREVSUyB9KTsKICBpZiAoIXJlcy5vaykgeyBlbC5pbm5lckhUTUwgPSAnPHAgc3R5bGU9ImNvbG9yOiNlNzRjM2MiPuWKoOi9veWksei0pTwvcD4nOyByZXR1cm47IH0KICB2YXIgYXBwcyA9IGF3YWl0IHJlcy5qc29uKCk7CgogIC8vIOWuouaIt+err+etm+mAiQogIGlmIChzdGF0dXNGaWx0ZXIpIGFwcHMgPSBhcHBzLmZpbHRlcihmdW5jdGlvbihhKSB7IHJldHVybiBhLnN0YXR1cyA9PT0gc3RhdHVzRmlsdGVyOyB9KTsKICBpZiAodHlwZUZpbHRlcikgYXBwcyA9IGFwcHMuZmlsdGVyKGZ1bmN0aW9uKGEpIHsgcmV0dXJuIGEudHlwZSA9PT0gdHlwZUZpbHRlcjsgfSk7CiAgaWYgKHNlYXJjaE5hbWUpIGFwcHMgPSBhcHBzLmZpbHRlcihmdW5jdGlvbihhKSB7IHJldHVybiAoYS5jb21wZXRpdGlvbnMgfHwge30pLm5hbWUgJiYgYS5jb21wZXRpdGlvbnMubmFtZS5pbmRleE9mKHNlYXJjaE5hbWUpID49IDA7IH0pOwoKICBpZiAoYXBwcy5sZW5ndGggPT09IDApIHsKICAgIGVsLmlubmVySFRNTCA9ICc8ZGl2IHN0eWxlPSJ0ZXh0LWFsaWduOmNlbnRlcjtwYWRkaW5nOjQwcHg7Y29sb3I6dmFyKC0tdGV4dC1tdXRlZCkiPuaaguaXoOaKpeWQjeiusOW9lTwvZGl2Pic7CiAgICByZXR1cm47CiAgfQoKICB2YXIgaHRtbCA9ICcnOwogIGFwcHMuZm9yRWFjaChmdW5jdGlvbihhcHApIHsKICAgIHZhciBjb21wID0gYXBwLmNvbXBldGl0aW9ucyB8fCB7fTsKICAgIHZhciBwcm9maWxlID0gYXBwLnByb2ZpbGVzIHx8IHt9OwogICAgdmFyIHN0YXR1c0JnID0geyBkcmFmdDogJ3JnYmEoMjU1LDI1NSwyNTUsMC4wNiknLCBzdWJtaXR0ZWQ6ICdyZ2JhKDI1NSwyMDAsNzQsMC4xKScsIHVuZGVyX3JldmlldzogJ3JnYmEoNiwxODIsMjEyLDAuMSknLCBhcHByb3ZlZDogJ3JnYmEoNDYsMjA0LDExMywwLjEpJywgcmVqZWN0ZWQ6ICdyZ2JhKDIzMSw3Niw2MCwwLjEpJywgcmVxdWVzdF9jaGFuZ2VzOiAncmdiYSgyNTEsMTkxLDM2LDAuMSknIH07CiAgICB2YXIgc3RhdHVzQ29sb3IgPSB7IGRyYWZ0OiAndmFyKC0tdGV4dC1tdXRlZCknLCBzdWJtaXR0ZWQ6ICcjRkZDODRBJywgdW5kZXJfcmV2aWV3OiAnIzA2YjZkNCcsIGFwcHJvdmVkOiAnIzJlY2M3MScsIHJlamVjdGVkOiAnI2U3NGMzYycsIHJlcXVlc3RfY2hhbmdlczogJyNmNTllMGInIH07CiAgICB2YXIgc3RhdHVzVGV4dCA9IHsgZHJhZnQ6ICfojYnnqL8nLCBzdWJtaXR0ZWQ6ICflvoXlrqHmoLgnLCB1bmRlcl9yZXZpZXc6ICflrqHmoLjkuK0nLCBhcHByb3ZlZDogJ+W3sumAmui/hycsIHJlamVjdGVkOiAn5bey6amz5ZueJywgcmVxdWVzdF9jaGFuZ2VzOiAn6ZyA6KGl5YWFJyB9OwoKICAgIGh0bWwgKz0gJzxkaXYgY2xhc3M9ImNhcmQiIHN0eWxlPSJwYWRkaW5nOjE2cHg7bWFyZ2luLWJvdHRvbTo4cHg7Y3Vyc29yOnBvaW50ZXIiIG9uY2xpY2s9InNob3dBZG1pbkFwcERldGFpbChcJycgKyBhcHAuaWQgKyAnXCcpIj4nOwogICAgaHRtbCArPSAnPGRpdiBzdHlsZT0iZGlzcGxheTpmbGV4O2p1c3RpZnktY29udGVudDpzcGFjZS1iZXR3ZWVuO2FsaWduLWl0ZW1zOmZsZXgtc3RhcnQiPic7CiAgICBodG1sICs9ICc8ZGl2IHN0eWxlPSJmbGV4OjE7bWluLXdpZHRoOjAiPic7CiAgICBodG1sICs9ICc8ZGl2IHN0eWxlPSJmb250LXdlaWdodDo2MDA7Zm9udC1zaXplOjE0cHgiPicgKyBlc2MoY29tcC5uYW1lIHx8ICfmnKrnn6Xnq57otZsnKSArICc8L2Rpdj4nOwogICAgaHRtbCArPSAnPGRpdiBzdHlsZT0iZm9udC1zaXplOjEycHg7Y29sb3I6dmFyKC0tdGV4dC1tdXRlZCk7bWFyZ2luLXRvcDo0cHgiPicgKyBlc2MocHJvZmlsZS5uYW1lIHx8ICcnKSArICcgfCAnICsgZXNjKHByb2ZpbGUuc3R1ZGVudF9pZCB8fCAnJykgKyAnIHwgJyArIGVzYyhwcm9maWxlLmNvbGxlZ2UgfHwgJycpICsgJzwvZGl2Pic7CiAgICBodG1sICs9ICc8ZGl2IHN0eWxlPSJmb250LXNpemU6MTFweDtjb2xvcjp2YXIoLS10ZXh0LW11dGVkKTttYXJnaW4tdG9wOjJweCI+JyArIChhcHAudHlwZSA9PT0gJ3RlYW0nID8gJ+WboumYnycgOiAn5Liq5Lq6JykgKyAnIMK3ICcgKyBuZXcgRGF0ZShhcHAuY3JlYXRlZF9hdCkudG9Mb2NhbGVEYXRlU3RyaW5nKCkgKyAnPC9kaXY+JzsKICAgIGh0bWwgKz0gJzwvZGl2Pic7CiAgICBodG1sICs9ICc8c3BhbiBzdHlsZT0iZm9udC1zaXplOjEycHg7cGFkZGluZzo0cHggMTBweDtib3JkZXItcmFkaXVzOjk5OXB4O2JhY2tncm91bmQ6JyArIChzdGF0dXNCZ1thcHAuc3RhdHVzXSB8fCAnJykgKyAnO2NvbG9yOicgKyAoc3RhdHVzQ29sb3JbYXBwLnN0YXR1c10gfHwgJycpICsgJzt3aGl0ZS1zcGFjZTpub3dyYXAiPicgKyAoc3RhdHVzVGV4dFthcHAuc3RhdHVzXSB8fCBhcHAuc3RhdHVzKSArICc8L3NwYW4+JzsKICAgIGh0bWwgKz0gJzwvZGl2PjwvZGl2Pic7CiAgfSk7CiAgZWwuaW5uZXJIVE1MID0gaHRtbDsKfQoKYXN5bmMgZnVuY3Rpb24gc2hvd0FkbWluQXBwRGV0YWlsKGFwcGxpY2F0aW9uSWQpIHsKICAvLyDojrflj5bmiqXlkI0KICB2YXIgcmVzID0gYXdhaXQgZmV0Y2goSFVCX1VSTCArICcvcmVzdC92MS9hcHBsaWNhdGlvbnM/aWQ9ZXEuJyArIGFwcGxpY2F0aW9uSWQgKyAnJnNlbGVjdD0qLGNvbXBldGl0aW9ucyhuYW1lLGxldmVsLGNhdGVnb3J5KSxwcm9maWxlcyFhcHBsaWNhdGlvbnNfYXBwbGljYW50X3VzZXJfaWRfZmtleShuYW1lLHN0dWRlbnRfaWQsY29sbGVnZSknLCB7IGhlYWRlcnM6IEhVQl9IRUFERVJTIH0pOwogIHZhciBhcHBzID0gYXdhaXQgcmVzLmpzb24oKTsKICB2YXIgYXBwID0gYXBwc1swXTsKICBpZiAoIWFwcCkgcmV0dXJuOwoKICAvLyDojrflj5blrqHmoLjorrDlvZUKICB2YXIgcmV2UmVzID0gYXdhaXQgZmV0Y2goSFVCX1VSTCArICcvcmVzdC92MS9hcHBsaWNhdGlvbl9yZXZpZXdzP2FwcGxpY2F0aW9uX2lkPWVxLicgKyBhcHBsaWNhdGlvbklkICsgJyZzZWxlY3Q9Kixwcm9maWxlcyFhcHBsaWNhdGlvbl9yZXZpZXdzX3Jldmlld2VyX3VzZXJfaWRfZmtleShuYW1lKSZvcmRlcj1jcmVhdGVkX2F0LmRlc2MnLCB7IGhlYWRlcnM6IEhVQl9IRUFERVJTIH0pOwogIHZhciByZXZpZXdzID0gYXdhaXQgcmV2UmVzLmpzb24oKTsKCiAgLy8g6I635Y+W5p2Q5paZCiAgdmFyIGZpbGVzUmVzID0gYXdhaXQgZmV0Y2goSFVCX1VSTCArICcvcmVzdC92MS9hcHBsaWNhdGlvbl9maWxlcz9hcHBsaWNhdGlvbl9pZD1lcS4nICsgYXBwbGljYXRpb25JZCArICcmc3RhdHVzPWVxLnVwbG9hZGVkJm9yZGVyPXVwbG9hZGVkX2F0LmRlc2MnLCB7IGhlYWRlcnM6IEhVQl9IRUFERVJTIH0pOwogIHZhciBmaWxlcyA9IGF3YWl0IGZpbGVzUmVzLmpzb24oKTsKCiAgdmFyIGNvbXAgPSBhcHAuY29tcGV0aXRpb25zIHx8IHt9OwogIHZhciBwcm9maWxlID0gYXBwLnByb2ZpbGVzIHx8IHt9OwoKICB2YXIgaHRtbCA9ICc8ZGl2IHN0eWxlPSJtYXgtd2lkdGg6NjAwcHg7bWFyZ2luOjAgYXV0bztwYWRkaW5nOjIwcHgiPic7CiAgaHRtbCArPSAnPGRpdiBzdHlsZT0iZGlzcGxheTpmbGV4O2FsaWduLWl0ZW1zOmNlbnRlcjtnYXA6MTJweDttYXJnaW4tYm90dG9tOjIwcHgiPic7CiAgaHRtbCArPSAnPGJ1dHRvbiBvbmNsaWNrPSJyZW5kZXJBZG1pblYyKCkiIHN0eWxlPSJiYWNrZ3JvdW5kOm5vbmU7Ym9yZGVyOm5vbmU7Y29sb3I6dmFyKC0tdGV4dC1tdXRlZCk7Y3Vyc29yOnBvaW50ZXI7Zm9udC1zaXplOjE4cHgiPiZsYXJyOzwvYnV0dG9uPic7CiAgaHRtbCArPSAnPGgzIHN0eWxlPSJmbGV4OjEiPicgKyBlc2MoY29tcC5uYW1lIHx8ICfmiqXlkI3or6bmg4UnKSArICc8L2gzPic7CiAgaHRtbCArPSAnPC9kaXY+JzsKCiAgLy8g55Sz6K+35Lq65L+h5oGvCiAgaHRtbCArPSAnPGRpdiBjbGFzcz0iY2FyZCIgc3R5bGU9InBhZGRpbmc6MTZweDttYXJnaW4tYm90dG9tOjEycHgiPic7CiAgaHRtbCArPSAnPGRpdiBzdHlsZT0iZm9udC1zaXplOjEzcHg7Zm9udC13ZWlnaHQ6NTAwO21hcmdpbi1ib3R0b206OHB4O2NvbG9yOnZhcigtLWFjY2VudCkiPueUs+ivt+S6uuS/oeaBrzwvZGl2Pic7CiAgaHRtbCArPSAnPGRpdiBzdHlsZT0iZGlzcGxheTpncmlkO2dyaWQtdGVtcGxhdGUtY29sdW1uczoxZnIgMWZyO2dhcDo4cHg7Zm9udC1zaXplOjEzcHgiPic7CiAgaHRtbCArPSAnPGRpdj48c3BhbiBzdHlsZT0iY29sb3I6dmFyKC0tdGV4dC1tdXRlZCkiPuWnk+WQje+8mjwvc3Bhbj4nICsgZXNjKHByb2ZpbGUubmFtZSB8fCAnJykgKyAnPC9kaXY+JzsKICBodG1sICs9ICc8ZGl2PjxzcGFuIHN0eWxlPSJjb2xvcjp2YXIoLS10ZXh0LW11dGVkKSI+5a2m5Y+377yaPC9zcGFuPicgKyBlc2MocHJvZmlsZS5zdHVkZW50X2lkIHx8ICcnKSArICc8L2Rpdj4nOwogIGh0bWwgKz0gJzxkaXY+PHNwYW4gc3R5bGU9ImNvbG9yOnZhcigtLXRleHQtbXV0ZWQpIj7lrabpmaLvvJo8L3NwYW4+JyArIGVzYyhwcm9maWxlLmNvbGxlZ2UgfHwgJycpICsgJzwvZGl2Pic7CiAgaHRtbCArPSAnPGRpdj48c3BhbiBzdHlsZT0iY29sb3I6dmFyKC0tdGV4dC1tdXRlZCkiPuexu+Wei++8mjwvc3Bhbj4nICsgKGFwcC50eXBlID09PSAndGVhbScgPyAn5Zui6ZifJyA6ICfkuKrkuronKSArICc8L2Rpdj4nOwogIGh0bWwgKz0gJzwvZGl2PjwvZGl2Pic7CgogIC8vIOihqOWNleaVsOaNrgogIHZhciBkYXRhID0gYXBwLmRhdGEgfHwge307CiAgaWYgKE9iamVjdC5rZXlzKGRhdGEpLmxlbmd0aCA+IDApIHsKICAgIGh0bWwgKz0gJzxkaXYgY2xhc3M9ImNhcmQiIHN0eWxlPSJwYWRkaW5nOjE2cHg7bWFyZ2luLWJvdHRvbToxMnB4Ij4nOwogICAgaHRtbCArPSAnPGRpdiBzdHlsZT0iZm9udC1zaXplOjEzcHg7Zm9udC13ZWlnaHQ6NTAwO21hcmdpbi1ib3R0b206OHB4O2NvbG9yOnZhcigtLWFjY2VudCkiPuaKpeWQjeS/oeaBrzwvZGl2Pic7CiAgICBPYmplY3Qua2V5cyhkYXRhKS5mb3JFYWNoKGZ1bmN0aW9uKGtleSkgewogICAgICBpZiAoZGF0YVtrZXldKSB7CiAgICAgICAgaHRtbCArPSAnPGRpdiBzdHlsZT0iZm9udC1zaXplOjEzcHg7bWFyZ2luLWJvdHRvbTo2cHgiPjxzcGFuIHN0eWxlPSJjb2xvcjp2YXIoLS10ZXh0LW11dGVkKSI+JyArIGVzYyhrZXkpICsgJ++8mjwvc3Bhbj4nICsgZXNjKGRhdGFba2V5XSkgKyAnPC9kaXY+JzsKICAgICAgfQogICAgfSk7CiAgICBodG1sICs9ICc8L2Rpdj4nOwogIH0KCiAgLy8g5p2Q5paZCiAgaWYgKGZpbGVzLmxlbmd0aCA+IDApIHsKICAgIGh0bWwgKz0gJzxkaXYgY2xhc3M9ImNhcmQiIHN0eWxlPSJwYWRkaW5nOjE2cHg7bWFyZ2luLWJvdHRvbToxMnB4Ij4nOwogICAgaHRtbCArPSAnPGRpdiBzdHlsZT0iZm9udC1zaXplOjEzcHg7Zm9udC13ZWlnaHQ6NTAwO21hcmdpbi1ib3R0b206OHB4O2NvbG9yOnZhcigtLWFjY2VudCkiPuaPkOS6pOadkOaWmTwvZGl2Pic7CiAgICBmaWxlcy5mb3JFYWNoKGZ1bmN0aW9uKGYpIHsKICAgICAgaHRtbCArPSAnPGRpdiBzdHlsZT0iZm9udC1zaXplOjEycHg7cGFkZGluZzo2cHggMDtib3JkZXItYm90dG9tOjFweCBzb2xpZCB2YXIoLS1ib3JkZXItc3VidGxlKSI+JyArIGVzYyhmLmZpbGVfbmFtZSkgKyAnIDxzcGFuIHN0eWxlPSJjb2xvcjp2YXIoLS10ZXh0LW11dGVkKSI+KCcgKyAoZi5maWxlX3NpemUgLyAxMDI0KS50b0ZpeGVkKDEpICsgJ0tCKTwvc3Bhbj48L2Rpdj4nOwogICAgfSk7CiAgICBodG1sICs9ICc8L2Rpdj4nOwogIH0KCiAgLy8g5a6h5qC46K6w5b2VCiAgaWYgKHJldmlld3MubGVuZ3RoID4gMCkgewogICAgaHRtbCArPSAnPGRpdiBjbGFzcz0iY2FyZCIgc3R5bGU9InBhZGRpbmc6MTZweDttYXJnaW4tYm90dG9tOjEycHgiPic7CiAgICBodG1sICs9ICc8ZGl2IHN0eWxlPSJmb250LXNpemU6MTNweDtmb250LXdlaWdodDo1MDA7bWFyZ2luLWJvdHRvbTo4cHg7Y29sb3I6dmFyKC0tYWNjZW50KSI+5a6h5qC46K6w5b2VPC9kaXY+JzsKICAgIHJldmlld3MuZm9yRWFjaChmdW5jdGlvbihyKSB7CiAgICAgIHZhciBhY3Rpb25UZXh0ID0geyBhcHByb3ZlOiAn6YCa6L+HJywgcmVqZWN0OiAn6amz5ZueJywgcmVxdWVzdF9jaGFuZ2VzOiAn6KaB5rGC6KGl5YWFJyB9OwogICAgICB2YXIgYWN0aW9uQ29sb3IgPSB7IGFwcHJvdmU6ICcjMmVjYzcxJywgcmVqZWN0OiAnI2U3NGMzYycsIHJlcXVlc3RfY2hhbmdlczogJyNmNTllMGInIH07CiAgICAgIGh0bWwgKz0gJzxkaXYgc3R5bGU9ImZvbnQtc2l6ZToxMnB4O21hcmdpbi1ib3R0b206OHB4O3BhZGRpbmc6OHB4O2JvcmRlci1yYWRpdXM6NnB4O2JhY2tncm91bmQ6dmFyKC0tYmctc2Vjb25kYXJ5KSI+JzsKICAgICAgaHRtbCArPSAnPGRpdiBzdHlsZT0iZGlzcGxheTpmbGV4O2p1c3RpZnktY29udGVudDpzcGFjZS1iZXR3ZWVuIj48c3BhbiBzdHlsZT0iY29sb3I6JyArIChhY3Rpb25Db2xvcltyLmFjdGlvbl0gfHwgJycpICsgJztmb250LXdlaWdodDo1MDAiPicgKyAoYWN0aW9uVGV4dFtyLmFjdGlvbl0gfHwgci5hY3Rpb24pICsgJzwvc3Bhbj48c3BhbiBzdHlsZT0iY29sb3I6dmFyKC0tdGV4dC1tdXRlZCkiPicgKyAoci5wcm9maWxlcyA/IGVzYyhyLnByb2ZpbGVzLm5hbWUpIDogJycpICsgJyDCtyAnICsgbmV3IERhdGUoci5jcmVhdGVkX2F0KS50b0xvY2FsZVN0cmluZygpICsgJzwvc3Bhbj48L2Rpdj4nOwogICAgICBpZiAoci5jb21tZW50KSBodG1sICs9ICc8ZGl2IHN0eWxlPSJtYXJnaW4tdG9wOjRweDtjb2xvcjp2YXIoLS10ZXh0LXNlY29uZGFyeSkiPicgKyBlc2Moci5jb21tZW50KSArICc8L2Rpdj4nOwogICAgICBodG1sICs9ICc8L2Rpdj4nOwogICAgfSk7CiAgICBodG1sICs9ICc8L2Rpdj4nOwogIH0KCiAgLy8g5a6h5qC45pON5L2cCiAgaWYgKGFwcC5zdGF0dXMgPT09ICdzdWJtaXR0ZWQnIHx8IGFwcC5zdGF0dXMgPT09ICd1bmRlcl9yZXZpZXcnIHx8IGFwcC5zdGF0dXMgPT09ICdyZXF1ZXN0X2NoYW5nZXMnKSB7CiAgICBodG1sICs9ICc8ZGl2IHN0eWxlPSJtYXJnaW4tdG9wOjE2cHgiPic7CiAgICBodG1sICs9ICc8dGV4dGFyZWEgaWQ9InJldmlld0NvbW1lbnQiIHBsYWNlaG9sZGVyPSLlrqHmoLjmhI/op4HvvIjlj6/pgInvvIkiIHJvd3M9IjIiIHN0eWxlPSJ3aWR0aDoxMDAlO3BhZGRpbmc6MTBweDtib3JkZXItcmFkaXVzOjhweDtib3JkZXI6MXB4IHNvbGlkIHZhcigtLWJvcmRlci1zdWJ0bGUpO2JhY2tncm91bmQ6dmFyKC0tYmctY2FyZCk7Y29sb3I6dmFyKC0tdGV4dC1wcmltYXJ5KTtmb250LWZhbWlseTppbmhlcml0O21hcmdpbi1ib3R0b206MTJweCI+PC90ZXh0YXJlYT4nOwogICAgaHRtbCArPSAnPGRpdiBzdHlsZT0iZGlzcGxheTpmbGV4O2dhcDo4cHgiPic7CiAgICBodG1sICs9ICc8YnV0dG9uIGNsYXNzPSJidG4tcHJpbWFyeSIgc3R5bGU9ImZsZXg6MSIgb25jbGljaz0icmV2aWV3QXBwbGljYXRpb24oXCcnICsgYXBwbGljYXRpb25JZCArICdcJyxcJ2FwcHJvdmVcJykiPumAmui/hzwvYnV0dG9uPic7CiAgICBodG1sICs9ICc8YnV0dG9uIHN0eWxlPSJmbGV4OjE7cGFkZGluZzoxMHB4O2JvcmRlci1yYWRpdXM6OHB4O2JvcmRlcjoxcHggc29saWQgcmdiYSgyNTEsMTkxLDM2LDAuMyk7YmFja2dyb3VuZDpyZ2JhKDI1MSwxOTEsMzYsMC4wOCk7Y29sb3I6I2Y1OWUwYjtjdXJzb3I6cG9pbnRlcjtmb250LXdlaWdodDo1MDAiIG9uY2xpY2s9InJldmlld0FwcGxpY2F0aW9uKFwnJyArIGFwcGxpY2F0aW9uSWQgKyAnXCcsXCdyZXF1ZXN0X2NoYW5nZXNcJykiPuimgeaxguihpeWFhTwvYnV0dG9uPic7CiAgICBodG1sICs9ICc8YnV0dG9uIHN0eWxlPSJmbGV4OjE7cGFkZGluZzoxMHB4O2JvcmRlci1yYWRpdXM6OHB4O2JvcmRlcjoxcHggc29saWQgcmdiYSgyMzEsNzYsNjAsMC4zKTtiYWNrZ3JvdW5kOnJnYmEoMjMxLDc2LDYwLDAuMDgpO2NvbG9yOiNlNzRjM2M7Y3Vyc29yOnBvaW50ZXI7Zm9udC13ZWlnaHQ6NTAwIiBvbmNsaWNrPSJyZXZpZXdBcHBsaWNhdGlvbihcJycgKyBhcHBsaWNhdGlvbklkICsgJ1wnLFwncmVqZWN0XCcpIj7pqbPlm548L2J1dHRvbj4nOwogICAgaHRtbCArPSAnPC9kaXY+PC9kaXY+JzsKICB9CgogIGh0bWwgKz0gJzwvZGl2Pic7CiAgc2hvd0NvbXBNb2RhbChodG1sKTsKfQoKYXN5bmMgZnVuY3Rpb24gcmV2aWV3QXBwbGljYXRpb24oYXBwbGljYXRpb25JZCwgYWN0aW9uKSB7CiAgdmFyIGNvbW1lbnQgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgncmV2aWV3Q29tbWVudCcpOwogIHZhciBjb21tZW50VGV4dCA9IGNvbW1lbnQgPyBjb21tZW50LnZhbHVlLnRyaW0oKSA6ICcnOwoKICBpZiAoYWN0aW9uID09PSAncmVqZWN0JyAmJiAhY29tbWVudFRleHQpIHsKICAgIHNob3dDb3B5VG9hc3QoJ+mps+WbnuaXtuivt+Whq+WGmeWOn+WboCcsICdlcnJvcicpOwogICAgcmV0dXJuOwogIH0KCiAgdmFyIHVzZXIgPSBnZXRDdXJyZW50VXNlcigpOwogIHZhciBuZXdTdGF0dXMgPSB7IGFwcHJvdmU6ICdhcHByb3ZlZCcsIHJlamVjdDogJ3JlamVjdGVkJywgcmVxdWVzdF9jaGFuZ2VzOiAncmVxdWVzdF9jaGFuZ2VzJyB9OwoKICAvLyDlhpnlhaXlrqHmoLjorrDlvZUKICB2YXIgcmV2UmVzID0gYXdhaXQgZmV0Y2goSFVCX1VSTCArICcvcmVzdC92MS9hcHBsaWNhdGlvbl9yZXZpZXdzJywgewogICAgbWV0aG9kOiAnUE9TVCcsCiAgICBoZWFkZXJzOiBIVUJfSEVBREVSUywKICAgIGJvZHk6IEpTT04uc3RyaW5naWZ5KHsKICAgICAgYXBwbGljYXRpb25faWQ6IGFwcGxpY2F0aW9uSWQsCiAgICAgIHJldmlld2VyX3VzZXJfaWQ6IHVzZXIuaWQsCiAgICAgIGFjdGlvbjogYWN0aW9uLAogICAgICBjb21tZW50OiBjb21tZW50VGV4dAogICAgfSkKICB9KTsKCiAgaWYgKCFyZXZSZXMub2spIHsgc2hvd0NvcHlUb2FzdCgn5a6h5qC45pON5L2c5aSx6LSlJywgJ2Vycm9yJyk7IHJldHVybjsgfQoKICAvLyDmm7TmlrDmiqXlkI3nirbmgIEKICB2YXIgYXBwUmVzID0gYXdhaXQgZmV0Y2goSFVCX1VSTCArICcvcmVzdC92MS9hcHBsaWNhdGlvbnM/aWQ9ZXEuJyArIGFwcGxpY2F0aW9uSWQsIHsKICAgIG1ldGhvZDogJ1BBVENIJywKICAgIGhlYWRlcnM6IEhVQl9IRUFERVJTLAogICAgYm9keTogSlNPTi5zdHJpbmdpZnkoeyBzdGF0dXM6IG5ld1N0YXR1c1thY3Rpb25dIH0pCiAgfSk7CgogIGlmIChhcHBSZXMub2spIHsKICAgIHNob3dDb3B5VG9hc3QoJ+WuoeaguOWujOaIkO+8micgKyB7IGFwcHJvdmU6ICflt7LpgJrov4cnLCByZWplY3Q6ICflt7LpqbPlm54nLCByZXF1ZXN0X2NoYW5nZXM6ICflt7LopoHmsYLooaXlhYUnIH1bYWN0aW9uXSwgJ3N1Y2Nlc3MnKTsKICAgIHNob3dBZG1pbkFwcERldGFpbChhcHBsaWNhdGlvbklkKTsKICB9IGVsc2UgewogICAgc2hvd0NvcHlUb2FzdCgn54q25oCB5pu05paw5aSx6LSlJywgJ2Vycm9yJyk7CiAgfQp9Cg==
+/* Admin Review System v2 */
+
+async function renderAdminV2() {
+  var container = document.getElementById('adminContent') || document.getElementById('page-admin');
+  if (!container) return;
+  if (!isAdmin()) {
+    container.innerHTML = '<div style="text-align:center;padding:40px;color:var(--text-muted)">无权限访问</div>';
+    return;
+  }
+
+  container.innerHTML = '<div style="max-width:900px;margin:0 auto;padding:20px">';
+  container.innerHTML += '<h3 style="margin-bottom:20px">审核管理</h3>';
+
+  // 统计卡片
+  container.innerHTML += '<div id="adminStats" style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:24px"></div>';
+
+  // 筛选栏
+  container.innerHTML += '<div style="display:flex;gap:8px;margin-bottom:16px;flex-wrap:wrap">';
+  container.innerHTML += '<select id="adminFilterStatus" onchange="loadAdminApplications()" style="padding:8px 12px;border-radius:8px;border:1px solid var(--border-subtle);background:var(--bg-card);color:var(--text-primary);font-size:13px"><option value="">全部状态</option><option value="submitted">待审核</option><option value="under_review">审核中</option><option value="approved">已通过</option><option value="rejected">已驳回</option><option value="request_changes">需补充</option></select>';
+  container.innerHTML += '<select id="adminFilterType" onchange="loadAdminApplications()" style="padding:8px 12px;border-radius:8px;border:1px solid var(--border-subtle);background:var(--bg-card);color:var(--text-primary);font-size:13px"><option value="">全部类型</option><option value="individual">个人</option><option value="team">团队</option></select>';
+  container.innerHTML += '<input type="text" id="adminSearchName" placeholder="搜索竞赛名..." oninput="loadAdminApplications()" style="flex:1;padding:8px 12px;border-radius:8px;border:1px solid var(--border-subtle);background:var(--bg-card);color:var(--text-primary);font-size:13px;min-width:150px">';
+  container.innerHTML += '</div>';
+
+  // 报名列表
+  container.innerHTML += '<div id="adminAppList"></div>';
+  container.innerHTML += '</div>';
+
+  loadAdminStats();
+  loadAdminApplications();
+}
+
+async function loadAdminStats() {
+  var el = document.getElementById('adminStats');
+  if (!el) return;
+
+  var counts = { total: 0, pending: 0, approved: 0, rejected: 0 };
+  var statuses = ['submitted', 'under_review', 'approved', 'rejected', 'request_changes'];
+
+  for (var i = 0; i < statuses.length; i++) {
+    var res = await fetch(HUB_URL + '/rest/v1/applications?status=eq.' + statuses[i] + '&select=id', { headers: HUB_HEADERS });
+    if (res.ok) {
+      var data = await res.json();
+      counts.total += data.length;
+      if (statuses[i] === 'submitted' || statuses[i] === 'under_review') counts.pending += data.length;
+      if (statuses[i] === 'approved') counts.approved += data.length;
+      if (statuses[i] === 'rejected') counts.rejected += data.length;
+    }
+  }
+
+  el.innerHTML = '<div class="card" style="padding:16px;text-align:center"><div style="font-size:24px;font-weight:800;color:var(--text-primary)">' + counts.total + '</div><div style="font-size:12px;color:var(--text-muted)">总报名</div></div>' +
+    '<div class="card" style="padding:16px;text-align:center"><div style="font-size:24px;font-weight:800;color:#FFC84A">' + counts.pending + '</div><div style="font-size:12px;color:var(--text-muted)">待审核</div></div>' +
+    '<div class="card" style="padding:16px;text-align:center"><div style="font-size:24px;font-weight:800;color:#2ecc71">' + counts.approved + '</div><div style="font-size:12px;color:var(--text-muted)">已通过</div></div>' +
+    '<div class="card" style="padding:16px;text-align:center"><div style="font-size:24px;font-weight:800;color:#e74c3c">' + counts.rejected + '</div><div style="font-size:12px;color:var(--text-muted)">已驳回</div></div>';
+}
+
+async function loadAdminApplications() {
+  var el = document.getElementById('adminAppList');
+  if (!el) return;
+  el.innerHTML = '<div style="text-align:center;padding:20px;color:var(--text-muted)">加载中...</div>';
+
+  var statusFilter = document.getElementById('adminFilterStatus').value;
+  var typeFilter = document.getElementById('adminFilterType').value;
+  var searchName = document.getElementById('adminSearchName').value.trim();
+
+  var url = HUB_URL + '/rest/v1/applications?select=*,competitions(name,level,category),profiles!applications_applicant_user_id_fkey(name,student_id,college)&order=created_at.desc&limit=50';
+
+  var res = await fetch(url, { headers: HUB_HEADERS });
+  if (!res.ok) { el.innerHTML = '<p style="color:#e74c3c">加载失败</p>'; return; }
+  var apps = await res.json();
+
+  // 客户端筛选
+  if (statusFilter) apps = apps.filter(function(a) { return a.status === statusFilter; });
+  if (typeFilter) apps = apps.filter(function(a) { return a.type === typeFilter; });
+  if (searchName) apps = apps.filter(function(a) { return (a.competitions || {}).name && a.competitions.name.indexOf(searchName) >= 0; });
+
+  if (apps.length === 0) {
+    el.innerHTML = '<div style="text-align:center;padding:40px;color:var(--text-muted)">暂无报名记录</div>';
+    return;
+  }
+
+  var html = '';
+  apps.forEach(function(app) {
+    var comp = app.competitions || {};
+    var profile = app.profiles || {};
+    var statusBg = { draft: 'rgba(255,255,255,0.06)', submitted: 'rgba(255,200,74,0.1)', under_review: 'rgba(6,182,212,0.1)', approved: 'rgba(46,204,113,0.1)', rejected: 'rgba(231,76,60,0.1)', request_changes: 'rgba(251,191,36,0.1)' };
+    var statusColor = { draft: 'var(--text-muted)', submitted: '#FFC84A', under_review: '#06b6d4', approved: '#2ecc71', rejected: '#e74c3c', request_changes: '#f59e0b' };
+    var statusText = { draft: '草稿', submitted: '待审核', under_review: '审核中', approved: '已通过', rejected: '已驳回', request_changes: '需补充' };
+
+    html += '<div class="card" style="padding:16px;margin-bottom:8px;cursor:pointer" onclick="showAdminAppDetail(\'' + app.id + '\')">';
+    html += '<div style="display:flex;justify-content:space-between;align-items:flex-start">';
+    html += '<div style="flex:1;min-width:0">';
+    html += '<div style="font-weight:600;font-size:14px">' + esc(comp.name || '未知竞赛') + '</div>';
+    html += '<div style="font-size:12px;color:var(--text-muted);margin-top:4px">' + esc(profile.name || '') + ' | ' + esc(profile.student_id || '') + ' | ' + esc(profile.college || '') + '</div>';
+    html += '<div style="font-size:11px;color:var(--text-muted);margin-top:2px">' + (app.type === 'team' ? '团队' : '个人') + ' · ' + new Date(app.created_at).toLocaleDateString() + '</div>';
+    html += '</div>';
+    html += '<span style="font-size:12px;padding:4px 10px;border-radius:999px;background:' + (statusBg[app.status] || '') + ';color:' + (statusColor[app.status] || '') + ';white-space:nowrap">' + (statusText[app.status] || app.status) + '</span>';
+    html += '</div></div>';
+  });
+  el.innerHTML = html;
+}
+
+async function showAdminAppDetail(applicationId) {
+  // 获取报名
+  var res = await fetch(HUB_URL + '/rest/v1/applications?id=eq.' + applicationId + '&select=*,competitions(name,level,category),profiles!applications_applicant_user_id_fkey(name,student_id,college)', { headers: HUB_HEADERS });
+  var apps = await res.json();
+  var app = apps[0];
+  if (!app) return;
+
+  // 获取审核记录
+  var revRes = await fetch(HUB_URL + '/rest/v1/application_reviews?application_id=eq.' + applicationId + '&select=*,profiles!application_reviews_reviewer_user_id_fkey(name)&order=created_at.desc', { headers: HUB_HEADERS });
+  var reviews = await revRes.json();
+
+  // 获取材料
+  var filesRes = await fetch(HUB_URL + '/rest/v1/application_files?application_id=eq.' + applicationId + '&status=eq.uploaded&order=uploaded_at.desc', { headers: HUB_HEADERS });
+  var files = await filesRes.json();
+
+  var comp = app.competitions || {};
+  var profile = app.profiles || {};
+
+  var html = '<div style="max-width:600px;margin:0 auto;padding:20px">';
+  html += '<div style="display:flex;align-items:center;gap:12px;margin-bottom:20px">';
+  html += '<button onclick="renderAdminV2()" style="background:none;border:none;color:var(--text-muted);cursor:pointer;font-size:18px">&larr;</button>';
+  html += '<h3 style="flex:1">' + esc(comp.name || '报名详情') + '</h3>';
+  html += '</div>';
+
+  // 申请人信息
+  html += '<div class="card" style="padding:16px;margin-bottom:12px">';
+  html += '<div style="font-size:13px;font-weight:500;margin-bottom:8px;color:var(--accent)">申请人信息</div>';
+  html += '<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:13px">';
+  html += '<div><span style="color:var(--text-muted)">姓名：</span>' + esc(profile.name || '') + '</div>';
+  html += '<div><span style="color:var(--text-muted)">学号：</span>' + esc(profile.student_id || '') + '</div>';
+  html += '<div><span style="color:var(--text-muted)">学院：</span>' + esc(profile.college || '') + '</div>';
+  html += '<div><span style="color:var(--text-muted)">类型：</span>' + (app.type === 'team' ? '团队' : '个人') + '</div>';
+  html += '</div></div>';
+
+  // 表单数据
+  var data = app.data || {};
+  if (Object.keys(data).length > 0) {
+    html += '<div class="card" style="padding:16px;margin-bottom:12px">';
+    html += '<div style="font-size:13px;font-weight:500;margin-bottom:8px;color:var(--accent)">报名信息</div>';
+    Object.keys(data).forEach(function(key) {
+      if (data[key]) {
+        html += '<div style="font-size:13px;margin-bottom:6px"><span style="color:var(--text-muted)">' + esc(key) + '：</span>' + esc(data[key]) + '</div>';
+      }
+    });
+    html += '</div>';
+  }
+
+  // 材料
+  if (files.length > 0) {
+    html += '<div class="card" style="padding:16px;margin-bottom:12px">';
+    html += '<div style="font-size:13px;font-weight:500;margin-bottom:8px;color:var(--accent)">提交材料</div>';
+    files.forEach(function(f) {
+      html += '<div style="font-size:12px;padding:6px 0;border-bottom:1px solid var(--border-subtle)">' + esc(f.file_name) + ' <span style="color:var(--text-muted)">(' + (f.file_size / 1024).toFixed(1) + 'KB)</span></div>';
+    });
+    html += '</div>';
+  }
+
+  // 审核记录
+  if (reviews.length > 0) {
+    html += '<div class="card" style="padding:16px;margin-bottom:12px">';
+    html += '<div style="font-size:13px;font-weight:500;margin-bottom:8px;color:var(--accent)">审核记录</div>';
+    reviews.forEach(function(r) {
+      var actionText = { approve: '通过', reject: '驳回', request_changes: '要求补充' };
+      var actionColor = { approve: '#2ecc71', reject: '#e74c3c', request_changes: '#f59e0b' };
+      html += '<div style="font-size:12px;margin-bottom:8px;padding:8px;border-radius:6px;background:var(--bg-secondary)">';
+      html += '<div style="display:flex;justify-content:space-between"><span style="color:' + (actionColor[r.action] || '') + ';font-weight:500">' + (actionText[r.action] || r.action) + '</span><span style="color:var(--text-muted)">' + (r.profiles ? esc(r.profiles.name) : '') + ' · ' + new Date(r.created_at).toLocaleString() + '</span></div>';
+      if (r.comment) html += '<div style="margin-top:4px;color:var(--text-secondary)">' + esc(r.comment) + '</div>';
+      html += '</div>';
+    });
+    html += '</div>';
+  }
+
+  // 审核操作
+  if (app.status === 'submitted' || app.status === 'under_review' || app.status === 'request_changes') {
+    html += '<div style="margin-top:16px">';
+    html += '<textarea id="reviewComment" placeholder="审核意见（可选）" rows="2" style="width:100%;padding:10px;border-radius:8px;border:1px solid var(--border-subtle);background:var(--bg-card);color:var(--text-primary);font-family:inherit;margin-bottom:12px"></textarea>';
+    html += '<div style="display:flex;gap:8px">';
+    html += '<button class="btn-primary" style="flex:1" onclick="reviewApplication(\'' + applicationId + '\',\'approve\')">通过</button>';
+    html += '<button style="flex:1;padding:10px;border-radius:8px;border:1px solid rgba(251,191,36,0.3);background:rgba(251,191,36,0.08);color:#f59e0b;cursor:pointer;font-weight:500" onclick="reviewApplication(\'' + applicationId + '\',\'request_changes\')">要求补充</button>';
+    html += '<button style="flex:1;padding:10px;border-radius:8px;border:1px solid rgba(231,76,60,0.3);background:rgba(231,76,60,0.08);color:#e74c3c;cursor:pointer;font-weight:500" onclick="reviewApplication(\'' + applicationId + '\',\'reject\')">驳回</button>';
+    html += '</div></div>';
+  }
+
+  html += '</div>';
+  showCompModal(html);
+}
+
+async function reviewApplication(applicationId, action) {
+  var comment = document.getElementById('reviewComment');
+  var commentText = comment ? comment.value.trim() : '';
+
+  if (action === 'reject' && !commentText) {
+    showCopyToast('驳回时请填写原因', 'error');
+    return;
+  }
+
+  var user = getCurrentUser();
+  var newStatus = { approve: 'approved', reject: 'rejected', request_changes: 'request_changes' };
+
+  // 写入审核记录
+  var revRes = await fetch(HUB_URL + '/rest/v1/application_reviews', {
+    method: 'POST',
+    headers: HUB_HEADERS,
+    body: JSON.stringify({
+      application_id: applicationId,
+      reviewer_user_id: user.id,
+      action: action,
+      comment: commentText
+    })
+  });
+
+  if (!revRes.ok) { showCopyToast('审核操作失败', 'error'); return; }
+
+  // 更新报名状态
+  var appRes = await fetch(HUB_URL + '/rest/v1/applications?id=eq.' + applicationId, {
+    method: 'PATCH',
+    headers: HUB_HEADERS,
+    body: JSON.stringify({ status: newStatus[action] })
+  });
+
+  if (appRes.ok) {
+    showCopyToast('审核完成：' + { approve: '已通过', reject: '已驳回', request_changes: '已要求补充' }[action], 'success');
+    showAdminAppDetail(applicationId);
+  } else {
+    showCopyToast('状态更新失败', 'error');
+  }
+}

@@ -1,1 +1,440 @@
-LyogRXh0cmFjdGVkIGZyb20gYXBwLmpzICovCnZhciBDQUxFTkRBUl9FVkVOVFMgPSBbCiAgLy8g56ys5LiA5a2m5pyfICgyMDI15bm0OeaciC0yMDI25bm0MeaciCkKICB7dGl0bGU6J+iAgeeUn+i/lOagoeaKpeWIsCcsZGF0ZTonMjAyNS0wOS0wMScsZW5kRGF0ZTonMjAyNS0wOS0wMicsY2F0ZWdvcnk6J3RlYWNoaW5nJyxkZXNjcmlwdGlvbjon5Zyo5qCh55Sf6L+U5qCh5rOo5YaM5oql5YiwJ30sCiAge3RpdGxlOifmlrDnlJ/miqXliLAnLGRhdGU6JzIwMjUtMDktMDMnLGVuZERhdGU6JzIwMjUtMDktMDQnLGNhdGVnb3J5Oid0ZWFjaGluZycsZGVzY3JpcHRpb246JzIwMjXnuqfmlrDnlJ/lhaXlrabmiqXliLAnfSwKICB7dGl0bGU6J+W8gOWtpuWFuOekvCcsZGF0ZTonMjAyNS0wOS0wNScsY2F0ZWdvcnk6J2FjdGl2aXR5JyxkZXNjcmlwdGlvbjonMjAyNS0yMDI25a2m5bm05byA5a2m5YW456S8J30sCiAge3RpdGxlOifmraPlvI/kuIror74nLGRhdGU6JzIwMjUtMDktMDgnLGNhdGVnb3J5Oid0ZWFjaGluZycsZGVzY3JpcHRpb246J+esrOS4gOWtpuacn+ato+W8j+W8gOWni+S4iuivvid9LAogIHt0aXRsZTon5pWZ5biI6IqCJyxkYXRlOicyMDI1LTA5LTEwJyxjYXRlZ29yeTonaG9saWRheScsZGVzY3JpcHRpb246J+aVmeW4iOiKgid9LAogIHt0aXRsZTon56S+5Zui5oub5pawJyxkYXRlOicyMDI1LTA5LTE1JyxlbmREYXRlOicyMDI1LTA5LTMwJyxjYXRlZ29yeTonYWN0aXZpdHknLGRlc2NyaXB0aW9uOiflkITlrabnlJ/npL7lm6LnurPmlrDmtLvliqgnfSwKICB7dGl0bGU6J+WbveW6huiKguaUvuWBhycsZGF0ZTonMjAyNS0xMC0wMScsZW5kRGF0ZTonMjAyNS0xMC0wNycsY2F0ZWdvcnk6J2hvbGlkYXknLGRlc2NyaXB0aW9uOiflm73luoboioLlgYfmnJ8nfSwKICB7dGl0bGU6J+iwg+S8keihpeivvicsZGF0ZTonMjAyNS0xMC0wOCcsY2F0ZWdvcnk6J3RlYWNoaW5nJyxkZXNjcmlwdGlvbjon6LCD5LyR6KGl5ZGo5LiJ55qE6K++Jyxpc0FkanVzdGVkOnRydWUsYWRqdXN0bWVudE5vdGU6J+ihpTnmnIgyOOaXpe+8iOWRqOaXpe+8ieeahOivvid9LAogIHt0aXRsZTon5qCh6L+Q5Yqo5LyaJyxkYXRlOicyMDI1LTEwLTE4JyxlbmREYXRlOicyMDI1LTEwLTE5JyxjYXRlZ29yeTonYWN0aXZpdHknLGRlc2NyaXB0aW9uOifmoKHnp4vlraPnlLDlvoTov5DliqjkvJonfSwKICB7dGl0bGU6J+acn+S4reiAg+ivlScsZGF0ZTonMjAyNS0xMS0wMScsZW5kRGF0ZTonMjAyNS0xMS0xNScsY2F0ZWdvcnk6J3RlYWNoaW5nJyxkZXNjcmlwdGlvbjon56ys5LiA5a2m5pyf5pyf5Lit6ICD6K+VJ30sCiAge3RpdGxlOiflhYPml6bmmZrkvJonLGRhdGU6JzIwMjUtMTItMjgnLGNhdGVnb3J5OidhY3Rpdml0eScsZGVzY3JpcHRpb246J+i3qOW5tOWFg+aXpuaZmuS8mid9LAogIHt0aXRsZTon5YWD5pem5pS+5YGHJyxkYXRlOicyMDI2LTAxLTAxJyxjYXRlZ29yeTonaG9saWRheScsZGVzY3JpcHRpb246J+WFg+aXpuWBh+acnyd9LAogIHt0aXRsZTon5pyf5pyr6ICD6K+VJyxkYXRlOicyMDI2LTAxLTA1JyxlbmREYXRlOicyMDI2LTAxLTE2JyxjYXRlZ29yeTondGVhY2hpbmcnLGRlc2NyaXB0aW9uOifnrKzkuIDlrabmnJ/mnJ/mnKvogIPor5UnfSwKICB7dGl0bGU6J+aUvuWvkuWBhycsZGF0ZTonMjAyNi0wMS0xNycsY2F0ZWdvcnk6J3RlYWNoaW5nJyxkZXNjcmlwdGlvbjon5a+S5YGH5byA5aeLJ30sCiAgLy8g56ys5LqM5a2m5pyfICgyMDI25bm0MuaciC035pyIKQogIHt0aXRsZTon5a2m55Sf6L+U5qCh5oql5YiwJyxkYXRlOicyMDI2LTAyLTIxJyxlbmREYXRlOicyMDI2LTAyLTIyJyxjYXRlZ29yeTondGVhY2hpbmcnLGRlc2NyaXB0aW9uOiflnKjmoKHnlJ/ov5TmoKHms6jlhozmiqXliLAnfSwKICB7dGl0bGU6J+ato+W8j+S4iuivvicsZGF0ZTonMjAyNi0wMi0yMycsY2F0ZWdvcnk6J3RlYWNoaW5nJyxkZXNjcmlwdGlvbjon56ys5LqM5a2m5pyf5q2j5byP5byA5aeL5LiK6K++J30sCiAge3RpdGxlOiflpoflpbPoioInLGRhdGU6JzIwMjYtMDMtMDgnLGNhdGVnb3J5Oidob2xpZGF5JyxkZXNjcmlwdGlvbjon5Zu96ZmF5aaH5aWz6IqCJ30sCiAge3RpdGxlOifmpI3moJHoioInLGRhdGU6JzIwMjYtMDMtMTInLGNhdGVnb3J5OidhY3Rpdml0eScsZGVzY3JpcHRpb246J+S5ieWKoeakjeagkea0u+WKqCd9LAogIHt0aXRsZTon5riF5piO6IqC5pS+5YGHJyxkYXRlOicyMDI2LTA0LTA0JyxlbmREYXRlOicyMDI2LTA0LTA2JyxjYXRlZ29yeTonaG9saWRheScsZGVzY3JpcHRpb246J+a4heaYjuiKguWBh+acnyd9LAogIHt0aXRsZTon56eR5oqA5paH5YyW6IqCJyxkYXRlOicyMDI2LTA0LTEzJyxlbmREYXRlOicyMDI2LTA0LTE4JyxjYXRlZ29yeTonYWN0aXZpdHknLGRlc2NyaXB0aW9uOifmoKHlm63np5HmioDmlofljJboioInfSwKICB7dGl0bGU6J+acn+S4reiAg+ivlScsZGF0ZTonMjAyNi0wNC0yMCcsZW5kRGF0ZTonMjAyNi0wNC0zMCcsY2F0ZWdvcnk6J3RlYWNoaW5nJyxkZXNjcmlwdGlvbjon56ys5LqM5a2m5pyf5pyf5Lit6ICD6K+VJ30sCiAge3RpdGxlOiflirPliqjoioLmlL7lgYcnLGRhdGU6JzIwMjYtMDUtMDEnLGVuZERhdGU6JzIwMjYtMDUtMDUnLGNhdGVnb3J5Oidob2xpZGF5JyxkZXNjcmlwdGlvbjon5Yqz5Yqo6IqC5YGH5pyfJ30sCiAge3RpdGxlOifnq6/ljYjoioLmlL7lgYcnLGRhdGU6JzIwMjYtMDUtMzEnLGVuZERhdGU6JzIwMjYtMDYtMDInLGNhdGVnb3J5Oidob2xpZGF5JyxkZXNjcmlwdGlvbjon56uv5Y2I6IqC5YGH5pyfJ30sCiAge3RpdGxlOiflm5vlha3nuqfogIPor5UnLGRhdGU6JzIwMjYtMDYtMTMnLGNhdGVnb3J5Oidjb21wZXRpdGlvbicsZGVzY3JpcHRpb246J+WFqOWbveWkp+WtpuiLseivreWbm+WFree6p+iAg+ivlSd9LAogIHt0aXRsZTon5pyf5pyr6ICD6K+VJyxkYXRlOicyMDI2LTA2LTIyJyxlbmREYXRlOicyMDI2LTA3LTA0JyxjYXRlZ29yeTondGVhY2hpbmcnLGRlc2NyaXB0aW9uOifnrKzkuozlrabmnJ/mnJ/mnKvogIPor5UnfSwKICB7dGl0bGU6J+aUvuaakeWBhycsZGF0ZTonMjAyNi0wNy0wNicsY2F0ZWdvcnk6J3RlYWNoaW5nJyxkZXNjcmlwdGlvbjon5pqR5YGH5byA5aeLJ30KXTsKCi8qIOS6i+S7tuexu+WIq+mFjee9riAqLwp2YXIgQ0FMX0NBVEVHT1JJRVMgPSB7CiAgdGVhY2hpbmc6ICAgIHtsYWJlbDon5pWZ5a2m5a6J5o6SJywgY29sb3I6JyMxNmEzNGEnLCBpY29uOnN2Z0ljb24oJ2NoZWNrLWNpcmNsZScsMTYpfSwKICBob2xpZGF5OiAgICAge2xhYmVsOifoioLlgYfml6UnLCAgIGNvbG9yOicjZGMyNjI2JywgaWNvbjpzdmdJY29uKCdhbGVydCcsMTYpfSwKICBhY3Rpdml0eTogICAge2xhYmVsOifmoKHlm63mtLvliqgnLCBjb2xvcjonIzI1NjNlYicsIGljb246c3ZnSWNvbignYmVsbCcsMTYpfSwKICBjb21wZXRpdGlvbjoge2xhYmVsOifnq57otZvnm7jlhbMnLCBjb2xvcjonI2Q5NzcwNicsIGljb246c3ZnSWNvbignY2FsZW5kYXInLDE2KX0KfTsKCi8qIOaXpeWOhueKtuaAgSAqLwp2YXIgY2FsU3RhdGUgPSB7CiAgc2VtZXN0ZXI6IDEsICAgICAgIC8vIDE956ys5LiA5a2m5pyfLCAyPeesrOS6jOWtpuacnwogIHllYXI6IDIwMjUsCiAgbW9udGg6IDksICAgICAgICAgIC8vIOW9k+WJjeaYvuekuuaciOS7vQogIHZpZXdNb2RlOiAnY2FsZW5kYXInLCAvLyAnY2FsZW5kYXInIOaIliAnbGlzdCcKICBmaWx0ZXJDYXRlZ29yeTogbnVsbCAgLy8gbnVsbD3lhajpg6gsIOaIliAndGVhY2hpbmcnLydob2xpZGF5Jy8nYWN0aXZpdHknLydjb21wZXRpdGlvbicKfTsKCi8qIOaYn+acn+WQjeensCAqLwp2YXIgQ0FMX1dFRUtEQVlTID0gWyfml6UnLCfkuIAnLCfkuownLCfkuIknLCflm5snLCfkupQnLCflha0nXTsKCi8qIOWIpOaWreaXpeacn+Wtl+espuS4suaYr+WQpuWcqOS6i+S7tuiMg+WbtOWGhSAqLwpmdW5jdGlvbiBjYWxEYXRlSW5SYW5nZShkYXRlU3RyLCBldmVudCkgewogIHZhciBkID0gZGF0ZVN0cjsKICB2YXIgcyA9IGV2ZW50LmRhdGU7CiAgdmFyIGUgPSBldmVudC5lbmREYXRlIHx8IGV2ZW50LmRhdGU7CiAgcmV0dXJuIGQgPj0gcyAmJiBkIDw9IGU7Cn0KCi8qIOiOt+WPluafkOWkqeeahOS6i+S7tuWIl+ihqCAqLwpmdW5jdGlvbiBjYWxHZXRFdmVudHNGb3JEYXRlKGRhdGVTdHIpIHsKICB2YXIgZmlsdGVyZWQgPSBDQUxFTkRBUl9FVkVOVFMuZmlsdGVyKGZ1bmN0aW9uKGV2KSB7CiAgICBpZiAoY2FsU3RhdGUuZmlsdGVyQ2F0ZWdvcnkgJiYgZXYuY2F0ZWdvcnkgIT09IGNhbFN0YXRlLmZpbHRlckNhdGVnb3J5KSByZXR1cm4gZmFsc2U7CiAgICByZXR1cm4gY2FsRGF0ZUluUmFuZ2UoZGF0ZVN0ciwgZXYpOwogIH0pOwogIHJldHVybiBmaWx0ZXJlZDsKfQoKLyog6I635Y+W5p+Q5aSp55qE5LqL5Lu257G75Yir77yI55So5LqO5pi+56S65b2p6Imy54K577yJICovCmZ1bmN0aW9uIGNhbEdldENhdGVnb3JpZXNGb3JEYXRlKGRhdGVTdHIpIHsKICB2YXIgY2F0cyA9IHt9OwogIENBTEVOREFSX0VWRU5UUy5mb3JFYWNoKGZ1bmN0aW9uKGV2KSB7CiAgICBpZiAoY2FsU3RhdGUuZmlsdGVyQ2F0ZWdvcnkgJiYgZXYuY2F0ZWdvcnkgIT09IGNhbFN0YXRlLmZpbHRlckNhdGVnb3J5KSByZXR1cm47CiAgICBpZiAoY2FsRGF0ZUluUmFuZ2UoZGF0ZVN0ciwgZXYpKSB7CiAgICAgIGNhdHNbZXYuY2F0ZWdvcnldID0gdHJ1ZTsKICAgIH0KICB9KTsKICByZXR1cm4gT2JqZWN0LmtleXMoY2F0cyk7Cn0KCi8qIOagvOW8j+WMluaXpeacn+S4uiBZWVlZLU1NLUREICovCmZ1bmN0aW9uIGNhbEZvcm1hdERhdGUoeSwgbSwgZCkgewogIHJldHVybiB5ICsgJy0nICsgKG0gPCAxMCA/ICcwJyArIG0gOiBtKSArICctJyArIChkIDwgMTAgPyAnMCcgKyBkIDogZCk7Cn0KCi8qIOiOt+WPluaciOS7veWkqeaVsCAqLwpmdW5jdGlvbiBjYWxEYXlzSW5Nb250aCh5LCBtKSB7CiAgcmV0dXJuIG5ldyBEYXRlKHksIG0sIDApLmdldERhdGUoKTsKfQoKLyog6I635Y+W5pyI5Lu956ys5LiA5aSp5piv5pif5pyf5YegICgwPeaXpSkgKi8KZnVuY3Rpb24gY2FsRmlyc3REYXlPZk1vbnRoKHksIG0pIHsKICByZXR1cm4gbmV3IERhdGUoeSwgbSAtIDEsIDEpLmdldERheSgpOwp9CgovKiDkuK3mlofmmJ/mnJ8gKi8KZnVuY3Rpb24gY2FsQ2hpbmVzZVdlZWtkYXkoZGF0ZVN0cikgewogIHZhciBkID0gbmV3IERhdGUoZGF0ZVN0cik7CiAgcmV0dXJuICflkagnICsgQ0FMX1dFRUtEQVlTW2QuZ2V0RGF5KCldOwp9CgovKiDmuLLmn5Pml6XljobkuLvlh73mlbAgKi8KZnVuY3Rpb24gcmVuZGVyQ2FsZW5kYXIoKSB7CiAgdmFyIGNvbnRhaW5lciA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdhY2FkZW1pY0NvbnRlbnQnKTsKICBpZiAoIWNvbnRhaW5lcikgcmV0dXJuOwoKICAvLyDmoLnmja7lvZPliY3lrabmnJ/noa7lrprpu5jorqTmnIjku70KICBpZiAoY2FsU3RhdGUuc2VtZXN0ZXIgPT09IDEpIHsKICAgIC8vIOesrOS4gOWtpuacnzogMjAyNeW5tDnmnIggLSAyMDI25bm0MeaciAogICAgaWYgKGNhbFN0YXRlLnllYXIgIT09IDIwMjUgfHwgKGNhbFN0YXRlLm1vbnRoIDwgOSAmJiBjYWxTdGF0ZS55ZWFyID09PSAyMDI1KSB8fCAoY2FsU3RhdGUubW9udGggPiAxICYmIGNhbFN0YXRlLnllYXIgPT09IDIwMjYpKSB7CiAgICAgIGNhbFN0YXRlLnllYXIgPSAyMDI1OwogICAgICBjYWxTdGF0ZS5tb250aCA9IDk7CiAgICB9CiAgfSBlbHNlIHsKICAgIC8vIOesrOS6jOWtpuacnzogMjAyNuW5tDLmnIggLSAyMDI25bm0N+aciAogICAgaWYgKGNhbFN0YXRlLnllYXIgIT09IDIwMjYgfHwgY2FsU3RhdGUubW9udGggPCAyIHx8IGNhbFN0YXRlLm1vbnRoID4gNykgewogICAgICBjYWxTdGF0ZS55ZWFyID0gMjAyNjsKICAgICAgY2FsU3RhdGUubW9udGggPSAyOwogICAgfQogIH0KCiAgdmFyIGh0bWwgPSAnPGRpdiBjbGFzcz0iY2FsLWNvbnRhaW5lciI+JzsKCiAgLy8g5aS06YOo77ya5qCH6aKYICsg5a2m5pyf5YiH5o2iCiAgaHRtbCArPSAnPGRpdiBjbGFzcz0iY2FsLWhlYWRlciI+JzsKICBodG1sICs9ICc8ZGl2IGNsYXNzPSJjYWwtdGl0bGUiPjIwMjUtMjAyNuWtpuW5tDwvZGl2Pic7CiAgaHRtbCArPSAnPGRpdiBjbGFzcz0iY2FsLXNlbWVzdGVyLXRhYnMiPic7CiAgaHRtbCArPSAnPGJ1dHRvbiBjbGFzcz0iY2FsLXNlbWVzdGVyLXRhYicgKyAoY2FsU3RhdGUuc2VtZXN0ZXIgPT09IDEgPyAnIGFjdGl2ZScgOiAnJykgKyAnIiBvbmNsaWNrPSJjYWxTd2l0Y2hTZW1lc3RlcigxKSI+56ys5LiA5a2m5pyfPC9idXR0b24+JzsKICBodG1sICs9ICc8YnV0dG9uIGNsYXNzPSJjYWwtc2VtZXN0ZXItdGFiJyArIChjYWxTdGF0ZS5zZW1lc3RlciA9PT0gMiA/ICcgYWN0aXZlJyA6ICcnKSArICciIG9uY2xpY2s9ImNhbFN3aXRjaFNlbWVzdGVyKDIpIj7nrKzkuozlrabmnJ88L2J1dHRvbj4nOwogIGh0bWwgKz0gJzwvZGl2Pic7CiAgaHRtbCArPSAnPC9kaXY+JzsKCiAgLy8g6KeG5Zu+5YiH5o2i5oyJ6ZKuCiAgaHRtbCArPSAnPGRpdiBjbGFzcz0iY2FsLXZpZXctdG9nZ2xlIj4nOwogIGh0bWwgKz0gJzxidXR0b24gY2xhc3M9ImNhbC12aWV3LWJ0bicgKyAoY2FsU3RhdGUudmlld01vZGUgPT09ICdjYWxlbmRhcicgPyAnIGFjdGl2ZScgOiAnJykgKyAnIiBvbmNsaWNrPSJjYWxTd2l0Y2hWaWV3KFwnY2FsZW5kYXJcJykiPuaXpeWOhuinhuWbvjwvYnV0dG9uPic7CiAgaHRtbCArPSAnPGJ1dHRvbiBjbGFzcz0iY2FsLXZpZXctYnRuJyArIChjYWxTdGF0ZS52aWV3TW9kZSA9PT0gJ2xpc3QnID8gJyBhY3RpdmUnIDogJycpICsgJyIgb25jbGljaz0iY2FsU3dpdGNoVmlldyhcJ2xpc3RcJykiPuWIl+ihqOinhuWbvjwvYnV0dG9uPic7CiAgaHRtbCArPSAnPC9kaXY+JzsKCiAgLy8g5pyI5Lu95a+86IiqCiAgaHRtbCArPSAnPGRpdiBjbGFzcz0iY2FsLW1vbnRoLW5hdiIgc3R5bGU9Im1hcmdpbi1ib3R0b206MTJweCI+JzsKICBodG1sICs9ICc8YnV0dG9uIGNsYXNzPSJjYWwtbW9udGgtYnRuIiBvbmNsaWNrPSJjYWxQcmV2TW9udGgoKSI+JiM4MjQ5OzwvYnV0dG9uPic7CiAgaHRtbCArPSAnPHNwYW4gY2xhc3M9ImNhbC1tb250aC1sYWJlbCI+JyArIGNhbFN0YXRlLnllYXIgKyAn5bm0JyArIGNhbFN0YXRlLm1vbnRoICsgJ+aciDwvc3Bhbj4nOwogIGh0bWwgKz0gJzxidXR0b24gY2xhc3M9ImNhbC1tb250aC1idG4iIG9uY2xpY2s9ImNhbE5leHRNb250aCgpIj4mIzgyNTA7PC9idXR0b24+JzsKICBodG1sICs9ICc8L2Rpdj4nOwoKICAvLyDml6XljobnvZHmoLzmiJbliJfooajop4blm74KICBpZiAoY2FsU3RhdGUudmlld01vZGUgPT09ICdjYWxlbmRhcicpIHsKICAgIGh0bWwgKz0gcmVuZGVyQ2FsR3JpZCgpOwogIH0gZWxzZSB7CiAgICBodG1sICs9IHJlbmRlckNhbExpc3RWaWV3KCk7CiAgfQoKICAvLyDlm77kvosKICBodG1sICs9IHJlbmRlckNhbExlZ2VuZCgpOwoKICAvLyDov5HmnJ/kuovpobkKICBodG1sICs9IHJlbmRlckNhbFVwY29taW5nKCk7CgogIGh0bWwgKz0gJzwvZGl2Pic7CgogIGNvbnRhaW5lci5pbm5lckhUTUwgPSBodG1sOwoKICAvLyDmt6HlhaXliqjnlLsKICB2YXIgd3JhcHBlciA9IGNvbnRhaW5lci5xdWVyeVNlbGVjdG9yKCcuY2FsLWdyaWQtd3JhcHBlcicpOwogIGlmICh3cmFwcGVyKSB7CiAgICB3cmFwcGVyLmNsYXNzTGlzdC5hZGQoJ2NhbC1mYWRlLWVudGVyJyk7CiAgICByZXF1ZXN0QW5pbWF0aW9uRnJhbWUoZnVuY3Rpb24oKSB7CiAgICAgIHdyYXBwZXIuY2xhc3NMaXN0LmFkZCgnY2FsLWZhZGUtYWN0aXZlJyk7CiAgICB9KTsKICB9Cn0KCi8qIOa4suafk+aXpeWOhue9keagvCAqLwpmdW5jdGlvbiByZW5kZXJDYWxHcmlkKCkgewogIHZhciB5ID0gY2FsU3RhdGUueWVhciwgbSA9IGNhbFN0YXRlLm1vbnRoOwogIHZhciBkYXlzSW5Nb250aCA9IGNhbERheXNJbk1vbnRoKHksIG0pOwogIHZhciBmaXJzdERheSA9IGNhbEZpcnN0RGF5T2ZNb250aCh5LCBtKTsKICB2YXIgdG9kYXkgPSBuZXcgRGF0ZSgpOwogIHZhciB0b2RheVN0ciA9IGNhbEZvcm1hdERhdGUodG9kYXkuZ2V0RnVsbFllYXIoKSwgdG9kYXkuZ2V0TW9udGgoKSArIDEsIHRvZGF5LmdldERhdGUoKSk7CgogIHZhciBodG1sID0gJzxkaXYgY2xhc3M9ImNhbC1ncmlkLXdyYXBwZXIiPjxkaXYgY2xhc3M9ImNhbC1ncmlkIj4nOwoKICAvLyDmmJ/mnJ/moIfpopjooYwKICBDQUxfV0VFS0RBWVMuZm9yRWFjaChmdW5jdGlvbih3ZCkgewogICAgaHRtbCArPSAnPGRpdiBjbGFzcz0iY2FsLXdlZWtkYXkiPicgKyB3ZCArICc8L2Rpdj4nOwogIH0pOwoKICAvLyDkuIrmnIjooaXpvZAKICB2YXIgcHJldk1vbnRoID0gbSA9PT0gMSA/IDEyIDogbSAtIDE7CiAgdmFyIHByZXZZZWFyID0gbSA9PT0gMSA/IHkgLSAxIDogeTsKICB2YXIgcHJldkRheXMgPSBjYWxEYXlzSW5Nb250aChwcmV2WWVhciwgcHJldk1vbnRoKTsKICBmb3IgKHZhciBpID0gZmlyc3REYXkgLSAxOyBpID49IDA7IGktLSkgewogICAgdmFyIHBkID0gcHJldkRheXMgLSBpOwogICAgdmFyIHBEYXRlU3RyID0gY2FsRm9ybWF0RGF0ZShwcmV2WWVhciwgcHJldk1vbnRoLCBwZCk7CiAgICB2YXIgcENhdHMgPSBjYWxHZXRDYXRlZ29yaWVzRm9yRGF0ZShwRGF0ZVN0cik7CiAgICBodG1sICs9ICc8ZGl2IGNsYXNzPSJjYWwtY2VsbCBvdGhlci1tb250aCcgKyAocENhdHMubGVuZ3RoID8gJyBoYXMtZXZlbnRzJyA6ICcnKSArICciIG9uY2xpY2s9ImNhbENlbGxDbGljayhcJycgKyBwRGF0ZVN0ciArICdcJykiPic7CiAgICBodG1sICs9ICc8c3BhbiBjbGFzcz0iY2FsLWRhdGUiPicgKyBwZCArICc8L3NwYW4+JzsKICAgIGlmIChwQ2F0cy5sZW5ndGgpIHsKICAgICAgaHRtbCArPSAnPGRpdiBjbGFzcz0iY2FsLWRvdHMiPic7CiAgICAgIHBDYXRzLmZvckVhY2goZnVuY3Rpb24oYykgeyBodG1sICs9ICc8c3BhbiBjbGFzcz0iY2FsLWRvdCIgc3R5bGU9ImJhY2tncm91bmQ6JyArIENBTF9DQVRFR09SSUVTW2NdLmNvbG9yICsgJyI+PC9zcGFuPic7IH0pOwogICAgICBodG1sICs9ICc8L2Rpdj4nOwogICAgfQogICAgaHRtbCArPSAnPC9kaXY+JzsKICB9CgogIC8vIOW9k+aciOaXpeacnwogIGZvciAodmFyIGQgPSAxOyBkIDw9IGRheXNJbk1vbnRoOyBkKyspIHsKICAgIHZhciBkYXRlU3RyID0gY2FsRm9ybWF0RGF0ZSh5LCBtLCBkKTsKICAgIHZhciBjYXRzID0gY2FsR2V0Q2F0ZWdvcmllc0ZvckRhdGUoZGF0ZVN0cik7CiAgICB2YXIgaXNUb2RheSA9IGRhdGVTdHIgPT09IHRvZGF5U3RyOwogICAgaHRtbCArPSAnPGRpdiBjbGFzcz0iY2FsLWNlbGwnICsgKGlzVG9kYXkgPyAnIHRvZGF5JyA6ICcnKSArIChjYXRzLmxlbmd0aCA/ICcgaGFzLWV2ZW50cycgOiAnJykgKyAnIiBvbmNsaWNrPSJjYWxDZWxsQ2xpY2soXCcnICsgZGF0ZVN0ciArICdcJykiPic7CiAgICBodG1sICs9ICc8c3BhbiBjbGFzcz0iY2FsLWRhdGUiPicgKyBkICsgJzwvc3Bhbj4nOwogICAgaWYgKGNhdHMubGVuZ3RoKSB7CiAgICAgIGh0bWwgKz0gJzxkaXYgY2xhc3M9ImNhbC1kb3RzIj4nOwogICAgICBjYXRzLmZvckVhY2goZnVuY3Rpb24oYykgeyBodG1sICs9ICc8c3BhbiBjbGFzcz0iY2FsLWRvdCIgc3R5bGU9ImJhY2tncm91bmQ6JyArIENBTF9DQVRFR09SSUVTW2NdLmNvbG9yICsgJyI+PC9zcGFuPic7IH0pOwogICAgICBodG1sICs9ICc8L2Rpdj4nOwogICAgfQogICAgaHRtbCArPSAnPC9kaXY+JzsKICB9CgogIC8vIOS4i+aciOihpem9kAogIHZhciB0b3RhbENlbGxzID0gZmlyc3REYXkgKyBkYXlzSW5Nb250aDsKICB2YXIgcmVtYWluaW5nID0gKDcgLSB0b3RhbENlbGxzICUgNykgJSA3OwogIHZhciBuZXh0TW9udGggPSBtID09PSAxMiA/IDEgOiBtICsgMTsKICB2YXIgbmV4dFllYXIgPSBtID09PSAxMiA/IHkgKyAxIDogeTsKICBmb3IgKHZhciBqID0gMTsgaiA8PSByZW1haW5pbmc7IGorKykgewogICAgdmFyIG5EYXRlU3RyID0gY2FsRm9ybWF0RGF0ZShuZXh0WWVhciwgbmV4dE1vbnRoLCBqKTsKICAgIHZhciBuQ2F0cyA9IGNhbEdldENhdGVnb3JpZXNGb3JEYXRlKG5EYXRlU3RyKTsKICAgIGh0bWwgKz0gJzxkaXYgY2xhc3M9ImNhbC1jZWxsIG90aGVyLW1vbnRoJyArIChuQ2F0cy5sZW5ndGggPyAnIGhhcy1ldmVudHMnIDogJycpICsgJyIgb25jbGljaz0iY2FsQ2VsbENsaWNrKFwnJyArIG5EYXRlU3RyICsgJ1wnKSI+JzsKICAgIGh0bWwgKz0gJzxzcGFuIGNsYXNzPSJjYWwtZGF0ZSI+JyArIGogKyAnPC9zcGFuPic7CiAgICBpZiAobkNhdHMubGVuZ3RoKSB7CiAgICAgIGh0bWwgKz0gJzxkaXYgY2xhc3M9ImNhbC1kb3RzIj4nOwogICAgICBuQ2F0cy5mb3JFYWNoKGZ1bmN0aW9uKGMpIHsgaHRtbCArPSAnPHNwYW4gY2xhc3M9ImNhbC1kb3QiIHN0eWxlPSJiYWNrZ3JvdW5kOicgKyBDQUxfQ0FURUdPUklFU1tjXS5jb2xvciArICciPjwvc3Bhbj4nOyB9KTsKICAgICAgaHRtbCArPSAnPC9kaXY+JzsKICAgIH0KICAgIGh0bWwgKz0gJzwvZGl2Pic7CiAgfQoKICBodG1sICs9ICc8L2Rpdj48L2Rpdj4nOwogIHJldHVybiBodG1sOwp9CgovKiDmuLLmn5PliJfooajop4blm74gKi8KZnVuY3Rpb24gcmVuZGVyQ2FsTGlzdFZpZXcoKSB7CiAgdmFyIHkgPSBjYWxTdGF0ZS55ZWFyLCBtID0gY2FsU3RhdGUubW9udGg7CiAgdmFyIGRheXNJbk1vbnRoID0gY2FsRGF5c0luTW9udGgoeSwgbSk7CiAgdmFyIGh0bWwgPSAnPGRpdiBjbGFzcz0iY2FsLWV2ZW50LWxpc3QiPic7CgogIHZhciBoYXNFdmVudHMgPSBmYWxzZTsKICBmb3IgKHZhciBkID0gMTsgZCA8PSBkYXlzSW5Nb250aDsgZCsrKSB7CiAgICB2YXIgZGF0ZVN0ciA9IGNhbEZvcm1hdERhdGUoeSwgbSwgZCk7CiAgICB2YXIgZXZlbnRzID0gY2FsR2V0RXZlbnRzRm9yRGF0ZShkYXRlU3RyKTsKICAgIGlmIChldmVudHMubGVuZ3RoID09PSAwKSBjb250aW51ZTsKICAgIGhhc0V2ZW50cyA9IHRydWU7CgogICAgZXZlbnRzLmZvckVhY2goZnVuY3Rpb24oZXYpIHsKICAgICAgdmFyIGNhdCA9IENBTF9DQVRFR09SSUVTW2V2LmNhdGVnb3J5XSB8fCBDQUxfQ0FURUdPUklFUy50ZWFjaGluZzsKICAgICAgdmFyIGRhdGVPYmogPSBuZXcgRGF0ZShkYXRlU3RyKTsKICAgICAgaHRtbCArPSAnPGRpdiBjbGFzcz0iY2FsLWV2ZW50LWxpc3QtaXRlbSI+JzsKICAgICAgaHRtbCArPSAnPGRpdiBjbGFzcz0iY2FsLWV2ZW50LWxpc3QtZGF0ZSI+JzsKICAgICAgaHRtbCArPSAnPGRpdiBjbGFzcz0iY2FsLWV2ZW50LWxpc3QtZGF5Ij4nICsgZGF0ZU9iai5nZXREYXRlKCkgKyAnPC9kaXY+JzsKICAgICAgaHRtbCArPSAnPGRpdiBjbGFzcz0iY2FsLWV2ZW50LWxpc3QtbW9udGgiPicgKyAoZGF0ZU9iai5nZXRNb250aCgpICsgMSkgKyAn5pyIPC9kaXY+JzsKICAgICAgaHRtbCArPSAnPC9kaXY+JzsKICAgICAgaHRtbCArPSAnPGRpdiBjbGFzcz0iY2FsLWV2ZW50LWxpc3QtaW5mbyI+JzsKICAgICAgaHRtbCArPSAnPGRpdiBjbGFzcz0iY2FsLWV2ZW50LWxpc3QtdGl0bGUiPicgKyBlc2MoZXYudGl0bGUpICsgJzwvZGl2Pic7CiAgICAgIGh0bWwgKz0gJzxkaXYgY2xhc3M9ImNhbC1ldmVudC1saXN0LWRlc2MiPicgKyBlc2MoZXYuZGVzY3JpcHRpb24pICsgJzwvZGl2Pic7CiAgICAgIGh0bWwgKz0gJzxzcGFuIGNsYXNzPSJjYWwtZXZlbnQtbGlzdC1jYXRlZ29yeSIgc3R5bGU9ImJhY2tncm91bmQ6JyArIGNhdC5jb2xvciArICcxODtjb2xvcjonICsgY2F0LmNvbG9yICsgJyI+JyArIGNhdC5sYWJlbCArICc8L3NwYW4+JzsKICAgICAgaHRtbCArPSAnPC9kaXY+PC9kaXY+JzsKICAgIH0pOwogIH0KCiAgaWYgKCFoYXNFdmVudHMpIHsKICAgIGh0bWwgKz0gJzxkaXYgY2xhc3M9ImNhbC11cGNvbWluZy1lbXB0eSI+5pys5pyI5pqC5peg5a6J5o6SPC9kaXY+JzsKICB9CgogIGh0bWwgKz0gJzwvZGl2Pic7CiAgcmV0dXJuIGh0bWw7Cn0KCi8qIOa4suafk+WbvuS+iyAqLwpmdW5jdGlvbiByZW5kZXJDYWxMZWdlbmQoKSB7CiAgdmFyIGh0bWwgPSAnPGRpdiBjbGFzcz0iY2FsLWxlZ2VuZCI+JzsKICBPYmplY3Qua2V5cyhDQUxfQ0FURUdPUklFUykuZm9yRWFjaChmdW5jdGlvbihrZXkpIHsKICAgIHZhciBjYXQgPSBDQUxfQ0FURUdPUklFU1trZXldOwogICAgdmFyIGlzQWN0aXZlID0gIWNhbFN0YXRlLmZpbHRlckNhdGVnb3J5IHx8IGNhbFN0YXRlLmZpbHRlckNhdGVnb3J5ID09PSBrZXk7CiAgICB2YXIgaXNGaWx0ZXJlZCA9IGNhbFN0YXRlLmZpbHRlckNhdGVnb3J5ICYmIGNhbFN0YXRlLmZpbHRlckNhdGVnb3J5ICE9PSBrZXk7CiAgICBodG1sICs9ICc8ZGl2IGNsYXNzPSJjYWwtbGVnZW5kLWl0ZW0nICsgKGNhbFN0YXRlLmZpbHRlckNhdGVnb3J5ID09PSBrZXkgPyAnIGFjdGl2ZScgOiAnJykgKyAoaXNGaWx0ZXJlZCA/ICcgaW5hY3RpdmUnIDogJycpICsgJyIgb25jbGljaz0iY2FsVG9nZ2xlRmlsdGVyKFwnJyArIGtleSArICdcJykiPic7CiAgICBodG1sICs9ICc8c3BhbiBjbGFzcz0iY2FsLWxlZ2VuZC1kb3QiIHN0eWxlPSJiYWNrZ3JvdW5kOicgKyBjYXQuY29sb3IgKyAnIj48L3NwYW4+JzsKICAgIGh0bWwgKz0gJzxzcGFuPicgKyBjYXQuaWNvbiArICcgJyArIGNhdC5sYWJlbCArICc8L3NwYW4+JzsKICAgIGh0bWwgKz0gJzwvZGl2Pic7CiAgfSk7CiAgaHRtbCArPSAnPC9kaXY+JzsKICByZXR1cm4gaHRtbDsKfQoKLyog5riy5p+T6L+R5pyf5LqL6aG577yI5pyq5p2lN+Wkqe+8iSAqLwpmdW5jdGlvbiByZW5kZXJDYWxVcGNvbWluZygpIHsKICB2YXIgdG9kYXkgPSBuZXcgRGF0ZSgpOwogIHRvZGF5LnNldEhvdXJzKDAsIDAsIDAsIDApOwogIHZhciB1cGNvbWluZyA9IFtdOwoKICBmb3IgKHZhciBpID0gMDsgaSA8PSA3OyBpKyspIHsKICAgIHZhciBkID0gbmV3IERhdGUodG9kYXkpOwogICAgZC5zZXREYXRlKGQuZ2V0RGF0ZSgpICsgaSk7CiAgICB2YXIgZGF0ZVN0ciA9IGNhbEZvcm1hdERhdGUoZC5nZXRGdWxsWWVhcigpLCBkLmdldE1vbnRoKCkgKyAxLCBkLmdldERhdGUoKSk7CiAgICB2YXIgZXZlbnRzID0gY2FsR2V0RXZlbnRzRm9yRGF0ZShkYXRlU3RyKTsKICAgIGV2ZW50cy5mb3JFYWNoKGZ1bmN0aW9uKGV2KSB7CiAgICAgIHVwY29taW5nLnB1c2goe2V2ZW50OiBldiwgZGF0ZTogZGF0ZVN0ciwgZGF0ZU9iajogZH0pOwogICAgfSk7CiAgfQoKICB2YXIgaHRtbCA9ICc8ZGl2IGNsYXNzPSJjYWwtdXBjb21pbmciPic7CiAgaHRtbCArPSAnPGRpdiBjbGFzcz0iY2FsLXVwY29taW5nLXRpdGxlIj4nK3N2Z0ljb24oJ2NhbGVuZGFyJywxOCkrJyDov5HmnJ/kuovpobk8L2Rpdj4nOwoKICBpZiAodXBjb21pbmcubGVuZ3RoID09PSAwKSB7CiAgICBodG1sICs9ICc8ZGl2IGNsYXNzPSJjYWwtdXBjb21pbmctZW1wdHkiPuacquadpTflpKnmmoLml6DlronmjpI8L2Rpdj4nOwogIH0gZWxzZSB7CiAgICB1cGNvbWluZy5mb3JFYWNoKGZ1bmN0aW9uKGl0ZW0pIHsKICAgICAgdmFyIGNhdCA9IENBTF9DQVRFR09SSUVTW2l0ZW0uZXZlbnQuY2F0ZWdvcnldIHx8IENBTF9DQVRFR09SSUVTLnRlYWNoaW5nOwogICAgICB2YXIgZGF0ZUxhYmVsID0gKGl0ZW0uZGF0ZU9iai5nZXRNb250aCgpICsgMSkgKyAn5pyIJyArIGl0ZW0uZGF0ZU9iai5nZXREYXRlKCkgKyAn5pelICcgKyBjYWxDaGluZXNlV2Vla2RheShpdGVtLmRhdGUpOwogICAgICBodG1sICs9ICc8ZGl2IGNsYXNzPSJjYWwtdXBjb21pbmctaXRlbSI+JzsKICAgICAgaHRtbCArPSAnPHNwYW4gY2xhc3M9ImNhbC11cGNvbWluZy1kb3QiIHN0eWxlPSJiYWNrZ3JvdW5kOicgKyBjYXQuY29sb3IgKyAnIj48L3NwYW4+JzsKICAgICAgaHRtbCArPSAnPGRpdiBjbGFzcz0iY2FsLXVwY29taW5nLWluZm8iPic7CiAgICAgIGh0bWwgKz0gJzxkaXYgY2xhc3M9ImNhbC11cGNvbWluZy10aXRsZS10ZXh0Ij4nICsgZXNjKGl0ZW0uZXZlbnQudGl0bGUpICsgJzwvZGl2Pic7CiAgICAgIGh0bWwgKz0gJzxkaXYgY2xhc3M9ImNhbC11cGNvbWluZy1kYXRlLXRleHQiPicgKyBkYXRlTGFiZWwgKyAnIC0gJyArIGVzYyhpdGVtLmV2ZW50LmRlc2NyaXB0aW9uKSArICc8L2Rpdj4nOwogICAgICBodG1sICs9ICc8L2Rpdj48L2Rpdj4nOwogICAgfSk7CiAgfQoKICBodG1sICs9ICc8L2Rpdj4nOwogIHJldHVybiBodG1sOwp9CgovKiDliIfmjaLlrabmnJ8gKi8KZnVuY3Rpb24gY2FsU3dpdGNoU2VtZXN0ZXIoc2VtKSB7CiAgY2FsU3RhdGUuc2VtZXN0ZXIgPSBzZW07CiAgaWYgKHNlbSA9PT0gMSkgewogICAgY2FsU3RhdGUueWVhciA9IDIwMjU7CiAgICBjYWxTdGF0ZS5tb250aCA9IDk7CiAgfSBlbHNlIHsKICAgIGNhbFN0YXRlLnllYXIgPSAyMDI2OwogICAgY2FsU3RhdGUubW9udGggPSAyOwogIH0KICByZW5kZXJDYWxlbmRhcigpOwp9CgovKiDkuIrkuIDmnIggKi8KZnVuY3Rpb24gY2FsUHJldk1vbnRoKCkgewogIGNhbFN0YXRlLm1vbnRoLS07CiAgaWYgKGNhbFN0YXRlLm1vbnRoIDwgMSkgewogICAgY2FsU3RhdGUubW9udGggPSAxMjsKICAgIGNhbFN0YXRlLnllYXItLTsKICB9CiAgcmVuZGVyQ2FsZW5kYXIoKTsKfQoKLyog5LiL5LiA5pyIICovCmZ1bmN0aW9uIGNhbE5leHRNb250aCgpIHsKICBjYWxTdGF0ZS5tb250aCsrOwogIGlmIChjYWxTdGF0ZS5tb250aCA+IDEyKSB7CiAgICBjYWxTdGF0ZS5tb250aCA9IDE7CiAgICBjYWxTdGF0ZS55ZWFyKys7CiAgfQogIHJlbmRlckNhbGVuZGFyKCk7Cn0KCi8qIOWIh+aNouinhuWbvuaooeW8jyAqLwpmdW5jdGlvbiBjYWxTd2l0Y2hWaWV3KG1vZGUpIHsKICBjYWxTdGF0ZS52aWV3TW9kZSA9IG1vZGU7CiAgcmVuZGVyQ2FsZW5kYXIoKTsKfQoKLyog5YiH5o2i57G75Yir562b6YCJICovCmZ1bmN0aW9uIGNhbFRvZ2dsZUZpbHRlcihjYXRlZ29yeSkgewogIGlmIChjYWxTdGF0ZS5maWx0ZXJDYXRlZ29yeSA9PT0gY2F0ZWdvcnkpIHsKICAgIGNhbFN0YXRlLmZpbHRlckNhdGVnb3J5ID0gbnVsbDsgLy8g5Y+W5raI562b6YCJCiAgfSBlbHNlIHsKICAgIGNhbFN0YXRlLmZpbHRlckNhdGVnb3J5ID0gY2F0ZWdvcnk7CiAgfQogIHJlbmRlckNhbGVuZGFyKCk7Cn0KCi8qIOeCueWHu+aXpeacn+WNleWFg+agvCAtIOaYvuekuuS6i+S7tuivpuaDheW8ueeqlyAqLwpmdW5jdGlvbiBjYWxDZWxsQ2xpY2soZGF0ZVN0cikgewogIHZhciBldmVudHMgPSBjYWxHZXRFdmVudHNGb3JEYXRlKGRhdGVTdHIpOwogIGlmIChldmVudHMubGVuZ3RoID09PSAwKSByZXR1cm47CgogIHZhciBkYXRlT2JqID0gbmV3IERhdGUoZGF0ZVN0cik7CiAgdmFyIGRhdGVMYWJlbCA9IChkYXRlT2JqLmdldE1vbnRoKCkgKyAxKSArICfmnIgnICsgZGF0ZU9iai5nZXREYXRlKCkgKyAn5pelICcgKyBjYWxDaGluZXNlV2Vla2RheShkYXRlU3RyKTsKCiAgdmFyIGh0bWwgPSAnPGRpdiBjbGFzcz0iY2FsLXBvcHVwLW92ZXJsYXkiIGlkPSJjYWxQb3B1cE92ZXJsYXkiIG9uY2xpY2s9ImNhbENsb3NlUG9wdXAoZXZlbnQpIj4nOwogIGh0bWwgKz0gJzxkaXYgY2xhc3M9ImNhbC1wb3B1cCI+JzsKICBodG1sICs9ICc8YnV0dG9uIGNsYXNzPSJjYWwtcG9wdXAtY2xvc2UiIG9uY2xpY2s9ImNhbENsb3NlUG9wdXAoKSI+JnRpbWVzOzwvYnV0dG9uPic7CiAgaHRtbCArPSAnPGRpdiBjbGFzcz0iY2FsLXBvcHVwLWRhdGUiPicgKyBkYXRlTGFiZWwgKyAnPC9kaXY+JzsKCiAgZXZlbnRzLmZvckVhY2goZnVuY3Rpb24oZXYpIHsKICAgIHZhciBjYXQgPSBDQUxfQ0FURUdPUklFU1tldi5jYXRlZ29yeV0gfHwgQ0FMX0NBVEVHT1JJRVMudGVhY2hpbmc7CiAgICBodG1sICs9ICc8ZGl2IGNsYXNzPSJjYWwtcG9wdXAtZXZlbnQiPic7CiAgICBodG1sICs9ICc8c3BhbiBjbGFzcz0iY2FsLXBvcHVwLWV2ZW50LWRvdCIgc3R5bGU9ImJhY2tncm91bmQ6JyArIGNhdC5jb2xvciArICciPjwvc3Bhbj4nOwogICAgaHRtbCArPSAnPGRpdj4nOwogICAgaHRtbCArPSAnPGRpdiBjbGFzcz0iY2FsLXBvcHVwLWV2ZW50LXRpdGxlIj4nICsgZXNjKGV2LnRpdGxlKSArICc8L2Rpdj4nOwogICAgaHRtbCArPSAnPGRpdiBjbGFzcz0iY2FsLXBvcHVwLWV2ZW50LWRlc2MiPicgKyBlc2MoZXYuZGVzY3JpcHRpb24pICsgJzwvZGl2Pic7CiAgICBpZiAoZXYuZW5kRGF0ZSAmJiBldi5lbmREYXRlICE9PSBldi5kYXRlKSB7CiAgICAgIGh0bWwgKz0gJzxkaXYgY2xhc3M9ImNhbC1wb3B1cC1ldmVudC1kZXNjIj4nICsgZXYuZGF0ZSArICcgfiAnICsgZXYuZW5kRGF0ZSArICc8L2Rpdj4nOwogICAgfQogICAgaWYgKGV2LmlzQWRqdXN0ZWQgJiYgZXYuYWRqdXN0bWVudE5vdGUpIHsKICAgICAgaHRtbCArPSAnPGRpdiBjbGFzcz0iY2FsLXBvcHVwLWV2ZW50LWRlc2MiIHN0eWxlPSJjb2xvcjp2YXIoLS1hY2NlbnQpIj4nICsgZXNjKGV2LmFkanVzdG1lbnROb3RlKSArICc8L2Rpdj4nOwogICAgfQogICAgaWYgKGV2LmNhdGVnb3J5ID09PSAnY29tcGV0aXRpb24nKSB7CiAgICAgIGh0bWwgKz0gJzxidXR0b24gY2xhc3M9ImNhbC1wb3B1cC1ldmVudC1idG4iIG9uY2xpY2s9ImNhbENsb3NlUG9wdXAoKTtuYXZpZ2F0ZShcJ2NvbXBldGl0aW9uXCcpIj7mn6XnnIvnq57otZs8L2J1dHRvbj4nOwogICAgfQogICAgaHRtbCArPSAnPC9kaXY+PC9kaXY+JzsKICB9KTsKCiAgaHRtbCArPSAnPC9kaXY+PC9kaXY+JzsKCiAgLy8g56e76Zmk5pen5by556qXCiAgdmFyIG9sZCA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdjYWxQb3B1cE92ZXJsYXknKTsKICBpZiAob2xkKSBvbGQucmVtb3ZlKCk7CgogIC8vIOaPkuWFpeW8ueeqlwogIGRvY3VtZW50LmJvZHkuaW5zZXJ0QWRqYWNlbnRIVE1MKCdiZWZvcmVlbmQnLCBodG1sKTsKCiAgLy8g6Kem5Y+R5Yqo55S7CiAgcmVxdWVzdEFuaW1hdGlvbkZyYW1lKGZ1bmN0aW9uKCkgewogICAgdmFyIG92ZXJsYXkgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnY2FsUG9wdXBPdmVybGF5Jyk7CiAgICBpZiAob3ZlcmxheSkgb3ZlcmxheS5jbGFzc0xpc3QuYWRkKCdzaG93Jyk7CiAgfSk7Cn0KCi8qIOWFs+mXreW8ueeqlyAqLwpmdW5jdGlvbiBjYWxDbG9zZVBvcHVwKGUpIHsKICBpZiAoZSAmJiBlLnRhcmdldCAmJiAhZS50YXJnZXQuY2xhc3NMaXN0LmNvbnRhaW5zKCdjYWwtcG9wdXAtb3ZlcmxheScpKSByZXR1cm47CiAgdmFyIG92ZXJsYXkgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnY2FsUG9wdXBPdmVybGF5Jyk7CiAgaWYgKG92ZXJsYXkpIHsKICAgIG92ZXJsYXkuY2xhc3NMaXN0LnJlbW92ZSgnc2hvdycpOwogICAgc2V0VGltZW91dChmdW5jdGlvbigpIHsgb3ZlcmxheS5yZW1vdmUoKTsgfSwgMjAwKTsKICB9Cn0K
+/* Extracted from app.js */
+var CALENDAR_EVENTS = [
+  // 第一学期 (2025年9月-2026年1月)
+  {title:'老生返校报到',date:'2025-09-01',endDate:'2025-09-02',category:'teaching',description:'在校生返校注册报到'},
+  {title:'新生报到',date:'2025-09-03',endDate:'2025-09-04',category:'teaching',description:'2025级新生入学报到'},
+  {title:'开学典礼',date:'2025-09-05',category:'activity',description:'2025-2026学年开学典礼'},
+  {title:'正式上课',date:'2025-09-08',category:'teaching',description:'第一学期正式开始上课'},
+  {title:'教师节',date:'2025-09-10',category:'holiday',description:'教师节'},
+  {title:'社团招新',date:'2025-09-15',endDate:'2025-09-30',category:'activity',description:'各学生社团纳新活动'},
+  {title:'国庆节放假',date:'2025-10-01',endDate:'2025-10-07',category:'holiday',description:'国庆节假期'},
+  {title:'调休补课',date:'2025-10-08',category:'teaching',description:'调休补周三的课',isAdjusted:true,adjustmentNote:'补9月28日（周日）的课'},
+  {title:'校运动会',date:'2025-10-18',endDate:'2025-10-19',category:'activity',description:'校秋季田径运动会'},
+  {title:'期中考试',date:'2025-11-01',endDate:'2025-11-15',category:'teaching',description:'第一学期期中考试'},
+  {title:'元旦晚会',date:'2025-12-28',category:'activity',description:'跨年元旦晚会'},
+  {title:'元旦放假',date:'2026-01-01',category:'holiday',description:'元旦假期'},
+  {title:'期末考试',date:'2026-01-05',endDate:'2026-01-16',category:'teaching',description:'第一学期期末考试'},
+  {title:'放寒假',date:'2026-01-17',category:'teaching',description:'寒假开始'},
+  // 第二学期 (2026年2月-7月)
+  {title:'学生返校报到',date:'2026-02-21',endDate:'2026-02-22',category:'teaching',description:'在校生返校注册报到'},
+  {title:'正式上课',date:'2026-02-23',category:'teaching',description:'第二学期正式开始上课'},
+  {title:'妇女节',date:'2026-03-08',category:'holiday',description:'国际妇女节'},
+  {title:'植树节',date:'2026-03-12',category:'activity',description:'义务植树活动'},
+  {title:'清明节放假',date:'2026-04-04',endDate:'2026-04-06',category:'holiday',description:'清明节假期'},
+  {title:'科技文化节',date:'2026-04-13',endDate:'2026-04-18',category:'activity',description:'校园科技文化节'},
+  {title:'期中考试',date:'2026-04-20',endDate:'2026-04-30',category:'teaching',description:'第二学期期中考试'},
+  {title:'劳动节放假',date:'2026-05-01',endDate:'2026-05-05',category:'holiday',description:'劳动节假期'},
+  {title:'端午节放假',date:'2026-05-31',endDate:'2026-06-02',category:'holiday',description:'端午节假期'},
+  {title:'四六级考试',date:'2026-06-13',category:'competition',description:'全国大学英语四六级考试'},
+  {title:'期末考试',date:'2026-06-22',endDate:'2026-07-04',category:'teaching',description:'第二学期期末考试'},
+  {title:'放暑假',date:'2026-07-06',category:'teaching',description:'暑假开始'}
+];
+
+/* 事件类别配置 */
+var CAL_CATEGORIES = {
+  teaching:    {label:'教学安排', color:'#16a34a', icon:svgIcon('check-circle',16)},
+  holiday:     {label:'节假日',   color:'#dc2626', icon:svgIcon('alert',16)},
+  activity:    {label:'校园活动', color:'#2563eb', icon:svgIcon('bell',16)},
+  competition: {label:'竞赛相关', color:'#d97706', icon:svgIcon('calendar',16)}
+};
+
+/* 日历状态 */
+var calState = {
+  semester: 1,       // 1=第一学期, 2=第二学期
+  year: 2025,
+  month: 9,          // 当前显示月份
+  viewMode: 'calendar', // 'calendar' 或 'list'
+  filterCategory: null  // null=全部, 或 'teaching'/'holiday'/'activity'/'competition'
+};
+
+/* 星期名称 */
+var CAL_WEEKDAYS = ['日','一','二','三','四','五','六'];
+
+/* 判断日期字符串是否在事件范围内 */
+function calDateInRange(dateStr, event) {
+  var d = dateStr;
+  var s = event.date;
+  var e = event.endDate || event.date;
+  return d >= s && d <= e;
+}
+
+/* 获取某天的事件列表 */
+function calGetEventsForDate(dateStr) {
+  var filtered = CALENDAR_EVENTS.filter(function(ev) {
+    if (calState.filterCategory && ev.category !== calState.filterCategory) return false;
+    return calDateInRange(dateStr, ev);
+  });
+  return filtered;
+}
+
+/* 获取某天的事件类别（用于显示彩色点） */
+function calGetCategoriesForDate(dateStr) {
+  var cats = {};
+  CALENDAR_EVENTS.forEach(function(ev) {
+    if (calState.filterCategory && ev.category !== calState.filterCategory) return;
+    if (calDateInRange(dateStr, ev)) {
+      cats[ev.category] = true;
+    }
+  });
+  return Object.keys(cats);
+}
+
+/* 格式化日期为 YYYY-MM-DD */
+function calFormatDate(y, m, d) {
+  return y + '-' + (m < 10 ? '0' + m : m) + '-' + (d < 10 ? '0' + d : d);
+}
+
+/* 获取月份天数 */
+function calDaysInMonth(y, m) {
+  return new Date(y, m, 0).getDate();
+}
+
+/* 获取月份第一天是星期几 (0=日) */
+function calFirstDayOfMonth(y, m) {
+  return new Date(y, m - 1, 1).getDay();
+}
+
+/* 中文星期 */
+function calChineseWeekday(dateStr) {
+  var d = new Date(dateStr);
+  return '周' + CAL_WEEKDAYS[d.getDay()];
+}
+
+/* 渲染日历主函数 */
+function renderCalendar() {
+  var container = document.getElementById('academicContent');
+  if (!container) return;
+
+  // 根据当前学期确定默认月份
+  if (calState.semester === 1) {
+    // 第一学期: 2025年9月 - 2026年1月
+    if (calState.year !== 2025 || (calState.month < 9 && calState.year === 2025) || (calState.month > 1 && calState.year === 2026)) {
+      calState.year = 2025;
+      calState.month = 9;
+    }
+  } else {
+    // 第二学期: 2026年2月 - 2026年7月
+    if (calState.year !== 2026 || calState.month < 2 || calState.month > 7) {
+      calState.year = 2026;
+      calState.month = 2;
+    }
+  }
+
+  var html = '<div class="cal-container">';
+
+  // 头部：标题 + 学期切换
+  html += '<div class="cal-header">';
+  html += '<div class="cal-title">2025-2026学年</div>';
+  html += '<div class="cal-semester-tabs">';
+  html += '<button class="cal-semester-tab' + (calState.semester === 1 ? ' active' : '') + '" onclick="calSwitchSemester(1)">第一学期</button>';
+  html += '<button class="cal-semester-tab' + (calState.semester === 2 ? ' active' : '') + '" onclick="calSwitchSemester(2)">第二学期</button>';
+  html += '</div>';
+  html += '</div>';
+
+  // 视图切换按钮
+  html += '<div class="cal-view-toggle">';
+  html += '<button class="cal-view-btn' + (calState.viewMode === 'calendar' ? ' active' : '') + '" onclick="calSwitchView(\'calendar\')">日历视图</button>';
+  html += '<button class="cal-view-btn' + (calState.viewMode === 'list' ? ' active' : '') + '" onclick="calSwitchView(\'list\')">列表视图</button>';
+  html += '</div>';
+
+  // 月份导航
+  html += '<div class="cal-month-nav" style="margin-bottom:12px">';
+  html += '<button class="cal-month-btn" onclick="calPrevMonth()">&#8249;</button>';
+  html += '<span class="cal-month-label">' + calState.year + '年' + calState.month + '月</span>';
+  html += '<button class="cal-month-btn" onclick="calNextMonth()">&#8250;</button>';
+  html += '</div>';
+
+  // 日历网格或列表视图
+  if (calState.viewMode === 'calendar') {
+    html += renderCalGrid();
+  } else {
+    html += renderCalListView();
+  }
+
+  // 图例
+  html += renderCalLegend();
+
+  // 近期事项
+  html += renderCalUpcoming();
+
+  html += '</div>';
+
+  container.innerHTML = html;
+
+  // 淡入动画
+  var wrapper = container.querySelector('.cal-grid-wrapper');
+  if (wrapper) {
+    wrapper.classList.add('cal-fade-enter');
+    requestAnimationFrame(function() {
+      wrapper.classList.add('cal-fade-active');
+    });
+  }
+}
+
+/* 渲染日历网格 */
+function renderCalGrid() {
+  var y = calState.year, m = calState.month;
+  var daysInMonth = calDaysInMonth(y, m);
+  var firstDay = calFirstDayOfMonth(y, m);
+  var today = new Date();
+  var todayStr = calFormatDate(today.getFullYear(), today.getMonth() + 1, today.getDate());
+
+  var html = '<div class="cal-grid-wrapper"><div class="cal-grid">';
+
+  // 星期标题行
+  CAL_WEEKDAYS.forEach(function(wd) {
+    html += '<div class="cal-weekday">' + wd + '</div>';
+  });
+
+  // 上月补齐
+  var prevMonth = m === 1 ? 12 : m - 1;
+  var prevYear = m === 1 ? y - 1 : y;
+  var prevDays = calDaysInMonth(prevYear, prevMonth);
+  for (var i = firstDay - 1; i >= 0; i--) {
+    var pd = prevDays - i;
+    var pDateStr = calFormatDate(prevYear, prevMonth, pd);
+    var pCats = calGetCategoriesForDate(pDateStr);
+    html += '<div class="cal-cell other-month' + (pCats.length ? ' has-events' : '') + '" onclick="calCellClick(\'' + pDateStr + '\')">';
+    html += '<span class="cal-date">' + pd + '</span>';
+    if (pCats.length) {
+      html += '<div class="cal-dots">';
+      pCats.forEach(function(c) { html += '<span class="cal-dot" style="background:' + CAL_CATEGORIES[c].color + '"></span>'; });
+      html += '</div>';
+    }
+    html += '</div>';
+  }
+
+  // 当月日期
+  for (var d = 1; d <= daysInMonth; d++) {
+    var dateStr = calFormatDate(y, m, d);
+    var cats = calGetCategoriesForDate(dateStr);
+    var isToday = dateStr === todayStr;
+    html += '<div class="cal-cell' + (isToday ? ' today' : '') + (cats.length ? ' has-events' : '') + '" onclick="calCellClick(\'' + dateStr + '\')">';
+    html += '<span class="cal-date">' + d + '</span>';
+    if (cats.length) {
+      html += '<div class="cal-dots">';
+      cats.forEach(function(c) { html += '<span class="cal-dot" style="background:' + CAL_CATEGORIES[c].color + '"></span>'; });
+      html += '</div>';
+    }
+    html += '</div>';
+  }
+
+  // 下月补齐
+  var totalCells = firstDay + daysInMonth;
+  var remaining = (7 - totalCells % 7) % 7;
+  var nextMonth = m === 12 ? 1 : m + 1;
+  var nextYear = m === 12 ? y + 1 : y;
+  for (var j = 1; j <= remaining; j++) {
+    var nDateStr = calFormatDate(nextYear, nextMonth, j);
+    var nCats = calGetCategoriesForDate(nDateStr);
+    html += '<div class="cal-cell other-month' + (nCats.length ? ' has-events' : '') + '" onclick="calCellClick(\'' + nDateStr + '\')">';
+    html += '<span class="cal-date">' + j + '</span>';
+    if (nCats.length) {
+      html += '<div class="cal-dots">';
+      nCats.forEach(function(c) { html += '<span class="cal-dot" style="background:' + CAL_CATEGORIES[c].color + '"></span>'; });
+      html += '</div>';
+    }
+    html += '</div>';
+  }
+
+  html += '</div></div>';
+  return html;
+}
+
+/* 渲染列表视图 */
+function renderCalListView() {
+  var y = calState.year, m = calState.month;
+  var daysInMonth = calDaysInMonth(y, m);
+  var html = '<div class="cal-event-list">';
+
+  var hasEvents = false;
+  for (var d = 1; d <= daysInMonth; d++) {
+    var dateStr = calFormatDate(y, m, d);
+    var events = calGetEventsForDate(dateStr);
+    if (events.length === 0) continue;
+    hasEvents = true;
+
+    events.forEach(function(ev) {
+      var cat = CAL_CATEGORIES[ev.category] || CAL_CATEGORIES.teaching;
+      var dateObj = new Date(dateStr);
+      html += '<div class="cal-event-list-item">';
+      html += '<div class="cal-event-list-date">';
+      html += '<div class="cal-event-list-day">' + dateObj.getDate() + '</div>';
+      html += '<div class="cal-event-list-month">' + (dateObj.getMonth() + 1) + '月</div>';
+      html += '</div>';
+      html += '<div class="cal-event-list-info">';
+      html += '<div class="cal-event-list-title">' + esc(ev.title) + '</div>';
+      html += '<div class="cal-event-list-desc">' + esc(ev.description) + '</div>';
+      html += '<span class="cal-event-list-category" style="background:' + cat.color + '18;color:' + cat.color + '">' + cat.label + '</span>';
+      html += '</div></div>';
+    });
+  }
+
+  if (!hasEvents) {
+    html += '<div class="cal-upcoming-empty">本月暂无安排</div>';
+  }
+
+  html += '</div>';
+  return html;
+}
+
+/* 渲染图例 */
+function renderCalLegend() {
+  var html = '<div class="cal-legend">';
+  Object.keys(CAL_CATEGORIES).forEach(function(key) {
+    var cat = CAL_CATEGORIES[key];
+    var isActive = !calState.filterCategory || calState.filterCategory === key;
+    var isFiltered = calState.filterCategory && calState.filterCategory !== key;
+    html += '<div class="cal-legend-item' + (calState.filterCategory === key ? ' active' : '') + (isFiltered ? ' inactive' : '') + '" onclick="calToggleFilter(\'' + key + '\')">';
+    html += '<span class="cal-legend-dot" style="background:' + cat.color + '"></span>';
+    html += '<span>' + cat.icon + ' ' + cat.label + '</span>';
+    html += '</div>';
+  });
+  html += '</div>';
+  return html;
+}
+
+/* 渲染近期事项（未来7天） */
+function renderCalUpcoming() {
+  var today = new Date();
+  today.setHours(0, 0, 0, 0);
+  var upcoming = [];
+
+  for (var i = 0; i <= 7; i++) {
+    var d = new Date(today);
+    d.setDate(d.getDate() + i);
+    var dateStr = calFormatDate(d.getFullYear(), d.getMonth() + 1, d.getDate());
+    var events = calGetEventsForDate(dateStr);
+    events.forEach(function(ev) {
+      upcoming.push({event: ev, date: dateStr, dateObj: d});
+    });
+  }
+
+  var html = '<div class="cal-upcoming">';
+  html += '<div class="cal-upcoming-title">'+svgIcon('calendar',18)+' 近期事项</div>';
+
+  if (upcoming.length === 0) {
+    html += '<div class="cal-upcoming-empty">未来7天暂无安排</div>';
+  } else {
+    upcoming.forEach(function(item) {
+      var cat = CAL_CATEGORIES[item.event.category] || CAL_CATEGORIES.teaching;
+      var dateLabel = (item.dateObj.getMonth() + 1) + '月' + item.dateObj.getDate() + '日 ' + calChineseWeekday(item.date);
+      html += '<div class="cal-upcoming-item">';
+      html += '<span class="cal-upcoming-dot" style="background:' + cat.color + '"></span>';
+      html += '<div class="cal-upcoming-info">';
+      html += '<div class="cal-upcoming-title-text">' + esc(item.event.title) + '</div>';
+      html += '<div class="cal-upcoming-date-text">' + dateLabel + ' - ' + esc(item.event.description) + '</div>';
+      html += '</div></div>';
+    });
+  }
+
+  html += '</div>';
+  return html;
+}
+
+/* 切换学期 */
+function calSwitchSemester(sem) {
+  calState.semester = sem;
+  if (sem === 1) {
+    calState.year = 2025;
+    calState.month = 9;
+  } else {
+    calState.year = 2026;
+    calState.month = 2;
+  }
+  renderCalendar();
+}
+
+/* 上一月 */
+function calPrevMonth() {
+  calState.month--;
+  if (calState.month < 1) {
+    calState.month = 12;
+    calState.year--;
+  }
+  renderCalendar();
+}
+
+/* 下一月 */
+function calNextMonth() {
+  calState.month++;
+  if (calState.month > 12) {
+    calState.month = 1;
+    calState.year++;
+  }
+  renderCalendar();
+}
+
+/* 切换视图模式 */
+function calSwitchView(mode) {
+  calState.viewMode = mode;
+  renderCalendar();
+}
+
+/* 切换类别筛选 */
+function calToggleFilter(category) {
+  if (calState.filterCategory === category) {
+    calState.filterCategory = null; // 取消筛选
+  } else {
+    calState.filterCategory = category;
+  }
+  renderCalendar();
+}
+
+/* 点击日期单元格 - 显示事件详情弹窗 */
+function calCellClick(dateStr) {
+  var events = calGetEventsForDate(dateStr);
+  if (events.length === 0) return;
+
+  var dateObj = new Date(dateStr);
+  var dateLabel = (dateObj.getMonth() + 1) + '月' + dateObj.getDate() + '日 ' + calChineseWeekday(dateStr);
+
+  var html = '<div class="cal-popup-overlay" id="calPopupOverlay" onclick="calClosePopup(event)">';
+  html += '<div class="cal-popup">';
+  html += '<button class="cal-popup-close" onclick="calClosePopup()">&times;</button>';
+  html += '<div class="cal-popup-date">' + dateLabel + '</div>';
+
+  events.forEach(function(ev) {
+    var cat = CAL_CATEGORIES[ev.category] || CAL_CATEGORIES.teaching;
+    html += '<div class="cal-popup-event">';
+    html += '<span class="cal-popup-event-dot" style="background:' + cat.color + '"></span>';
+    html += '<div>';
+    html += '<div class="cal-popup-event-title">' + esc(ev.title) + '</div>';
+    html += '<div class="cal-popup-event-desc">' + esc(ev.description) + '</div>';
+    if (ev.endDate && ev.endDate !== ev.date) {
+      html += '<div class="cal-popup-event-desc">' + ev.date + ' ~ ' + ev.endDate + '</div>';
+    }
+    if (ev.isAdjusted && ev.adjustmentNote) {
+      html += '<div class="cal-popup-event-desc" style="color:var(--accent)">' + esc(ev.adjustmentNote) + '</div>';
+    }
+    if (ev.category === 'competition') {
+      html += '<button class="cal-popup-event-btn" onclick="calClosePopup();navigate(\'competition\')">查看竞赛</button>';
+    }
+    html += '</div></div>';
+  });
+
+  html += '</div></div>';
+
+  // 移除旧弹窗
+  var old = document.getElementById('calPopupOverlay');
+  if (old) old.remove();
+
+  // 插入弹窗
+  document.body.insertAdjacentHTML('beforeend', html);
+
+  // 触发动画
+  requestAnimationFrame(function() {
+    var overlay = document.getElementById('calPopupOverlay');
+    if (overlay) overlay.classList.add('show');
+  });
+}
+
+/* 关闭弹窗 */
+function calClosePopup(e) {
+  if (e && e.target && !e.target.classList.contains('cal-popup-overlay')) return;
+  var overlay = document.getElementById('calPopupOverlay');
+  if (overlay) {
+    overlay.classList.remove('show');
+    setTimeout(function() { overlay.remove(); }, 200);
+  }
+}

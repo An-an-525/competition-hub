@@ -1,1 +1,93 @@
-LyogRXh0cmFjdGVkIGZyb20gYXBwLmpzICovCi8qID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CiAgIENsYXVkZSBBZXN0aGV0aWM6IExlbmlzIFNtb290aCBTY3JvbGwgKERJU0FCTEVEIGZvciBwZXJmb3JtYW5jZSkKICAgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0gKi8KZnVuY3Rpb24gaW5pdExlbmlzU21vb3RoU2Nyb2xsKCkgeyByZXR1cm47IH0KLyogPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KICAgQ2xhdWRlIEFlc3RoZXRpYzogU2Nyb2xsIFByb2dyZXNzIEJhciAobmF0aXZlIHNjcm9sbCkKICAgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0gKi8KZnVuY3Rpb24gaW5pdFNjcm9sbFByb2dyZXNzKCkgewogIHZhciBiYXIgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnc2Nyb2xsUHJvZ3Jlc3MnKTsKICBpZiAoIWJhcikgcmV0dXJuOwogIHdpbmRvdy5hZGRFdmVudExpc3RlbmVyKCdzY3JvbGwnLCBmdW5jdGlvbigpIHsKICAgIHZhciBzY3JvbGxUb3AgPSB3aW5kb3cuc2Nyb2xsWTsKICAgIHZhciBkb2NIZWlnaHQgPSBkb2N1bWVudC5kb2N1bWVudEVsZW1lbnQuc2Nyb2xsSGVpZ2h0IC0gd2luZG93LmlubmVySGVpZ2h0OwogICAgdmFyIHByb2dyZXNzID0gZG9jSGVpZ2h0ID4gMCA/IChzY3JvbGxUb3AgLyBkb2NIZWlnaHQpICogMTAwIDogMDsKICAgIGJhci5zdHlsZS53aWR0aCA9IHByb2dyZXNzICsgJyUnOwogIH0sIHsgcGFzc2l2ZTogdHJ1ZSB9KTsKfQovKiA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQogICBDbGF1ZGUgQWVzdGhldGljOiBHU0FQIEFuaW1hdGlvbnMgKFNJTVBMSUZJRUQgZm9yIHBlcmZvcm1hbmNlKQogICA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSAqLwpmdW5jdGlvbiBpbml0R1NBUEFuaW1hdGlvbnMoKSB7CiAgLy8gQ2xhdWRlIOmjjuagvO+8muS4jeS9v+eUqOWFpeWcuuWKqOeUuwogIGlmICh0eXBlb2YgZ3NhcCA9PT0gJ3VuZGVmaW5lZCcpIHJldHVybjsKICByZXR1cm47CiAgdHJ5IHsKICAgIGlmICh0eXBlb2YgZ3NhcCA9PT0gJ3VuZGVmaW5lZCcpIHJldHVybjsKCiAgICAvLyBTZXQgaW5pdGlhbCBzdGF0ZXMKICAgIGdzYXAuc2V0KCcudG9wLW5hdicsIHsgeTogLTEwMCwgb3BhY2l0eTogMCB9KTsKICAgIGdzYXAuc2V0KCcuaGVyby10aXRsZScsIHsgeTogNjAsIG9wYWNpdHk6IDAgfSk7CiAgICBnc2FwLnNldCgnLmhlcm8tc3VidGl0bGUnLCB7IHk6IDMwLCBvcGFjaXR5OiAwIH0pOwogICAgZ3NhcC5zZXQoJy5ob21lLXNlYXJjaCcsIHsgeTogMzAsIG9wYWNpdHk6IDAgfSk7CiAgICBnc2FwLnNldCgnLmRhaWx5LXF1b3RlJywgeyB5OiAzMCwgb3BhY2l0eTogMCB9KTsKICAgIGdzYXAuc2V0KCcuZmVhdHVyZWQtcm93IC5mZWF0dXJlZC1pdGVtJywgeyB5OiA0MCwgb3BhY2l0eTogMCB9KTsKICAgIGdzYXAuc2V0KCcuc2VydmljZS1saXN0IC5zZXJ2aWNlLWl0ZW0nLCB7IHk6IDMwLCBvcGFjaXR5OiAwIH0pOwoKICAgIC8vIE5hdiBzbGlkZXMgZG93bgogICAgZ3NhcC50bygnLnRvcC1uYXYnLCB7IHk6IDAsIG9wYWNpdHk6IDEsIGR1cmF0aW9uOiAwLjgsIGVhc2U6ICdwb3dlcjMub3V0JyB9KTsKCiAgICAvLyBIZXJvIHRpdGxlIC0gc3BsaXQgdGV4dCBlZmZlY3QKICAgIHZhciBoZXJvVGl0bGUgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yKCcuaGVyby10aXRsZScpOwogICAgaWYgKGhlcm9UaXRsZSkgewogICAgICB2YXIgdGV4dCA9IGhlcm9UaXRsZS50ZXh0Q29udGVudDsKICAgICAgaGVyb1RpdGxlLmlubmVySFRNTCA9ICcnOwogICAgICB0ZXh0LnNwbGl0KCcnKS5mb3JFYWNoKGZ1bmN0aW9uKGNoYXIpIHsKICAgICAgICB2YXIgc3BhbiA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ3NwYW4nKTsKICAgICAgICBzcGFuLmNsYXNzTmFtZSA9ICdjaGFyJzsKICAgICAgICBzcGFuLnRleHRDb250ZW50ID0gY2hhciA9PT0gJyAnID8gJ1x1MDBBMCcgOiBjaGFyOwogICAgICAgIGhlcm9UaXRsZS5hcHBlbmRDaGlsZChzcGFuKTsKICAgICAgfSk7CiAgICAgIGdzYXAuZnJvbSgnLmhlcm8tdGl0bGUgLmNoYXInLCB7IHk6IDMwLCBvcGFjaXR5OiAwLCBkdXJhdGlvbjogMC41LCBzdGFnZ2VyOiAwLjAyLCBlYXNlOiAncG93ZXIzLm91dCcsIGRlbGF5OiAwLjIgfSk7CiAgICB9CgogICAgLy8gU3VidGl0bGUKICAgIGdzYXAudG8oJy5oZXJvLXN1YnRpdGxlJywgeyB5OiAwLCBvcGFjaXR5OiAxLCBkdXJhdGlvbjogMC44LCBkZWxheTogMC41LCBlYXNlOiAncG93ZXIzLm91dCcgfSk7CgogICAgLy8gSG9tZSBzZWFyY2gKICAgIGdzYXAudG8oJy5ob21lLXNlYXJjaCcsIHsgeTogMCwgb3BhY2l0eTogMSwgZHVyYXRpb246IDAuOCwgZGVsYXk6IDAuNiwgZWFzZTogJ3Bvd2VyMy5vdXQnIH0pOwoKICAgIC8vIEZlYXR1cmVkIHJvdwogICAgZ3NhcC50bygnLmZlYXR1cmVkLXJvdyAuZmVhdHVyZWQtaXRlbScsIHsgeTogMCwgb3BhY2l0eTogMSwgZHVyYXRpb246IDAuOCwgc3RhZ2dlcjogMC4xLCBkZWxheTogMC43LCBlYXNlOiAncG93ZXIzLm91dCcgfSk7CgogICAgLy8gU2VydmljZSBsaXN0IGl0ZW1zCiAgICBnc2FwLnRvKCcuc2VydmljZS1saXN0IC5zZXJ2aWNlLWl0ZW0nLCB7IHk6IDAsIG9wYWNpdHk6IDEsIGR1cmF0aW9uOiAwLjYsIHN0YWdnZXI6IDAuMDUsIGRlbGF5OiAwLjksIGVhc2U6ICdwb3dlcjMub3V0JyB9KTsKCiAgICAvLyBEYWlseSBxdW90ZQogICAgZ3NhcC50bygnLmRhaWx5LXF1b3RlJywgeyB5OiAwLCBvcGFjaXR5OiAxLCBkdXJhdGlvbjogMC44LCBkZWxheTogMC44LCBlYXNlOiAncG93ZXIzLm91dCcgfSk7CgogIH0gY2F0Y2goZSkgeyBjb25zb2xlLndhcm4oJ0dTQVAgaW5pdCBmYWlsZWQ6JywgZSk7IH0KfQovKiA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQogICBMaWdodHdlaWdodCBSZXZlYWwgQW5pbWF0aW9ucyAoSW50ZXJzZWN0aW9uT2JzZXJ2ZXIpCiAgID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09ICovCmZ1bmN0aW9uIGluaXRSZXZlYWxBbmltYXRpb25zKCkgewogIHZhciBvYnNlcnZlciA9IG5ldyBJbnRlcnNlY3Rpb25PYnNlcnZlcihmdW5jdGlvbihlbnRyaWVzKSB7CiAgICBlbnRyaWVzLmZvckVhY2goZnVuY3Rpb24oZW50cnkpIHsKICAgICAgaWYgKGVudHJ5LmlzSW50ZXJzZWN0aW5nKSB7CiAgICAgICAgZW50cnkudGFyZ2V0LmNsYXNzTGlzdC5hZGQoJ3Zpc2libGUnKTsKICAgICAgICBvYnNlcnZlci51bm9ic2VydmUoZW50cnkudGFyZ2V0KTsKICAgICAgfQogICAgfSk7CiAgfSwgeyB0aHJlc2hvbGQ6IDAuMSB9KTsKICBkb2N1bWVudC5xdWVyeVNlbGVjdG9yQWxsKCcucmV2ZWFsJykuZm9yRWFjaChmdW5jdGlvbihlbCkgeyBvYnNlcnZlci5vYnNlcnZlKGVsKTsgfSk7Cn0KLyogPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KICAgQ2xhdWRlIEFlc3RoZXRpYzogQ3VzdG9tIEN1cnNvciAoRElTQUJMRUQgZm9yIHBlcmZvcm1hbmNlKQogICA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PSAqLwpmdW5jdGlvbiBpbml0Q3VzdG9tQ3Vyc29yKCkgeyByZXR1cm47IH0KLyogPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KICAgQ2xhdWRlIEFlc3RoZXRpYzogTW91c2UgU3BvdGxpZ2h0IChESVNBQkxFRCBmb3IgcGVyZm9ybWFuY2UpCiAgID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09ICovCmZ1bmN0aW9uIGluaXRNb3VzZVNwb3RsaWdodCgpIHsgcmV0dXJuOyB9Cg==
+/* Extracted from app.js */
+/* ============================================
+   Claude Aesthetic: Lenis Smooth Scroll (DISABLED for performance)
+   ============================================ */
+function initLenisSmoothScroll() { return; }
+/* ============================================
+   Claude Aesthetic: Scroll Progress Bar (native scroll)
+   ============================================ */
+function initScrollProgress() {
+  var bar = document.getElementById('scrollProgress');
+  if (!bar) return;
+  window.addEventListener('scroll', function() {
+    var scrollTop = window.scrollY;
+    var docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    var progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    bar.style.width = progress + '%';
+  }, { passive: true });
+}
+/* ============================================
+   Claude Aesthetic: GSAP Animations (SIMPLIFIED for performance)
+   ============================================ */
+function initGSAPAnimations() {
+  // Claude 风格：不使用入场动画
+  if (typeof gsap === 'undefined') return;
+  return;
+  try {
+    if (typeof gsap === 'undefined') return;
+
+    // Set initial states
+    gsap.set('.top-nav', { y: -100, opacity: 0 });
+    gsap.set('.hero-title', { y: 60, opacity: 0 });
+    gsap.set('.hero-subtitle', { y: 30, opacity: 0 });
+    gsap.set('.home-search', { y: 30, opacity: 0 });
+    gsap.set('.daily-quote', { y: 30, opacity: 0 });
+    gsap.set('.featured-row .featured-item', { y: 40, opacity: 0 });
+    gsap.set('.service-list .service-item', { y: 30, opacity: 0 });
+
+    // Nav slides down
+    gsap.to('.top-nav', { y: 0, opacity: 1, duration: 0.8, ease: 'power3.out' });
+
+    // Hero title - split text effect
+    var heroTitle = document.querySelector('.hero-title');
+    if (heroTitle) {
+      var text = heroTitle.textContent;
+      heroTitle.innerHTML = '';
+      text.split('').forEach(function(char) {
+        var span = document.createElement('span');
+        span.className = 'char';
+        span.textContent = char === ' ' ? '\u00A0' : char;
+        heroTitle.appendChild(span);
+      });
+      gsap.from('.hero-title .char', { y: 30, opacity: 0, duration: 0.5, stagger: 0.02, ease: 'power3.out', delay: 0.2 });
+    }
+
+    // Subtitle
+    gsap.to('.hero-subtitle', { y: 0, opacity: 1, duration: 0.8, delay: 0.5, ease: 'power3.out' });
+
+    // Home search
+    gsap.to('.home-search', { y: 0, opacity: 1, duration: 0.8, delay: 0.6, ease: 'power3.out' });
+
+    // Featured row
+    gsap.to('.featured-row .featured-item', { y: 0, opacity: 1, duration: 0.8, stagger: 0.1, delay: 0.7, ease: 'power3.out' });
+
+    // Service list items
+    gsap.to('.service-list .service-item', { y: 0, opacity: 1, duration: 0.6, stagger: 0.05, delay: 0.9, ease: 'power3.out' });
+
+    // Daily quote
+    gsap.to('.daily-quote', { y: 0, opacity: 1, duration: 0.8, delay: 0.8, ease: 'power3.out' });
+
+  } catch(e) { console.warn('GSAP init failed:', e); }
+}
+/* ============================================
+   Lightweight Reveal Animations (IntersectionObserver)
+   ============================================ */
+function initRevealAnimations() {
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(function(el) { observer.observe(el); });
+}
+/* ============================================
+   Claude Aesthetic: Custom Cursor (DISABLED for performance)
+   ============================================ */
+function initCustomCursor() { return; }
+/* ============================================
+   Claude Aesthetic: Mouse Spotlight (DISABLED for performance)
+   ============================================ */
+function initMouseSpotlight() { return; }

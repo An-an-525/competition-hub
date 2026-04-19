@@ -1,1 +1,83 @@
-LyogRXh0cmFjdGVkIGZyb20gYXBwLmpzICovCmFzeW5jIGZ1bmN0aW9uIHJlbmRlckFkbWluKCl7CiAgdmFyIGNvbnRhaW5lcj1kb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnYWRtaW5Db250ZW50Jyk7CiAgaWYoIWlzQWRtaW4oKSl7Y29udGFpbmVyLmlubmVySFRNTD0nPGRpdiBjbGFzcz0ibG9naW4tcmVxdWlyZWQiPjxoMz7ml6DmnYPpmZA8L2gzPjxwPuS7heeuoeeQhuWRmOWPr+iuv+mXruatpOmhtemdojwvcD48YnV0dG9uIGNsYXNzPSJidG4tcHJpbWFyeSIgb25jbGljaz0ibmF2aWdhdGUoXCdob21lXCcpIj7ov5Tlm57pppbpobU8L2J1dHRvbj48L2Rpdj4nO3JldHVybn0KICBjb250YWluZXIuaW5uZXJIVE1MPSc8ZGl2IGNsYXNzPSJsb2FkaW5nLW92ZXJsYXkiPjxkaXYgY2xhc3M9ImxvYWRpbmctc3Bpbm5lciIgc3R5bGU9IndpZHRoOjMycHg7aGVpZ2h0OjMycHgiPjwvZGl2PjxwIHN0eWxlPSJtYXJnaW4tdG9wOjEycHgiPuWKoOi9veeuoeeQhuaVsOaNri4uLjwvcD48L2Rpdj4nOwogIHRyeXsKICAgIHZhciByZWdzUmVzPWF3YWl0IGZldGNoKEhVQl9VUkwrJy9yZXN0L3YxL3JlZ2lzdHJhdGlvbnM/c2VsZWN0PSoscHJvZmlsZXMhcmVnaXN0cmF0aW9uc191c2VyX2lkX2ZrZXkobmFtZSxzdHVkZW50X2lkLGNvbGxlZ2UpLGNvbXBldGl0aW9ucyhuYW1lLGxldmVsLGNhdGVnb3J5KSZvcmRlcj1jcmVhdGVkX2F0LmRlc2MnLHtoZWFkZXJzOkhVQl9IRUFERVJTfSk7CiAgICB2YXIgY29tcHNSZXM9YXdhaXQgZmV0Y2goSFVCX1VSTCsnL3Jlc3QvdjEvY29tcGV0aXRpb25zP3NlbGVjdD1pZCxuYW1lJyx7aGVhZGVyczpIVUJfSEVBREVSU30pOwogICAgaWYoIXJlZ3NSZXMub2t8fCFjb21wc1Jlcy5vayl7Y29udGFpbmVyLmlubmVySFRNTD0nPGRpdiBjbGFzcz0iZW1wdHktc3RhdGUiPjxwPuWKoOi9veWksei0pTwvcD48L2Rpdj4nO3JldHVybn0KICAgIHZhciByZWdzPWF3YWl0IHJlZ3NSZXMuanNvbigpOwogICAgdmFyIGNvbXBzPWF3YWl0IGNvbXBzUmVzLmpzb24oKTsKICAgIHZhciB0b3RhbD1yZWdzLmxlbmd0aDsKICAgIHZhciBwZW5kaW5nPXJlZ3MuZmlsdGVyKGZ1bmN0aW9uKHIpe3JldHVybiByLnN0YXR1cz09PSdwZW5kaW5nJ30pLmxlbmd0aDsKICAgIHZhciBhcHByb3ZlZD1yZWdzLmZpbHRlcihmdW5jdGlvbihyKXtyZXR1cm4gci5zdGF0dXM9PT0nYXBwcm92ZWQnfSkubGVuZ3RoOwogICAgdmFyIGNvbGxlZ2VzPXt9O3JlZ3MuZm9yRWFjaChmdW5jdGlvbihyKXt2YXIgYz1yLnByb2ZpbGVzP3IucHJvZmlsZXMuY29sbGVnZTon5pyq55+lJztjb2xsZWdlc1tjXT0oY29sbGVnZXNbY118fDApKzF9KTsKICAgIHZhciBodG1sPSc8ZGl2IHN0eWxlPSJtYXgtd2lkdGg6ODAwcHg7bWFyZ2luOjAgYXV0byI+PGgyIGNsYXNzPSJjb250ZW50LXBhZ2UtdGl0bGUiPjxzcGFuIGNsYXNzPSJnb2xkIj7nrqHnkIbpnaLmnb88L3NwYW4+PC9oMj4nOwogICAgaHRtbCs9JzxkaXYgY2xhc3M9ImFkbWluLXN0YXQtZ3JpZCI+PGRpdiBjbGFzcz0iYWRtaW4tc3RhdC1jYXJkIj48ZGl2IGNsYXNzPSJhZG1pbi1zdGF0LXZhbHVlIj4nK3RvdGFsKyc8L2Rpdj48ZGl2IGNsYXNzPSJhZG1pbi1zdGF0LWxhYmVsIj7mgLvmiqXlkI3mlbA8L2Rpdj48L2Rpdj48ZGl2IGNsYXNzPSJhZG1pbi1zdGF0LWNhcmQiPjxkaXYgY2xhc3M9ImFkbWluLXN0YXQtdmFsdWUiIHN0eWxlPSJjb2xvcjojZjM5YzEyIj4nK3BlbmRpbmcrJzwvZGl2PjxkaXYgY2xhc3M9ImFkbWluLXN0YXQtbGFiZWwiPuW+heWuoeaguDwvZGl2PjwvZGl2PjxkaXYgY2xhc3M9ImFkbWluLXN0YXQtY2FyZCI+PGRpdiBjbGFzcz0iYWRtaW4tc3RhdC12YWx1ZSIgc3R5bGU9ImNvbG9yOiMyZWNjNzEiPicrYXBwcm92ZWQrJzwvZGl2PjxkaXYgY2xhc3M9ImFkbWluLXN0YXQtbGFiZWwiPuW3sumAmui/hzwvZGl2PjwvZGl2PjwvZGl2Pic7CiAgICBodG1sKz0nPGRpdiBjbGFzcz0iYWRtaW4tZmlsdGVyLWJhciI+PHNlbGVjdCBpZD0iYWRtaW5GaWx0ZXJDb21wIiBvbmNoYW5nZT0iYXBwbHlBZG1pbkZpbHRlcnMoKSI+PG9wdGlvbiB2YWx1ZT0iIj7lhajpg6jnq57otZs8L29wdGlvbj4nOwogICAgY29tcHMuZm9yRWFjaChmdW5jdGlvbihjKXtodG1sKz0nPG9wdGlvbiB2YWx1ZT0iJytjLmlkKyciPicrZXNjKGMubmFtZSkrJzwvb3B0aW9uPid9KTsKICAgIGh0bWwrPSc8L3NlbGVjdD48c2VsZWN0IGlkPSJhZG1pbkZpbHRlclN0YXR1cyIgb25jaGFuZ2U9ImFwcGx5QWRtaW5GaWx0ZXJzKCkiPjxvcHRpb24gdmFsdWU9IiI+5YWo6YOo54q25oCBPC9vcHRpb24+PG9wdGlvbiB2YWx1ZT0icGVuZGluZyI+5b6F5a6h5qC4PC9vcHRpb24+PG9wdGlvbiB2YWx1ZT0iYXBwcm92ZWQiPuW3sumAmui/hzwvb3B0aW9uPjxvcHRpb24gdmFsdWU9InJlamVjdGVkIj7lt7Lmi5Lnu508L29wdGlvbj48b3B0aW9uIHZhbHVlPSJjYW5jZWxsZWQiPuW3suWPlua2iDwvb3B0aW9uPjwvc2VsZWN0PjxpbnB1dCB0eXBlPSJ0ZXh0IiBpZD0iYWRtaW5TZWFyY2hJbnB1dCIgcGxhY2Vob2xkZXI9IuaQnOe0ouWtpuWPty/lp5PlkI0uLi4iIG9uaW5wdXQ9ImFwcGx5QWRtaW5GaWx0ZXJzKCkiIC8+PC9kaXY+JzsKICAgIGh0bWwrPSc8ZGl2IGlkPSJhZG1pblJlZ0xpc3QiPic7CiAgICBpZihyZWdzLmxlbmd0aD09PTApewogICAgICBodG1sKz0nPGRpdiBjbGFzcz0iZW1wdHktc3RhdGUiPjxkaXYgY2xhc3M9ImVtcHR5LXN0YXRlLWljb24iPjxzdmcgd2lkdGg9IjQwIiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iY3VycmVudENvbG9yIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNMTYgNGgyYTIgMiAwIDAgMSAyIDJ2MTRhMiAyIDAgMCAxLTIgMkg2YTIgMiAwIDAgMS0yLTJWNmEyIDIgMCAwIDEgMi0yaDIiLz48cmVjdCB4PSI4IiB5PSIyIiB3aWR0aD0iOCIgaGVpZ2h0PSI0IiByeD0iMSIgcnk9IjEiLz48bGluZSB4MT0iOCIgeTE9IjEyIiB4Mj0iMTYiIHkyPSIxMiIvPjxsaW5lIHgxPSI4IiB5MT0iMTYiIHgyPSIxNCIgeTI9IjE2Ii8+PC9zdmc+PC9kaXY+PHA+5pqC5peg5oql5ZCN6K6w5b2VPC9wPjwvZGl2Pic7CiAgICB9ZWxzZXsKICAgICAgcmVncy5mb3JFYWNoKGZ1bmN0aW9uKHIpewogICAgICAgIHZhciBwcm9maWxlPXIucHJvZmlsZXN8fHt9O3ZhciBjb21wPXIuY29tcGV0aXRpb25zfHx7fTsKICAgICAgICBodG1sKz0nPGRpdiBjbGFzcz0iYWRtaW4tcmVnLWl0ZW0iIGRhdGEtY29tcC1pZD0iJysoci5jb21wZXRpdGlvbl9pZHx8JycpKyciIGRhdGEtc3RhdHVzPSInKyhyLnN0YXR1c3x8JycpKyciIGRhdGEtc2VhcmNoPSInK2VzYygocHJvZmlsZS5zdHVkZW50X2lkfHwnJykrJycrKHByb2ZpbGUubmFtZXx8JycpKS50b0xvd2VyQ2FzZSgpKyciPic7CiAgICAgICAgaHRtbCs9JzxkaXYgY2xhc3M9InJlZy1oZWFkZXIiPjxkaXYgY2xhc3M9InJlZy1jb21wIj4nK2VzYyhjb21wLm5hbWV8fCfmnKrnn6Xnq57otZsnKSsnPC9kaXY+JytnZXRSZWdTdGF0dXNCYWRnZShyLnN0YXR1cykrJzwvZGl2Pic7CiAgICAgICAgaHRtbCs9JzxkaXYgY2xhc3M9InJlZy1zdHVkZW50Ij4nK2VzYyhwcm9maWxlLm5hbWV8fCfmnKrnn6UnKSsnIHwgJytlc2MocHJvZmlsZS5zdHVkZW50X2lkfHwnJykrJyB8ICcrZXNjKHByb2ZpbGUuY29sbGVnZXx8JycpKyc8L2Rpdj4nOwogICAgICAgIGh0bWwrPSc8ZGl2IGNsYXNzPSJyZWctZGV0YWlsIj7miqXlkI3ml7bpl7TvvJonK2Zvcm1hdFRpbWVBZ28oci5jcmVhdGVkX2F0KSsnPC9kaXY+JzsKICAgICAgICBpZihyLm5vdGUpaHRtbCs9JzxkaXYgY2xhc3M9InJlZy1kZXRhaWwiIHN0eWxlPSJtYXJnaW4tdG9wOjRweCI+5aSH5rOo77yaJytlc2Moci5ub3RlKSsnPC9kaXY+JzsKICAgICAgICBpZihyLnJlamVjdF9yZWFzb24paHRtbCs9JzxkaXYgY2xhc3M9InJlZy1kZXRhaWwiIHN0eWxlPSJtYXJnaW4tdG9wOjRweDtjb2xvcjojZTc0YzNjIj7mi5Lnu53ljp/lm6DvvJonK2VzYyhyLnJlamVjdF9yZWFzb24pKyc8L2Rpdj4nOwogICAgICAgIGlmKHIuc3RhdHVzPT09J3BlbmRpbmcnKXsKICAgICAgICAgIGh0bWwrPSc8ZGl2IGNsYXNzPSJyZWctYWN0aW9ucyI+PGJ1dHRvbiBjbGFzcz0iYnRuLWFwcHJvdmUiIG9uY2xpY2s9ImFkbWluQXBwcm92ZSgnK3IuaWQrJykiPumAmui/hzwvYnV0dG9uPjxidXR0b24gY2xhc3M9ImJ0bi1yZWplY3QiIG9uY2xpY2s9InRvZ2dsZVJlamVjdEZvcm0oJytyLmlkKycpIj7mi5Lnu508L2J1dHRvbj48L2Rpdj4nOwogICAgICAgICAgaHRtbCs9JzxkaXYgaWQ9InJlamVjdEZvcm0tJytyLmlkKyciIHN0eWxlPSJkaXNwbGF5Om5vbmUiPjx0ZXh0YXJlYSBjbGFzcz0icmVqZWN0LXJlYXNvbi1pbnB1dCIgaWQ9InJlamVjdFJlYXNvbi0nK3IuaWQrJyIgcGxhY2Vob2xkZXI9Iuivt+i+k+WFpeaLkue7neWOn+WboC4uLiI+PC90ZXh0YXJlYT48ZGl2IHN0eWxlPSJtYXJnaW4tdG9wOjhweDtkaXNwbGF5OmZsZXg7Z2FwOjhweCI+PGJ1dHRvbiBjbGFzcz0iYnRuLXJlamVjdCIgb25jbGljaz0iYWRtaW5SZWplY3QoJytyLmlkKycpIj7noa7orqTmi5Lnu508L2J1dHRvbj48YnV0dG9uIGNsYXNzPSJidG4tc2Vjb25kYXJ5IGJ0bi1zbSIgb25jbGljaz0iZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoXCdyZWplY3RGb3JtLScrci5pZCsnXCcpLnN0eWxlLmRpc3BsYXk9XCdub25lXCciPuWPlua2iDwvYnV0dG9uPjwvZGl2PjwvZGl2Pic7CiAgICAgICAgfQogICAgICAgIGh0bWwrPSc8L2Rpdj4nOwogICAgICB9KTsKICAgIH0KICAgIGh0bWwrPSc8L2Rpdj48L2Rpdj4nOwogICAgY29udGFpbmVyLmlubmVySFRNTD1odG1sOwogIH1jYXRjaChlKXtjb250YWluZXIuaW5uZXJIVE1MPSc8ZGl2IGNsYXNzPSJlbXB0eS1zdGF0ZSI+PHA+5Yqg6L295aSx6LSlPC9wPjwvZGl2Pid9Cn0KZnVuY3Rpb24gYXBwbHlBZG1pbkZpbHRlcnMoKXsKICB2YXIgY29tcElkPWRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdhZG1pbkZpbHRlckNvbXAnKT9kb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnYWRtaW5GaWx0ZXJDb21wJykudmFsdWU6Jyc7CiAgdmFyIHN0YXR1cz1kb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnYWRtaW5GaWx0ZXJTdGF0dXMnKT9kb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnYWRtaW5GaWx0ZXJTdGF0dXMnKS52YWx1ZTonJzsKICB2YXIgcT1kb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnYWRtaW5TZWFyY2hJbnB1dCcpP2RvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdhZG1pblNlYXJjaElucHV0JykudmFsdWUudG9Mb3dlckNhc2UoKTonJzsKICBkb2N1bWVudC5xdWVyeVNlbGVjdG9yQWxsKCcuYWRtaW4tcmVnLWl0ZW0nKS5mb3JFYWNoKGZ1bmN0aW9uKGl0ZW0pewogICAgdmFyIGl0ZW1Db21wPWl0ZW0uZ2V0QXR0cmlidXRlKCdkYXRhLWNvbXAtaWQnKXx8Jyc7CiAgICB2YXIgaXRlbVN0YXR1cz1pdGVtLmdldEF0dHJpYnV0ZSgnZGF0YS1zdGF0dXMnKXx8Jyc7CiAgICB2YXIgaXRlbVNlYXJjaD1pdGVtLmdldEF0dHJpYnV0ZSgnZGF0YS1zZWFyY2gnKXx8Jyc7CiAgICB2YXIgbWF0Y2hDb21wPSghY29tcElkfHxpdGVtQ29tcD09PWNvbXBJZCk7CiAgICB2YXIgbWF0Y2hTdGF0dXM9KCFzdGF0dXN8fGl0ZW1TdGF0dXM9PT1zdGF0dXMpOwogICAgdmFyIG1hdGNoUT0oIXF8fGl0ZW1TZWFyY2guaW5kZXhPZihxKT49MCk7CiAgICBpdGVtLnN0eWxlLmRpc3BsYXk9KG1hdGNoQ29tcCYmbWF0Y2hTdGF0dXMmJm1hdGNoUSk/Jyc6J25vbmUnOwogIH0pOwp9CmZ1bmN0aW9uIHRvZ2dsZVJlamVjdEZvcm0ocmVnSWQpewogIHZhciBmb3JtPWRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdyZWplY3RGb3JtLScrcmVnSWQpOwogIGlmKGZvcm0pZm9ybS5zdHlsZS5kaXNwbGF5PWZvcm0uc3R5bGUuZGlzcGxheT09PSdub25lJz8nYmxvY2snOidub25lJzsKfQphc3luYyBmdW5jdGlvbiBhZG1pbkFwcHJvdmUocmVnSWQpewogIGhhcHRpY0ZlZWRiYWNrKCk7CiAgdmFyIHVzZXI9Z2V0Q3VycmVudFVzZXIoKTtpZighdXNlcilyZXR1cm47CiAgdHJ5ewogICAgdmFyIHJlcz1hd2FpdCBmZXRjaChIVUJfVVJMKycvcmVzdC92MS9yZWdpc3RyYXRpb25zP2lkPWVxLicrcmVnSWQse21ldGhvZDonUEFUQ0gnLGhlYWRlcnM6SFVCX0hFQURFUlMsYm9keTpKU09OLnN0cmluZ2lmeSh7c3RhdHVzOidhcHByb3ZlZCcscmV2aWV3ZWRfYnk6dXNlci5pZCxyZXZpZXdlZF9hdDpuZXcgRGF0ZSgpLnRvSVNPU3RyaW5nKCl9KX0pOwogICAgaWYocmVzLm9rKXtzaG93Q29weVRvYXN0KCflt7LpgJrov4cnLCdzdWNjZXNzJyk7cmVuZGVyQWRtaW4oKX0KICAgIGVsc2Ugc2hvd0NvcHlUb2FzdCgn5pON5L2c5aSx6LSlJywnd2FybmluZycpOwogIH1jYXRjaChlKXtzaG93Q29weVRvYXN0KCfnvZHnu5zplJnor68nLCd3YXJuaW5nJyl9Cn0KYXN5bmMgZnVuY3Rpb24gYWRtaW5SZWplY3QocmVnSWQpewogIGhhcHRpY0ZlZWRiYWNrKCk7CiAgdmFyIHVzZXI9Z2V0Q3VycmVudFVzZXIoKTtpZighdXNlcilyZXR1cm47CiAgdmFyIHJlYXNvbkVsPWRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdyZWplY3RSZWFzb24tJytyZWdJZCk7CiAgdmFyIHJlYXNvbj1yZWFzb25FbD9yZWFzb25FbC52YWx1ZS50cmltKCk6Jyc7CiAgdHJ5ewogICAgdmFyIHBheWxvYWQ9e3N0YXR1czoncmVqZWN0ZWQnLHJldmlld2VkX2J5OnVzZXIuaWQscmV2aWV3ZWRfYXQ6bmV3IERhdGUoKS50b0lTT1N0cmluZygpfTsKICAgIGlmKHJlYXNvbilwYXlsb2FkLnJlamVjdF9yZWFzb249cmVhc29uOwogICAgdmFyIHJlcz1hd2FpdCBmZXRjaChIVUJfVVJMKycvcmVzdC92MS9yZWdpc3RyYXRpb25zP2lkPWVxLicrcmVnSWQse21ldGhvZDonUEFUQ0gnLGhlYWRlcnM6SFVCX0hFQURFUlMsYm9keTpKU09OLnN0cmluZ2lmeShwYXlsb2FkKX0pOwogICAgaWYocmVzLm9rKXtzaG93Q29weVRvYXN0KCflt7Lmi5Lnu50nLCdzdWNjZXNzJyk7cmVuZGVyQWRtaW4oKX0KICAgIGVsc2Ugc2hvd0NvcHlUb2FzdCgn5pON5L2c5aSx6LSlJywnd2FybmluZycpOwogIH1jYXRjaChlKXtzaG93Q29weVRvYXN0KCfnvZHnu5zplJnor68nLCd3YXJuaW5nJyl9Cn0K
+/* Extracted from app.js */
+async function renderAdmin(){
+  var container=document.getElementById('adminContent');
+  if(!isAdmin()){container.innerHTML='<div class="login-required"><h3>无权限</h3><p>仅管理员可访问此页面</p><button class="btn-primary" onclick="navigate(\'home\')">返回首页</button></div>';return}
+  container.innerHTML='<div class="loading-overlay"><div class="loading-spinner" style="width:32px;height:32px"></div><p style="margin-top:12px">加载管理数据...</p></div>';
+  try{
+    var regsRes=await fetch(HUB_URL+'/rest/v1/registrations?select=*,profiles!registrations_user_id_fkey(name,student_id,college),competitions(name,level,category)&order=created_at.desc',{headers:HUB_HEADERS});
+    var compsRes=await fetch(HUB_URL+'/rest/v1/competitions?select=id,name',{headers:HUB_HEADERS});
+    if(!regsRes.ok||!compsRes.ok){container.innerHTML='<div class="empty-state"><p>加载失败</p></div>';return}
+    var regs=await regsRes.json();
+    var comps=await compsRes.json();
+    var total=regs.length;
+    var pending=regs.filter(function(r){return r.status==='pending'}).length;
+    var approved=regs.filter(function(r){return r.status==='approved'}).length;
+    var colleges={};regs.forEach(function(r){var c=r.profiles?r.profiles.college:'未知';colleges[c]=(colleges[c]||0)+1});
+    var html='<div style="max-width:800px;margin:0 auto"><h2 class="content-page-title"><span class="gold">管理面板</span></h2>';
+    html+='<div class="admin-stat-grid"><div class="admin-stat-card"><div class="admin-stat-value">'+total+'</div><div class="admin-stat-label">总报名数</div></div><div class="admin-stat-card"><div class="admin-stat-value" style="color:#f39c12">'+pending+'</div><div class="admin-stat-label">待审核</div></div><div class="admin-stat-card"><div class="admin-stat-value" style="color:#2ecc71">'+approved+'</div><div class="admin-stat-label">已通过</div></div></div>';
+    html+='<div class="admin-filter-bar"><select id="adminFilterComp" onchange="applyAdminFilters()"><option value="">全部竞赛</option>';
+    comps.forEach(function(c){html+='<option value="'+c.id+'">'+esc(c.name)+'</option>'});
+    html+='</select><select id="adminFilterStatus" onchange="applyAdminFilters()"><option value="">全部状态</option><option value="pending">待审核</option><option value="approved">已通过</option><option value="rejected">已拒绝</option><option value="cancelled">已取消</option></select><input type="text" id="adminSearchInput" placeholder="搜索学号/姓名..." oninput="applyAdminFilters()" /></div>';
+    html+='<div id="adminRegList">';
+    if(regs.length===0){
+      html+='<div class="empty-state"><div class="empty-state-icon"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="8" y1="16" x2="14" y2="16"/></svg></div><p>暂无报名记录</p></div>';
+    }else{
+      regs.forEach(function(r){
+        var profile=r.profiles||{};var comp=r.competitions||{};
+        html+='<div class="admin-reg-item" data-comp-id="'+(r.competition_id||'')+'" data-status="'+(r.status||'')+'" data-search="'+esc((profile.student_id||'')+''+(profile.name||'')).toLowerCase()+'">';
+        html+='<div class="reg-header"><div class="reg-comp">'+esc(comp.name||'未知竞赛')+'</div>'+getRegStatusBadge(r.status)+'</div>';
+        html+='<div class="reg-student">'+esc(profile.name||'未知')+' | '+esc(profile.student_id||'')+' | '+esc(profile.college||'')+'</div>';
+        html+='<div class="reg-detail">报名时间：'+formatTimeAgo(r.created_at)+'</div>';
+        if(r.note)html+='<div class="reg-detail" style="margin-top:4px">备注：'+esc(r.note)+'</div>';
+        if(r.reject_reason)html+='<div class="reg-detail" style="margin-top:4px;color:#e74c3c">拒绝原因：'+esc(r.reject_reason)+'</div>';
+        if(r.status==='pending'){
+          html+='<div class="reg-actions"><button class="btn-approve" onclick="adminApprove('+r.id+')">通过</button><button class="btn-reject" onclick="toggleRejectForm('+r.id+')">拒绝</button></div>';
+          html+='<div id="rejectForm-'+r.id+'" style="display:none"><textarea class="reject-reason-input" id="rejectReason-'+r.id+'" placeholder="请输入拒绝原因..."></textarea><div style="margin-top:8px;display:flex;gap:8px"><button class="btn-reject" onclick="adminReject('+r.id+')">确认拒绝</button><button class="btn-secondary btn-sm" onclick="document.getElementById(\'rejectForm-'+r.id+'\').style.display=\'none\'">取消</button></div></div>';
+        }
+        html+='</div>';
+      });
+    }
+    html+='</div></div>';
+    container.innerHTML=html;
+  }catch(e){container.innerHTML='<div class="empty-state"><p>加载失败</p></div>'}
+}
+function applyAdminFilters(){
+  var compId=document.getElementById('adminFilterComp')?document.getElementById('adminFilterComp').value:'';
+  var status=document.getElementById('adminFilterStatus')?document.getElementById('adminFilterStatus').value:'';
+  var q=document.getElementById('adminSearchInput')?document.getElementById('adminSearchInput').value.toLowerCase():'';
+  document.querySelectorAll('.admin-reg-item').forEach(function(item){
+    var itemComp=item.getAttribute('data-comp-id')||'';
+    var itemStatus=item.getAttribute('data-status')||'';
+    var itemSearch=item.getAttribute('data-search')||'';
+    var matchComp=(!compId||itemComp===compId);
+    var matchStatus=(!status||itemStatus===status);
+    var matchQ=(!q||itemSearch.indexOf(q)>=0);
+    item.style.display=(matchComp&&matchStatus&&matchQ)?'':'none';
+  });
+}
+function toggleRejectForm(regId){
+  var form=document.getElementById('rejectForm-'+regId);
+  if(form)form.style.display=form.style.display==='none'?'block':'none';
+}
+async function adminApprove(regId){
+  hapticFeedback();
+  var user=getCurrentUser();if(!user)return;
+  try{
+    var res=await fetch(HUB_URL+'/rest/v1/registrations?id=eq.'+regId,{method:'PATCH',headers:HUB_HEADERS,body:JSON.stringify({status:'approved',reviewed_by:user.id,reviewed_at:new Date().toISOString()})});
+    if(res.ok){showCopyToast('已通过','success');renderAdmin()}
+    else showCopyToast('操作失败','warning');
+  }catch(e){showCopyToast('网络错误','warning')}
+}
+async function adminReject(regId){
+  hapticFeedback();
+  var user=getCurrentUser();if(!user)return;
+  var reasonEl=document.getElementById('rejectReason-'+regId);
+  var reason=reasonEl?reasonEl.value.trim():'';
+  try{
+    var payload={status:'rejected',reviewed_by:user.id,reviewed_at:new Date().toISOString()};
+    if(reason)payload.reject_reason=reason;
+    var res=await fetch(HUB_URL+'/rest/v1/registrations?id=eq.'+regId,{method:'PATCH',headers:HUB_HEADERS,body:JSON.stringify(payload)});
+    if(res.ok){showCopyToast('已拒绝','success');renderAdmin()}
+    else showCopyToast('操作失败','warning');
+  }catch(e){showCopyToast('网络错误','warning')}
+}
