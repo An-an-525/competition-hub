@@ -10,13 +10,20 @@ var _submitLock = false;
 // 1. 报名入口
 // ==========================================
 
-function startApplication(compId) {
-  if (!isLoggedIn()) {
-    showConfirm('报名需要先登录，是否前往登录？', function() { navigate('auth'); });
-    return;
+async function startApplication(compId) {
+  try {
+    if (!isLoggedIn()) {
+      showConfirm('报名需要先登录，是否前往登录？', function() { navigate('auth'); });
+      return;
+    }
+    // 显示加载提示
+    showCopyToast('正在检查报名状态...', 'info');
+    // 检查是否已有草稿
+    await checkExistingDraft(compId);
+  } catch (error) {
+    console.error('startApplication error:', error);
+    showCopyToast('操作失败，请重试', 'error');
   }
-  // 检查是否已有草稿
-  checkExistingDraft(compId);
 }
 
 // ==========================================

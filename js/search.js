@@ -1,6 +1,23 @@
 /* Extracted from app.js */
 
-function openGlobalSearch(){var modal=document.getElementById('globalSearchModal');if(modal){modal.classList.add('active');var input=document.getElementById('globalSearchInput');if(input){input.value='';input.focus()}renderSearchHistory()}}
+function openGlobalSearch(initialQuery){
+  var modal=document.getElementById('globalSearchModal');
+  if(modal){
+    modal.classList.add('active');
+    var input=document.getElementById('globalSearchInput');
+    if(input){
+      // 支持传入初始搜索词
+      if(initialQuery && initialQuery.trim()){
+        input.value=initialQuery.trim();
+        doGlobalSearch(initialQuery.trim());
+      }else{
+        input.value='';
+        renderSearchHistory();
+      }
+      input.focus();
+    }
+  }
+}
 function closeGlobalSearch(){var modal=document.getElementById('globalSearchModal');if(modal)modal.classList.remove('active')}
 function renderSearchHistory(){var history=getLS('search_history',[]);var container=document.getElementById('globalSearchResults');var hint=document.getElementById('globalSearchHint');if(history.length===0){hint.textContent='输入关键词开始搜索';container.innerHTML='';return}hint.textContent='搜索历史';var html='';history.slice(0,8).forEach(function(q,i){html+='<div class="search-history-item" data-query="'+esc(q)+'" tabindex="0" role="button"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>'+esc(q)+'</div>'});html+='<div class="search-history-item" id="clearSearchHistory" style="color:var(--text-muted);font-size:12px">清除搜索历史</div>';container.innerHTML=html;if(!container._histListener){container._histListener=true;container.addEventListener('click',function(e){var item=e.target.closest('[data-query]');if(item){document.getElementById('globalSearchInput').value=item.dataset.query;doGlobalSearch()}if(e.target.closest('#clearSearchHistory')){setLS('search_history',[]);renderSearchHistory()}})}}
 function doGlobalSearch(query){if(!query.trim()){renderSearchHistory();return}clearTimeout(window._searchDebounce);window._searchDebounce=setTimeout(function(){_doGlobalSearch(query)},200)}

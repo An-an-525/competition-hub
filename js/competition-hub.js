@@ -91,7 +91,11 @@ function getTeamStatusBadge(status){
   return'<span class="status-badge '+s[1]+'">'+esc(s[0])+'</span>';
 }
 function formatDate(d){
-  if(!d)return'';var dt=new Date(d);return dt.getFullYear()+'-'+(dt.getMonth()+1<10?'0':'')+(dt.getMonth()+1)+'-'+(dt.getDate()<10?'0':'')+dt.getDate();
+  if(!d)return'';
+  var dt=new Date(d);
+  // 检查日期是否有效
+  if(isNaN(dt.getTime()))return d; // 返回原始值而非格式化
+  return dt.getFullYear()+'-'+(dt.getMonth()+1<10?'0':'')+(dt.getMonth()+1)+'-'+(dt.getDate()<10?'0':'')+dt.getDate();
 }
 
 /* --- Competition Display (Hub) --- */
