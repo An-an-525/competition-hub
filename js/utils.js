@@ -6,7 +6,7 @@
 var API_BASE = (function(){
   var h = location.hostname;
   if(h.indexOf('github.io') >= 0 || h.indexOf('localhost') >= 0) {
-    return 'http://149.28.143.114';
+    return 'https://149.28.143.114';
   }
   return '';
 })();
