@@ -51,7 +51,7 @@ navigate = function(page, tab) {
     window.scrollTo({ top: 0, behavior: 'smooth' });
     if (page === 'auth') {}
     if (page === 'admin') renderAdminV2();
-    if (page === 'myregistrations') renderMyRegistrations();
+    if (page === 'myregistrations') renderMyApplications();
     return;
   }
   _origNavigate(page, tab);
