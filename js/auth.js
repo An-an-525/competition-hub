@@ -87,8 +87,8 @@ async function doRegister(){
     var profile=data[0];
     setCurrentUser({id:profile.id,studentId:profile.student_id,name:profile.name,college:profile.college,role:profile.role||'student'});
     showCopyToast('注册成功，欢迎 '+name,'success');
-    // 注册成功后自动登录获取token
-    setTimeout(function(){ doLogin(); }, 500);
+    // 注册成功后自动获取JWT token（直接调用后端，不依赖输入框）
+    try{var loginRes=await fetch('/api/login',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({studentId:sid,password:pwd})});if(loginRes.ok){var loginData=await loginRes.json();if(loginData.token){setLS('auth_token',loginData.token)}}}catch(e){console.warn('后端登录接口不可用:',e.message)}
     updateNavAuth();navigate('home');
   }catch(e){errEl.textContent='错误：'+e.message;errEl.classList.add('show');btn.disabled=false;btn.textContent='注册'}
 }
